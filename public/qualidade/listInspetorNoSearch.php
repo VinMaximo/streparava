@@ -20,7 +20,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
             <tr>
                 <th>Nome</th>
                 <th>Matrícula</th>
-                
+                <th></th>
             </tr>
 
             <?php
@@ -30,6 +30,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                     <tr>
                         <td><?php echo $exibir["nome"] ?></td>
                         <td><?php echo $exibir["matricula"] ?></td>
+
                         
                         <td>
                             <button type="button" class="btn btn-primary btn-sm">

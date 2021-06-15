@@ -1,15 +1,15 @@
 <?php
 session_start();
-if (isset($_SESSION['medico']) or isset($_SESSION['paciente'])) {
+if (isset($_SESSION['montagem']) or isset($_SESSION['qualidade'])) {
     //echo "voce eh um ADM!";
 ?>
     <script>
-        alert("Voce nao tem acesso a essa area");
+        alert("Você não tem acesso a essa área");
         window.location = "../home/home.php";
     </script>
     <?php
 } else {
-    if (isset($_SESSION['adm'])) {
+    if (isset($_SESSION['admnistrador'])) {
     } else {
     ?>
         <script>

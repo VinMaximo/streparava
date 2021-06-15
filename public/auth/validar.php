@@ -3,14 +3,14 @@ if ( session_status() !== PHP_SESSION_ACTIVE ){
     session_start();
 }
 
-if(isset($_SESSION['medico'])){
-    $id_usuario=$_SESSION['medico'];
+if(isset($_SESSION['montagem'])){
+    $id_usuario=$_SESSION['montagem'];
 }else{
-    if(isset($_SESSION['paciente'])){
-        $id_usuario=$_SESSION['paciente'];
+    if(isset($_SESSION['qualidade'])){
+        $id_usuario=$_SESSION['qualidade'];
     }else{
-        if(isset($_SESSION['adm'])){
-            $id_usuario=$_SESSION['adm'];
+        if(isset($_SESSION['admnistrador'])){
+            $id_usuario=$_SESSION['admnistrador'];
         }else{
             ?>
         <script>

@@ -3,14 +3,15 @@
 <html>
 
 <head>
-   <link rel="stylesheet" href="../styles/login.css">
+   <link rel="stylesheet" href="../Styles/login.css">
 </head>
 
 <body>
    <div class="sidenav">
       <div class="login-main-text">
-         <h2>Sistema Unico<br></h2>
-         <p>Faça o login ou registre-se por aqui.<br></p>
+         <br>
+         <h2>SISTEMA DE CONTROLE STREPARAVA COMPONENTES AUTOMOTIVOS LTDA.<br></h2>
+         <p><br></p>
       </div>
    </div>
    <div class="main">

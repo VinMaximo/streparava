@@ -20,6 +20,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
             <tr>
                 <th>Nome</th>
                 <th>Matrícula</th>
+                <th></th>
                 
             </tr>
 

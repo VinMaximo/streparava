@@ -20,7 +20,7 @@
     {?>
         <script>
             alert("Usuário cadastrado com sucesso");
-           // window.location = "listDoctor.php";
+            window.location = "listUser.php";
         </script>
     <?php
     }
@@ -28,7 +28,7 @@
     { ?>
         <script>
             alert("Ocorreu um erro ao cadastrar o usuário.");
-            //window.location = "listDoctor.php";
+            window.location = "listUser.php";
         </script>
     
     <?php

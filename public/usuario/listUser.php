@@ -32,6 +32,7 @@ if ($dadosUsuario->num_rows > 0) {
             <tr>
                 <th>User</th>
                 <th>Prioridade (3-Administrador/2-Montagem/1-Qualidade)</th>
+                <th></th>
 
             </tr>
 

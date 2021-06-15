@@ -5,12 +5,14 @@ body {
 .main-head{
     height: 150px;
     background: #FFF;
+    
    
 }
 
 .sidenav {
     height: 100%;
-    background-color: #ff3e3e;
+    background-image: url("../imagens/StreparavaComponents.png"), url("StreparavaComponents.png");
+    background-color: #691c1c;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -58,9 +60,12 @@ body {
 
 
 .login-main-text{
-    margin-top: 20%;
-    padding: 60px;
+    margin-top: 30%;
+    padding: 30px;
     color: #fff;
+    text-align: center;
+    font-family: Impact, fantasy;
+    font-size: xx-large;
 }
 
 .login-main-text h2{

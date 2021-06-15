@@ -1,7 +1,7 @@
 <?php
 include("../../data/connection.php");
-if ( session_status() !== PHP_SESSION_ACTIVE ){
-    session_start();
+if (session_status() !== PHP_SESSION_ACTIVE) {
+  session_start();
 }
 ?>
 <!DOCTYPE html>
@@ -18,27 +18,27 @@ if ( session_status() !== PHP_SESSION_ACTIVE ){
 
   <title></title>
 
-  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="stylesheet" href="../Styles/main.css" />
 </head>
 
 <?php
 $orgao = '';
 $orgaoa;
-$firstname='';
+$firstname = '';
 
 if (isset($_SESSION['logado'])) {
-  $idu=$_SESSION['logado'];
-  $sqlQuery2="SELECT nome FROM usuario where id_usuario=$idu";
+  $idu = $_SESSION['logado'];
+  $sqlQuery2 = "SELECT nome FROM usuario where id_usuario=$idu";
   $usuarioatual = $connection->query($sqlQuery2);
   if ($usuarioatual->num_rows > 0) {
     while ($row = $usuarioatual->fetch_assoc()) {
       $user = $row['nome'];
       $pieces = explode(" ", $user);
-      $firstname=", ".$pieces[0];
+      $firstname = ", " . $pieces[0];
 
 ?>
 
-<?php
+    <?php
     }
   }
 
@@ -54,9 +54,9 @@ if (isset($_SESSION['logado'])) {
     while ($row = $orgaoatual->fetch_assoc()) {
       $orgaocrud = $row['nome_orgao_atual'];
       $orgao = '- ' . $row['nome_orgao_atual'];
-      $orgaoa=$row['nome_orgao_atual'];
-      $exer=$row['exercicio_atual'];
-?>
+      $orgaoa = $row['nome_orgao_atual'];
+      $exer = $row['exercicio_atual'];
+    ?>
 
 <?php
     }
@@ -66,7 +66,7 @@ if (isset($_SESSION['logado'])) {
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #9b0000; font-family: Impact, fantasy; font-size: xx-large;font-size: 50px">
     <div class="container">
       <a class="navbar-brand" font-weight: bold href="../home/home.php">STREPARAVA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,23 +75,21 @@ if (isset($_SESSION['logado'])) {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
 
-          <?php
-          if (isset($_SESSION['logado'])) {
-          ?>
-            
-            <li class="nav-item">
-              <a class="nav-link" href="../login/sair.php">Sair</a>
-            </li>
-          <?php
           
-          }
-          ?>
-          <?php
-          if (isset($_SESSION['logado'])) {
-          ?>
+          
+
+            <?php
+            if (isset($_SESSION['qualidade']) or isset($_SESSION['montagem']) or isset($_SESSION['administrador'])) {
+            ?>
+              <li class="nav-item">
+                <a class="nav-link" href="../auth/sair.php">Sair</a>
+              </li>
+            <?php
+            }
+            ?>
 
           <?php
-          }
+          
           ?>
         </ul>
 
@@ -106,4 +104,3 @@ if (isset($_SESSION['logado'])) {
 </body>
 
 </html>
-

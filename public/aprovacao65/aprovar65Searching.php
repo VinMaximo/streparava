@@ -1,0 +1,62 @@
+
+
+<?php
+$usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
+?>
+
+<?php
+
+    include("../../data/connection.php");
+
+    $sql = "SELECT *, DATE_FORMAT(data,'%d/%m/%Y') as datas FROM g65 WHERE etiqueta LIKE '%$usuarios%' ";
+    $dadosPDCa = $connection -> query($sql);
+
+    if($dadosPDCa -> num_rows > 0)
+    {
+    ?>
+    <div style="margin-left: 100px; margin-right: 100px;">
+        <br>
+        <table class="table" style="text-align: center;">
+            <tr>
+                <th>Etiqueta</th>
+                <th>Data</th>
+                <th>Inspetor</th>
+                <th></th>   
+                
+            </tr>
+
+            <?php
+                while($exibir = $dadosPDCa -> fetch_assoc())
+                {
+                ?>
+                    <tr>
+                        <td><?php echo $exibir["etiqueta"] ?></td>
+                        <td><?php echo $exibir["datas"] ?></td>
+                        <td><?php echo $exibir["inspetor"] ?></td>
+                        
+                        <td>
+                            <button type="button" class="btn btn-primary btn-sm">
+                                <a href="editAprovar65.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Aprovar</a>
+                            </button>
+                        
+                            
+                        </td>
+                    </tr>
+                <?php
+                    }
+                ?>
+        </table>
+    </div>
+<p style="margin-left: 100px; margin-right: 100px;">
+<?php
+    }
+    
+    else
+    {?>
+        <div style="margin-left: 100px; margin-right: 100px;">
+        <?php
+        echo "Nenhum registro encontrado.";
+    }
+?>
+    </p>
+    <br>

@@ -14,7 +14,7 @@
 
 
             $sql = "UPDATE usuario 
-            SET user = '" . $usuario . "', senha = '" . $senha . "', prioridade = ". $prioridade .", nome = ". $nome.
+            SET user = '" . $usuario . "', senha = '" . $senha . "', prioridade = ". $prioridade .", nome = ". $nome. "', setor = ". $setor .
             " WHERE id_usuario = '" . $id . "'";
 
 

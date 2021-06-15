@@ -21,7 +21,7 @@ include("../Template/header.php");
 
         </div>
 
-        
+
 
 
         <div class="card text-center">
@@ -40,9 +40,14 @@ include("../Template/header.php");
 
                     <a href="../montagemG70/listPDC70.php" class="btn btn-primary">Lista planilha de controle G70</a>
 
-                    <a href="../operador/listOperador.php" class="btn btn-primary">Lista de operadores</a>
 
                 </div>
+
+                <div class="buttons">
+                    <br>
+                    <a href="../operador/listOperador.php" class="btn btn-primary">Lista de operadores</a>
+                </div>
+
             </div>
             <div class="card-footer text-muted">
 
@@ -57,9 +62,10 @@ include("../Template/header.php");
                 <h5 class="card-title">Outros</h5>
                 <p class="card-text"></p>
                 <div class="buttons">
-                    
+
                     <a href="../qualidade/listInspetor.php" class="btn btn-primary">Lista de inspetores</a>
 
+                    <a href="../usuario/listUser.php" class="btn btn-primary">Lista de usuários</a>
 
                 </div>
             </div>

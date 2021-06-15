@@ -20,18 +20,18 @@ if ((isset($_POST['user'])) && (isset($_POST['senha']))) {
 
             session_start();
 
-            if ($adm == 0) {
-                $_SESSION['adm']=$nome;
+            if ($adm == 3) {
+                $_SESSION['admnistrador']=$nome;
                 //echo "voce eh adm";
             }
 
-            if ($adm == 1) {
-                $_SESSION['medico']=$nome;
+            if ($adm == 2) {
+                $_SESSION['montagem']=$nome;
                 //echo "voce eh medico";
             }
 
-            if ($adm == 2) {
-                $_SESSION['paciente']=$nome;
+            if ($adm == 1) {
+                $_SESSION['qualidade']=$nome;
                 //echo "voce eh paciente";
             }
 

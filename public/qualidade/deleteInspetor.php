@@ -1,5 +1,5 @@
 <?php
-
+include("../auth/validaQualidade.php");
 include_once("../../data/connection.php");
 if (isset($_GET["matricula"])) {
 

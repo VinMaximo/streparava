@@ -1,7 +1,7 @@
 
 
 <?php include("../Template/header.php") ?>
-
+<?php include("../auth/validaQualidade.php") ?>
 <?php include("../../data/connection.php") ?>
 
 <br>

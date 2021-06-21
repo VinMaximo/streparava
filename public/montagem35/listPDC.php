@@ -1,5 +1,5 @@
 <?php include("../Template/header.php") ?>
-
+<?php include("../auth/validaMontagem.php"); ?>
 <?php include("../../data/connection.php") ?>
 
 <br>

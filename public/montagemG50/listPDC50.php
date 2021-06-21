@@ -3,7 +3,7 @@
 <?php include("../Template/header.php") ?>
 
 <?php include("../../data/connection.php") ?>
-
+<?php include("../auth/validaMontagem.php") ?>
 <br>
 <br>
 <br>

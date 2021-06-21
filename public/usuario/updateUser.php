@@ -1,6 +1,4 @@
-<?php // include("../auth/validarADM.php")
-
-?>
+<?php include("../auth/validaADM.php")?>
 
 
 <?php
@@ -27,7 +25,7 @@ if (isset($_POST)) {
 ?>
         <script>
             alert("Usuário editado com sucesso");
-            //window.location = "listDoctor.php";
+            window.location = "listUser.php";
         </script>
 
     <?php
@@ -37,7 +35,7 @@ if (isset($_POST)) {
     ?>
         <script>
             alert("Erro ao editar o usuário");
-            // window.location = "listDoctor.php";
+          //  window.location = "listUser.php";
         </script>
 <?php
 

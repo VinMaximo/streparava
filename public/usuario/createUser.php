@@ -1,7 +1,7 @@
 <?php include("../Template/header.php");
 include_once("../../data/connection.php");
 ?>
-
+<?php include("../auth/validaADM.php")?>
 <html lang="en">
 
 <head>

@@ -1,4 +1,5 @@
 <?php
+include("../auth/validaMontagem.php");
 include("../Template/header.php");
 include_once("../../data/connection.php");
 

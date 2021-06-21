@@ -3,7 +3,7 @@
     include("../Template/header.php");
     include_once("../../data/connection.php");
 ?>
-
+<?php include("../auth/validaADM.php")?>
 <?php
    if (isset ($_GET["id"])) 
    {

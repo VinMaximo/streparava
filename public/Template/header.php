@@ -21,48 +21,6 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
   <link rel="stylesheet" href="../Styles/main.css" />
 </head>
 
-<?php
-$orgao = '';
-$orgaoa;
-$firstname = '';
-
-if (isset($_SESSION['logado'])) {
-  $idu = $_SESSION['logado'];
-  $sqlQuery2 = "SELECT nome FROM usuario where id_usuario=$idu";
-  $usuarioatual = $connection->query($sqlQuery2);
-  if ($usuarioatual->num_rows > 0) {
-    while ($row = $usuarioatual->fetch_assoc()) {
-      $user = $row['nome'];
-      $pieces = explode(" ", $user);
-      $firstname = ", " . $pieces[0];
-
-?>
-
-    <?php
-    }
-  }
-
-
-
-
-  $sqlQuery = "SELECT nome_orgao_atual,exercicio_atual FROM orgao_atual where id_orgao_atual=1";
-
-  $orgaoatual = $connection->query($sqlQuery);
-
-  if ($orgaoatual->num_rows > 0) {
-
-    while ($row = $orgaoatual->fetch_assoc()) {
-      $orgaocrud = $row['nome_orgao_atual'];
-      $orgao = '- ' . $row['nome_orgao_atual'];
-      $orgaoa = $row['nome_orgao_atual'];
-      $exer = $row['exercicio_atual'];
-    ?>
-
-<?php
-    }
-  }
-}
-?>
 
 <body>
 

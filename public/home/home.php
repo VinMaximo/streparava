@@ -40,13 +40,15 @@ include("../Template/header.php");
                         <a href="../montagemG65/listPDC65.php" class="btn btn-primary">Lista planilha de controle G65</a>
 
                         <a href="../montagemG70/listPDC70.php" class="btn btn-primary">Lista planilha de controle G70</a>
-
-
+                        
+                        
+                        
                     </div>
 
                     <div class="buttons">
                         <br>
                         <a href="../operador/listOperador.php" class="btn btn-primary">Lista de operadores</a>
+                        <a href="../travessa/listTravessa.php" class="btn btn-primary">Lista de travessas</a>
                     </div>
 
                 </div>

@@ -1,4 +1,4 @@
-
+<?php include("../auth/validaADM.php")?>
 
 
 <?php

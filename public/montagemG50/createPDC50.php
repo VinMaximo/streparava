@@ -1,5 +1,6 @@
 <?php include("../Template/header.php");
 include("../../data/connection.php");
+include("../auth/validaMontagem.php");
 $dbcon = new mysqli($servername, $username, $password, $dbname);
 
 $sql = $dbcon->query("SELECT coalesce( max( etiqueta ), 0) + 1 FROM g50");

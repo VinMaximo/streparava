@@ -1,6 +1,8 @@
 <?php include("../Template/header.php");
 include_once("../../data/connection.php");
+
 ?>
+<?php include("../auth/validaADM.php")?>
 
 <div style="margin-left: 100px; margin-right: 100px;">
     <br>

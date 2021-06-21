@@ -1,11 +1,7 @@
 
-
-
-
-
 <?php
-    include("../templates/header.php");
-    include_once("../../data/db_connection.php");
+    include("../Template/header.php");
+    include_once("../../data/connection.php");
 ?>
 
 <?php
@@ -21,47 +17,76 @@
 
        
 ?>
-?>
+<br>
+<br>
+
 
 
 <div class="form">
         <form action="updateUser.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <h3>Editar Usuário</h3>
+
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Usuário</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Id do usuário</span>
                 </div>
-                <input type="text" name="txtUsuario" class="form-control" id="txtUsuario" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="number" name="numId" class="form-control" id="numId" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $usuario["id_usuario"] ?>" readonly>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Username</span>
+                </div>
+                <input type="text" name="txtUsuario" class="form-control" id="txtUsuario" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $usuario["user"] ?>">
             </div>
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Senha</span>
                 </div>
-                <input type="password" name="txtSenha" class="form-control" id="txtSenha" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="password" name="txtSenha" class="form-control" id="txtSenha" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $usuario["senha"] ?>">
             </div>
             
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Prioridade</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nível de prioridade</span>
                 </div>
-                <input type="number" name="numPrioridade" class="form-control" id="numPrioridade" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-            </div>
-            
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
-                </div>
-                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
-
+                <select class="form-select" name="numPrioridade" id="numPrioridade">
+                    <?php
+                    
+                    ?>
+                    
                     <option value="1">
-                        <?php echo "Qualidade"  ?>
+                        <?php echo "1 - Qualidade"  ?>
                     </option>
                     <option value="2">
-                        <?php echo "Montagem"  ?>
+                        <?php echo "2 - Montagem"  ?>
                     </option>
                     <option value="3">
+                        <?php echo "3 - Administrador"  ?>
+                    </option>
+
+                   
+
+                </select>
+
+
+            </div>
+            
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Setor</span>
+                </div>
+                <select class="form-select" name="txtSetor" id="txtSetor">
+
+                    <option value="Qualidade">
+                        <?php echo "Qualidade"  ?>
+                    </option>
+                    <option value="Montagem">
+                        <?php echo "Montagem"  ?>
+                    </option>
+                    <option value="Administrador">
                         <?php echo "Administrador"  ?>
                     </option>
 
@@ -73,7 +98,7 @@
 
             <div class="buttons">
                 <input type="submit" class="btn btn-success" value="Atualizar">
-                <input type="reset" class="btn btn-danger" value="Cancelar">
+                <input type="reset" class="btn btn-danger" onclick="window.location.href='../usuario/listUser.php'"  value="Cancelar">
             </div>
 
         </form>

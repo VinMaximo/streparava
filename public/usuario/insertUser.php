@@ -6,7 +6,6 @@
     include_once("../../data/connection.php");
 
     $usuario = $_POST["txtUsuario"];
-   
     $senha = $_POST["txtSenha"];
     $prioridade = $_POST["numPrioridade"];
     $setor = $_POST["txtSetor"];

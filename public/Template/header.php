@@ -75,14 +75,12 @@ if (isset($_SESSION['logado'])) {
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
 
-          
-          
 
             <?php
-            if (isset($_SESSION['qualidade']) or isset($_SESSION['montagem']) or isset($_SESSION['administrador'])) {
+            if (isset($_SESSION['qualidade']) or isset($_SESSION['montagem']) or isset($_SESSION['adm'])) {
             ?>
-              <li class="nav-item">
-                <a class="nav-link" href="../auth/sair.php">Sair</a>
+              <li class="nav-item" >
+                <a class="nav-link" style="font-size: large;" href="../auth/sair.php">Sair</a>
               </li>
             <?php
             }

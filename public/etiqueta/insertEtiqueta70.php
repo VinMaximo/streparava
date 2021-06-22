@@ -9,7 +9,7 @@ $etiqueta2 = $_POST["numEtiqueta"];
 
 
 $sql2 = "UPDATE guarda SET id ='" . $etiqueta . "' " ."WHERE id = " . $etiqueta2;"";
-echo $sql2;
+
 $sql = "ALTER TABLE g70 AUTO_INCREMENT = $etiqueta";
 
 $resultado2 = $connection -> query($sql2);

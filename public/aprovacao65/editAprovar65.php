@@ -121,7 +121,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 esquerdo</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod" disabled="disabled">
+                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe" disabled="disabled">
 
                     <option value="OK">
                         <?php echo "OK"  ?>
@@ -135,7 +135,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota esquerdo</span>
                 </div>
-                <select class="form-select" name="txtMontagemd" id="txtMontagemd" disabled="disabled">
+                <select class="form-select" name="txtMontageme" id="txtMontageme" disabled="disabled">
 
                     <option value="OK">
                         <?php echo "OK"  ?>
@@ -153,7 +153,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe" disabled="disabled">
+                <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod" disabled="disabled">
 
                     <option value="OK">
                         <?php echo "OK"  ?>
@@ -167,7 +167,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota direito</span>
                 </div>
-                <select class="form-select" name="txtMontageme" id="txtMontageme" disabled="disabled">
+                <select class="form-select" name="txtMontagemd" id="txtMontagemd" disabled="disabled">
 
                     <option value="OK">
                         <?php echo "OK"  ?>

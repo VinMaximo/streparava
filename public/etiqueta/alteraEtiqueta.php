@@ -53,7 +53,9 @@ $row = $sql->fetch_row();
                     <p class="card-text"></p>
                     1º A partir do momento em que uma etiqueta for alterada, NÃO será possível inserir números anteriores ao novo inserido. <br> <br>
 
-                    2º O primeiro número de etiqueta após a alteração não será exibido corretamente na hora da criação de uma nova planilha de controle, a partir da segunda será exibido normalmente.
+                    2º O primeiro número de etiqueta após a alteração não será exibido corretamente na hora da criação de uma nova planilha de controle, a partir da segunda será exibido normalmente. <br> <br>
+
+                    3º Essa função deverá ser usada SOMENTE na virada de ano quando houver troca de código
                 </div>
                 <div class="card-footer text-muted">
 

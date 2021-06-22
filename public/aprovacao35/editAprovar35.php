@@ -121,14 +121,27 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 esquerdo</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod" disabled="disabled">
-
-                    <option value="OK">
+                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe" disabled="disabled">
+                    <?php
+                    if($pdc["esmagamento_dir"] === "OK") {?>
+                    <option value="OK" selected>
                         <?php echo "OK"  ?>
                     </option>
                     <option value="NOK">
                         <?php echo "NOK"  ?>
                     </option>
+                    <?php
+                    } else {
+                        ?>
+                        <option value="OK">
+                        <?php echo "OK"  ?>
+                    </option>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -153,7 +166,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe" disabled="disabled">
+                <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod" disabled="disabled">
 
                     <option value="OK">
                         <?php echo "OK"  ?>

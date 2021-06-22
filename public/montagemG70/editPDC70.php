@@ -32,30 +32,7 @@ if (isset ($_GET["etiqueta"]))
         </div>
 
 
-        <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Gama</span>
-                </div>
-                <select class="form-select" name="txtGama" id="txtGama">
-
-                    <option value="G35">
-                        <?php echo "G35"  ?>
-                    </option>
-                    <option value="G40">
-                        <?php echo "G40"  ?>
-                    </option>
-                    <option value="G50">
-                        <?php echo "G50"  ?>
-                    </option>
-                    <option value="G65">
-                        <?php echo "G65"  ?>
-                    </option>
-                    <option value="G70">
-                        <?php echo "G70"  ?>
-                    </option>
-
-                </select>
-            </div>
+        
             
             <div>
             
@@ -147,7 +124,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 esquerdo</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod">
+                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
 
                     <option value="OK">
                         <?php echo "OK"  ?>
@@ -161,7 +138,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota esquerdo</span>
                 </div>
-                <select class="form-select" name="txtMontagemd" id="txtMontagemd">
+                <select class="form-select" name="txtMontageme" id="txtMontageme">
 
                     <option value="OK">
                         <?php echo "OK"  ?>
@@ -179,7 +156,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
+                <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod">
 
                     <option value="OK">
                         <?php echo "OK"  ?>
@@ -193,7 +170,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota direito</span>
                 </div>
-                <select class="form-select" name="txtMontageme" id="txtMontageme">
+                <select class="form-select" name="txtMontagemd" id="txtMontagemd">
 
                     <option value="OK">
                         <?php echo "OK"  ?>

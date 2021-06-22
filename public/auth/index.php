@@ -1,10 +1,5 @@
 <?php include("../Template/header.php")?>
 
-<?php
-if (session_status() !== PHP_SESSION_ACTIVE) {
-   session_start();
-
-?>
 
 <html>
 
@@ -40,7 +35,7 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
                <button type="submit" class="btn btn-success">Login</button>
             </form> 
             <br>
-            <button class="btn btn-warning" onclick="window.location.href='../operador/createOperador.php'">Register</button>          
+            
          </div>
       </div>
    </div>
@@ -48,15 +43,3 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 
 </html>
 
-<?php
-
-} else {
-
-   ?>
-   <script>
-            alert("Você já está logado");
-            window.location = "../home/home.php";
-        </script>
-
-        <?php
-}

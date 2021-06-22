@@ -44,7 +44,7 @@
 
                     <div class="buttons">
                         <br>
-                        <a href="../operador/listOperador.php" class="btn btn-primary">Lista de operadores</a>
+                       
                         <a href="../travessa/listTravessa.php" class="btn btn-primary">Lista de travessas</a>
                     </div>
 
@@ -65,7 +65,7 @@
 
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Outros</h5>
+                    <h5 class="card-title">Admnistradores</h5>
                     <p class="card-text"></p>
                     <div class="buttons">
 
@@ -103,6 +103,8 @@
                         <a href="../aprovacao50/aprovar50.php" class="btn btn-primary">Aprovação Gama 50</a>
                         <a href="../aprovacao65/aprovar65.php" class="btn btn-primary">Aprovação Gama 65</a>
                         <a href="../aprovacao70/aprovar70.php" class="btn btn-primary">Aprovação Gama 70</a>
+
+                        <a href="../get35/list35.php" class="btn btn-primary">Planilhas 35</a>
 
                     </div>
                 </div>

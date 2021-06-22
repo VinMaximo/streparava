@@ -12,6 +12,8 @@ $esmagamento_dir = $_POST["txtEsmagamentod"];
 $montagem_dir = $_POST["txtMontagemd"];
 $esmagamento_esq = $_POST["txtEsmagamentoe"];
 $montagem_esq = $_POST["txtMontageme"];
+$oscilacao_esq = $_POST["numOscilacaoe"];
+$oscilacao_dir = $_POST["numOscilacaod"];
 $operacao1 = $_POST["txtVisto1"];
 $operacao1op = $_POST["txtVisto1op"];
 $operacao2 = $_POST["txtVisto2"];
@@ -24,7 +26,7 @@ $observacoes = $_POST["txtObservacoes"];
 
 
 $sql = "INSERT INTO 
-    g65 ( operador, operador2, operador3, esmagamento_dir, montagem_dir, esmagamento_esq, montagem_esq, operacao1, operacao1op, operacao2, operacao2op, operacao3, operacao3op,  travessa, data, observacoes)
+    g70 ( operador, operador2, operador3, esmagamento_dir, montagem_dir, esmagamento_esq, montagem_esq, oscilacao_esq, oscilacao_dir, operacao1, operacao1op, operacao2, operacao2op, operacao3, operacao3op,  travessa, data, observacoes)
     VALUES(
 '$operador',
 '$operador2',
@@ -33,6 +35,8 @@ $sql = "INSERT INTO
 '$montagem_dir',
 '$esmagamento_esq',
 '$montagem_esq',
+'$oscilacao_esq',
+'$oscilacao_dir',
 '$operacao1',
 '$operacao1op',
 '$operacao2',
@@ -43,6 +47,7 @@ $sql = "INSERT INTO
 '$data',
 '$observacoes'
 )";
+
 
 
 $resultado = $connection -> query($sql);

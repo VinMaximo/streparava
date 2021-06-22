@@ -1,7 +1,7 @@
 <?php
 
 include("../Template/header.php");
-include_once("../data/connection.php");
+include("../../data/connection.php");
 
 if (isset($_GET["etiqueta"])) {
     $etiqueta = $_GET["etiqueta"];

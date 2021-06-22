@@ -129,7 +129,7 @@ $row = $sql->fetch_row();
                 </table>
 
             </div>
-            <br>
+            
 
             <p style="text-align:center">
             <div class="input-group mb-3">
@@ -195,6 +195,23 @@ $row = $sql->fetch_row();
             </div>
 
             </p>
+
+            <br>
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio esquerdo</span>
+                </div>
+                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+            </div>
+
+            <br>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio direito</span>
+                </div>
+                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+            </div>
             <br>
 
             <div class="input-group mb-3">

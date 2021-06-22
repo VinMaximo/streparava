@@ -1,7 +1,6 @@
 
-
+<?php include("../auth/validaQualidade.php");?>
 <?php
-include("../auth/validaMontagem.php");
 $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 ?>
 
@@ -9,11 +8,10 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 
     include("../../data/connection.php");
 
-    $sql = "SELECT * FROM g65 WHERE etiqueta LIKE '%$usuarios%' ";
+    $sql = "SELECT *, DATE_FORMAT(data,'%d/%m/%Y') as datas FROM g35 WHERE etiqueta LIKE '%$usuarios%' ";
+    $dadosPDCa = $connection -> query($sql);
 
-    $dadosPDC3 = $connection -> query($sql);
-
-    if($dadosPDC3 -> num_rows > 0)
+    if($dadosPDCa -> num_rows > 0)
     {
     ?>
     <div style="margin-left: 100px; margin-right: 100px;">
@@ -22,21 +20,23 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
             <tr>
                 <th>Etiqueta</th>
                 <th>Data</th>
-                <th></th>
+                <th>Inspetor</th>
+                <th></th>   
                 
             </tr>
 
             <?php
-                while($exibir = $dadosPDC3 -> fetch_assoc())
+                while($exibir = $dadosPDCa -> fetch_assoc())
                 {
                 ?>
                     <tr>
                         <td><?php echo $exibir["etiqueta"] ?></td>
-                        <td><?php echo $exibir["data"] ?></td>
+                        <td><?php echo $exibir["datas"] ?></td>
+                        <td><?php echo $exibir["inspetor"] ?></td>
                         
                         <td>
                             <button type="button" class="btn btn-primary btn-sm">
-                                <a href="editPDC50.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Editar</a>
+                                <a href="pag35.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Ver planilha</a>
                             </button>
                         
                             
@@ -47,8 +47,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                 ?>
         </table>
     </div>
-    
-<div style="margin-left: 100px; margin-right: 100px;">
+<p style="margin-left: 100px; margin-right: 100px;">
 <?php
     }
     
@@ -59,6 +58,5 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
         echo "Nenhum registro encontrado.";
     }
 ?>
-    </div>
-
-
+    </p>
+    <br>

@@ -121,13 +121,27 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 esquerdo</span>
                 </div>
                 <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
-
+                    <?php 
+                    if($pdc["esmagamento_esq"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -135,13 +149,27 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota esquerdo</span>
                 </div>
                 <select class="form-select" name="txtMontageme" id="txtMontageme">
-
+                    <?php 
+                    if($pdc["montagem_esq"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
             </div>
@@ -153,13 +181,27 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
                 </div>
                 <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod">
-
+                    <?php 
+                    if($pdc["esmagamento_dir"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -167,13 +209,27 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota direito</span>
                 </div>
                 <select class="form-select" name="txtMontagemd" id="txtMontagemd">
-
+                    <?php 
+                    if($pdc["montagem_dir"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
             </div>

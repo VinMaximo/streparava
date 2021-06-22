@@ -19,7 +19,7 @@ $resultado = $connection -> query($sql);
 if ($resultado){ ?>
     <script>
         alert("Número inicial alterado");
-       // window.location = '../montagemG65/createPDC65.php';
+        window.location = '../montagemG65/createPDC65.php';
     </script>
 <?php
 } else {
@@ -31,21 +31,3 @@ if ($resultado){ ?>
     
 <?php
 }
-
-if ($resultado2){ ?>
-    <script>
-        alert("Deu certo");
-        //window.location = '../montagem/createPDC.php';
-    </script>
-<?php
-} else {
-    echo $sql; ?>
-    <script>
-        alert("Ocorreu um erro ao cadastrar o operador");
-       
-    </script>
-    
-<?php
-}
-
-?>

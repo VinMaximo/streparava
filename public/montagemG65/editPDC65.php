@@ -20,47 +20,23 @@ if (isset ($_GET["etiqueta"]))
 
 <div class="form">
     <form action="updatePDC65.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
-        <br>
-        <br>
-        <h3>Editar planilha de controle</h3>
+    <br>
+            <br>
+            <h3>Editar planilha de controle</h3>
 
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-default">Número da etiqueta</span>
-            </div>
-            <input type="text" name="etiqueta" class="form-control" id="etiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["etiqueta"]?>" readonly>
-        </div>
-
-
-        <div class="input-group mb-3">
+            <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Gama</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Número da etiqueta</span>
                 </div>
-                <select class="form-select" name="txtGama" id="txtGama">
-
-                    <option value="G35">
-                        <?php echo "G35"  ?>
-                    </option>
-                    <option value="G40">
-                        <?php echo "G40"  ?>
-                    </option>
-                    <option value="G50">
-                        <?php echo "G50"  ?>
-                    </option>
-                    <option value="G65">
-                        <?php echo "G65"  ?>
-                    </option>
-                    <option value="G70">
-                        <?php echo "G70"  ?>
-                    </option>
-
-                </select>
+                <input type="text" name="etiqueta" class="form-control" id="etiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["etiqueta"] ?>" readonly>
             </div>
-            
+
+
+
             <div>
-            
-            <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
-           
+
+                <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
+
                 <table class="table">
 
                     <p style="text-align: center">
@@ -148,13 +124,27 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 esquerdo</span>
                 </div>
                 <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
-
+                    <?php 
+                    if($pdc["esmagamento_esq"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -162,13 +152,27 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota esquerdo</span>
                 </div>
                 <select class="form-select" name="txtMontageme" id="txtMontageme">
-
+                    <?php 
+                    if($pdc["montagem_esq"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
             </div>
@@ -180,13 +184,27 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
                 </div>
                 <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod">
-
+                    <?php 
+                    if($pdc["esmagamento_dir"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -194,13 +212,27 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota direito</span>
                 </div>
                 <select class="form-select" name="txtMontagemd" id="txtMontagemd">
-
+                    <?php 
+                    if($pdc["montagem_dir"] === "NOK") {
+                    ?>
+                    <option value="NOK" selected>
+                        <?php echo "NOK"  ?>
+                    </option>
                     <option value="OK">
                         <?php echo "OK"  ?>
                     </option>
-                    <option value="NOK">
+                    <?php
+                    } else {
+                    ?>
+                        <option value="NOK" >
                         <?php echo "NOK"  ?>
                     </option>
+                    <option value="OK"selected>
+                        <?php echo "OK"  ?>
+                    </option>
+                    <?php
+                    }
+                    ?>
 
                 </select>
             </div>
@@ -324,7 +356,7 @@ if (isset ($_GET["etiqueta"]))
                     }
                     ?>
                 </select>
-           
+            </div>
 
             <br>
             <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
@@ -522,7 +554,7 @@ if (isset ($_GET["etiqueta"]))
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Visto </span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Visto</span>
                 </div>
                 <select class="form-select" name="txtVisto2" id="txtVisto2">
 
@@ -535,13 +567,26 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao2"] === $row["nome"]) {
                     ?>
+                                <option value="<?php echo $row["nome"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["nome"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -551,7 +596,7 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto2op" id="txtVisto2op">
-                    <option value="Nulo" selected>Selecione o operador</option>
+                    <option value="-1" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -561,13 +606,26 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao2op"] === $row["nome"]) {
                     ?>
+                                <option value="<?php echo $row["nome"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["nome"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -627,11 +685,11 @@ if (isset ($_GET["etiqueta"]))
                             <td> 116 ÷ 142 </td>
                         </tr>
 
-                        
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         </tr>
 
 
@@ -648,10 +706,10 @@ if (isset ($_GET["etiqueta"]))
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Visto </span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Visto</span>
                 </div>
                 <select class="form-select" name="txtVisto3" id="txtVisto3">
-
+                    <option value="-1" selected>Nenhum</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -661,13 +719,26 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao3"] === $row["nome"]) {
                     ?>
+                                <option value="<?php echo $row["nome"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["nome"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -677,7 +748,7 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto3op" id="txtVisto3op">
-                    <option value="Nulo" selected>Selecione o operador</option>
+                    <option value="-1" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -687,45 +758,94 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao3op"] === $row["nome"]) {
                     ?>
+                                <option value="<?php echo $row["nome"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["nome"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
                 </select>
             </div>
+
             <br>
             <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
 
 
 
-            
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Código da travessa</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Travessa</span>
                 </div>
-                <input type="text" name="txtTravessa" class="form-control" id="txtTravessa" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <select class="form-select" name="txtTravessa" id="txtTravessa">
+                    <?php
+
+                    $sqlQ = "SELECT * FROM travessa ORDER BY data";
+
+                    $travessa = $connection->query($sqlQ);
+
+                    if ($travessa->num_rows > 0) {
+
+                        while ($row = $travessa->fetch_assoc()) {
+                            if ($pdc["codigo"] === $row["codigo"]) {
+                    ?>
+                                <option value="<?php echo $row["codigo"] ?>" selected>
+                                    <?php echo $row["codigo"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["codigo"] ?>">
+                                    <?php echo $row["codigo"]  ?>
+                                </option>
+
+                                }
+                                }
+                                ?>
+
+
+
+                    <?php
+                            }
+                        }
+                    }
+                    ?>
+                </select>
             </div>
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Observações</span>
                 </div>
-                <textarea name="txtObservacoes" id="txtObservacoes" placeholder="Digite as observações relacionadas às operações" cols="190" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1'></textarea>
+                <textarea name="txtObservacoes" id="txtObservacoes" placeholder="Digite as observações relacionadas às operações" cols="190" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1'> <?php echo $pdc["observacoes"] ?></textarea>
             </div>
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Data</span>
                 </div>
-                <input type="date" name="date" class="form-control" id="date" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="date" name="date" class="form-control" id="date" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["data"] ?>">
             </div>
+
 
 
 

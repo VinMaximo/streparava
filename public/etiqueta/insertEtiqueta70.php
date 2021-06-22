@@ -31,21 +31,3 @@ if ($resultado){ ?>
     
 <?php
 }
-
-if ($resultado2){ ?>
-    <script>
-        alert("Deu certo");
-        //window.location = '../montagem/createPDC.php';
-    </script>
-<?php
-} else {
-    echo $sql; ?>
-    <script>
-        alert("Ocorreu um erro ao cadastrar o operador");
-       
-    </script>
-    
-<?php
-}
-
-?>

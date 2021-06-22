@@ -17,7 +17,7 @@ $row = $sql->fetch_row();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova planilha de controle</title>
+    <title>Nova planilha de controle (G35-40)</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@ $row = $sql->fetch_row();
     <div class="form">
         <form action="insertPDC.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <div>
-                <h3>Nova planilha de controle</h3>
+                <h3>Nova planilha de controle (G35-40)</h3>
                
                 <p style="text-align: right;"> 
                 <input type="button" class="btn btn-success"  onclick="window.location.href='../etiqueta/alteraEtiqueta.php'"  value="Mudar número de início">

@@ -22,7 +22,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
             <tr>
                 <th>Etiqueta</th>
                 <th>Data</th>
-                
+                <th></th>
             </tr>
 
             <?php

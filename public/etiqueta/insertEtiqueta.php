@@ -19,7 +19,7 @@ $resultado = $connection -> query($sql);
 if ($resultado){ ?>
     <script>
         alert("Número inicial alterado");
-       // window.location = '../montagem35/createPDC.php';
+        window.location = '../montagem35/createPDC.php';
     </script>
 <?php
 } else {

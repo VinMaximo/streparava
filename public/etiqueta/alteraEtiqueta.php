@@ -41,7 +41,7 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Número inicial etiqueta</span>
                 </div>
-                <input type="number" name="numEtiq" class="form-control" id="numEtiq" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="number" name="numEtiq" placeholder="Insira o numero que partirá a contagem de eixos" class="form-control" id="numEtiq" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
 
             <div class="card text-center">
@@ -55,7 +55,7 @@ $row = $sql->fetch_row();
 
                     2º O primeiro número de etiqueta após a alteração não será exibido corretamente na hora da criação de uma nova planilha de controle, a partir da segunda será exibido normalmente. <br> <br>
 
-                    3º Essa função deverá ser usada SOMENTE na virada de ano quando houver troca de código
+                    3º Essa função deverá ser usada SOMENTE na virada de ano quando houver troca de código <br>
                 </div>
                 <div class="card-footer text-muted">
 

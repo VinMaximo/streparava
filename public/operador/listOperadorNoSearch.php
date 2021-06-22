@@ -1,7 +1,8 @@
 
 
 <?php
-include("../auth/validaMontagem.php");
+include("../auth/validaADM.php");
+
 $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 ?>
 

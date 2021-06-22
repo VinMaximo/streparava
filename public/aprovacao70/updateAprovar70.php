@@ -1,3 +1,4 @@
+<?php include("../auth/validaQualidade.php");?>
 <?php
 
 include_once("../../data/connection.php");

@@ -1,6 +1,7 @@
 <br>
 <?php include("../Template/header.php");
 include("../../data/connection.php");
+include("../auth/validaMontagem.php");
 
 
 //"SELECT coalesce( max( etiqueta ), 0) + 1 FROM controle_montagem"

@@ -1,10 +1,7 @@
 <?php include("../Template/header.php");
 include("../../data/connection.php");
-include("../auth/validaQualidade.php");
-
-
 ?>
-
+<?php include("../auth/validaADM.php") ?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

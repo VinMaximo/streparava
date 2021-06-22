@@ -1,6 +1,7 @@
 <?php
 include("../Template/header.php");
 include_once("../../data/connection.php");
+include("../auth/validaMontagem.php");
 
 if (isset ($_GET["id"])) 
     {

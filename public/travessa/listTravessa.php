@@ -1,6 +1,7 @@
 <?php
 
 include("../Template/header.php");
+include("../auth/validaMontagem.php");
 
 ?>
 <br>

@@ -1,4 +1,4 @@
-
+<?php include("../auth/validaQualidade.php");?>
 
 <?php include("../Template/header.php") ?>
 

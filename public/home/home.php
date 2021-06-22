@@ -1,8 +1,5 @@
-<?php
+<?php include("../Template/header.php");?>
 
-include("../Template/header.php");
-
-?>
 
 <html lang="pt-BR">
 

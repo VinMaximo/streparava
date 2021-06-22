@@ -1,6 +1,6 @@
 
 <?php 
-
+        include("../auth/validaMontagem.php");
         include_once("../../data/connection.php");
             $id = $_POST["travessaId"];
             $codigo = $_POST["codigoc"];

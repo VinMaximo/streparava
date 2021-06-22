@@ -1,6 +1,7 @@
 <?php
 
 include_once("../../data/connection.php");
+include("../auth/validaMontagem.php");
 
 
 

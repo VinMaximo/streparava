@@ -1,5 +1,5 @@
 <?php
-include("../auth/validaQualidade.php");
+ include("../auth/validaADM.php");
 include_once("../../data/connection.php");
 
 

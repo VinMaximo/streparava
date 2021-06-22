@@ -1,4 +1,10 @@
-<?php include("../Template/header.php") ?>
+<?php include("../Template/header.php")?>
+
+<?php
+if (session_status() !== PHP_SESSION_ACTIVE) {
+   session_start();
+
+?>
 
 <html>
 
@@ -41,3 +47,16 @@
 </body>
 
 </html>
+
+<?php
+
+} else {
+
+   ?>
+   <script>
+            alert("Você já está logado");
+            window.location = "../home/home.php";
+        </script>
+
+        <?php
+}

@@ -19,9 +19,9 @@ include("../../data/connection.php");
 
 
     <div class="form">
-        <form action="insertPDC.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
+        <form action="../final35/insertFinal35.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <div>
-                <h2>Levantamento diário de produção final</h2>
+                <h2>Levantamento diário de produção final - Montagem G35</h2>
 
             </div>
             <br>
@@ -39,6 +39,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">07:00 a 08:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd7" class="form-control" id="numProd7" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
 
                 <div class="input-group-prepend">
@@ -58,6 +65,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">08:00 a 09:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd8" class="form-control" id="numProd8" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -75,6 +89,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">09:00 a 10:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd9" class="form-control" id="numProd9" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -92,6 +113,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">10:00 a 11:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd10" class="form-control" id="numProd10" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -109,6 +137,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">11:00 a 12:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd11" class="form-control" id="numProd11" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -126,6 +161,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">12:00 a 13:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd12" class="form-control" id="numProd12" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -143,6 +185,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">13:00 a 14:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd13" class="form-control" id="numProd13" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -160,6 +209,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">14:00 a 15:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd14" class="form-control" id="numProd14" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -177,6 +233,13 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">15:00 a 16:00</span>
                 </div>
+
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd15" class="form-control" id="numProd15" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -194,6 +257,12 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">16:00 a 16:48</span>
                 </div>
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção</span>
+                </div>
+                <input type="number" name="numProd16" class="form-control" id="numProd16" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
@@ -206,8 +275,17 @@ include("../../data/connection.php");
                 </div>
                 <input type="text" name="obs16" class="form-control" id="obs16" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
-                
-            
+
+
+            <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Produção total</span>
+                </div>
+                <input type="number" name="numProdt" class="form-control" id="numProdt" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+
+            </div>
+
 
 
 
@@ -266,6 +344,9 @@ include("../../data/connection.php");
                     ?>
                 </select>
             </div>
+
+            
+            
 
 
 

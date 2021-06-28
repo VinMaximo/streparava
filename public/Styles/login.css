@@ -68,6 +68,15 @@ body {
     font-size: xx-large;
 }
 
+.login-main-text2{
+    margin-top: 30%;
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: Impact, fantasy;
+    
+}
+
 .login-main-text h2{
     font-weight: 300;
 }

@@ -10,12 +10,12 @@
 <body>
     
     <div style="margin-left: 100px; margin-right: 100px;">
-        <h2>Levantamentos de produção - G35</h2>
+        <h2>Levantamentos de produção - G65</h2>
 
         <br>
         
     <div class="buttons">
-                <a href="../final35/createFinal35.php" class="btn btn-primary">Cadastre um levantamento diário de produção</a>
+                <a href="../final65/createFinal65.php" class="btn btn-primary">Cadastre um levantamento diário de produção</a>
         </div>
     
     <br>
@@ -31,7 +31,7 @@
     </form>
     <ul class="resultado">
 
-	<?php include("../final35/listFinal35NoSearch.php") ?>
+	<?php include("../final65/listFinal65NoSearch.php") ?>
 
 	</ul>
 	
@@ -49,12 +49,12 @@
 					palavra: pesquisa
 				}
 
-				$.post('listFinal35Searching.php', dados, function(retorna) {
+				$.post('listFinal65Searching.php', dados, function(retorna) {
 					//Mostra dentro da ul os resultado obtidos 
 					$(".resultado").html(retorna);
 				});
 			} else {
-				$.post('listFinal35NoSearch.php', dados, function(retorna) {
+				$.post('listFinal65NoSearch.php', dados, function(retorna) {
 					//Mostra dentro da ul os resultado obtidos 
 					$(".resultado").html(retorna);
 				});

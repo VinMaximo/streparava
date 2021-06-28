@@ -32,7 +32,7 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Montagem</h5>
+                        <h4  class="card-title">Montagem</h4>
                         <p class="card-text"></p>
                         <div class="buttons">
                             <a href="../montagem35/listPDC.php" class="btn btn-primary">Lista planilha de controle G35-40</a>
@@ -51,6 +51,22 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
                             <br>
 
                             <a href="../travessa/listTravessa.php" class="btn btn-primary">Lista de travessas</a>
+
+                            <a href="../final35/listFinal35.php" class="btn btn-primary">Levantamentos de produção G35-40</a>
+
+                            <a href="../final50/listFinal50.php" class="btn btn-primary">Levantamentos de produção G50</a>
+
+                            <a href="../final65/listFinal65.php" class="btn btn-primary">Levantamentos de produção G65</a>
+
+                            
+
+                        </div>
+
+                        <div class="buttons">
+                            <br>
+
+                            <a href="../final70/listFinal70.php" class="btn btn-primary">Levantamentos de produção G70</a>
+
                         </div>
 
                     </div>
@@ -70,7 +86,7 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Admnistradores</h5>
+                        <h4 class="card-title">Admnistradores</h4>
                         <p class="card-text"></p>
                         <div class="buttons">
 
@@ -101,7 +117,7 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title">Qualidade</h5>
+                        <h4 class="card-title">Qualidade</h4>
                         <p class="card-text"></p>
                         <div class="buttons">
                             <a href="../aprovacao35/aprovar35.php" class="btn btn-primary">Aprovação Gama 35</a>

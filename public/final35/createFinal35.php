@@ -49,9 +49,9 @@ include("../../data/connection.php");
                 &nbsp;&nbsp;&nbsp;&nbsp;
 
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time7" class="form-control" id="time7" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time7" class="form-control" id="time7" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -74,9 +74,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time8" class="form-control" id="time8" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time8" class="form-control" id="time8" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -98,9 +98,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time9" class="form-control" id="time9" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time9" class="form-control" id="time9" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -122,9 +122,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time10" class="form-control" id="time10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time10" class="form-control" id="time10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -146,9 +146,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time11" class="form-control" id="time11" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time11" class="form-control" id="time11" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -170,9 +170,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time12" class="form-control" id="time12" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time12" class="form-control" id="time12" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -194,9 +194,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time13" class="form-control" id="time13" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time13" class="form-control" id="time13" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -218,9 +218,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time14" class="form-control" id="time14" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time14" class="form-control" id="time14" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -242,9 +242,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time15" class="form-control" id="time15" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time15" class="form-control" id="time15" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -265,9 +265,9 @@ include("../../data/connection.php");
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                 </div>
-                <input type="time" name="time16" class="form-control" id="time16" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="00:00">
+                <input type="number" name="time16" class="form-control" id="time16" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="0">
 
                 &nbsp;&nbsp;&nbsp;&nbsp;
                 <div class="input-group-prepend">
@@ -276,15 +276,6 @@ include("../../data/connection.php");
                 <input type="text" name="obs16" class="form-control" id="obs16" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
 
-
-            <div class="input-group mb-3">
-
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Produção total</span>
-                </div>
-                <input type="number" name="numProdt" class="form-control" id="numProdt" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
-
-            </div>
 
 
 

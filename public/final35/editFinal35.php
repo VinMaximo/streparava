@@ -68,9 +68,9 @@ if (isset($_GET["id"])) {
                     &nbsp;&nbsp;&nbsp;&nbsp;
 
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time7" class="form-control" id="time7" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t7"] ?>">
+                    <input type="number" name="time7" class="form-control" id="time7" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t7"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -93,9 +93,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time8" class="form-control" id="time8" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t8"] ?>">
+                    <input type="number" name="time8" class="form-control" id="time8" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t8"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -117,9 +117,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time9" class="form-control" id="time9" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t9"] ?>">
+                    <input type="number" name="time9" class="form-control" id="time9" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t9"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -141,9 +141,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time10" class="form-control" id="time10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t10"] ?>">
+                    <input type="number" name="time10" class="form-control" id="time10" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t10"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -165,9 +165,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time11" class="form-control" id="time11" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t11"] ?>">
+                    <input type="number" name="time11" class="form-control" id="time11" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t11"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -189,9 +189,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time12" class="form-control" id="time12" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t12"] ?>">
+                    <input type="number" name="time12" class="form-control" id="time12" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t12"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -213,9 +213,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time13" class="form-control" id="time13" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t13"] ?>">
+                    <input type="number" name="time13" class="form-control" id="time13" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t13"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -237,9 +237,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time14" class="form-control" id="time14" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t14"] ?>">
+                    <input type="number" name="time14" class="form-control" id="time14" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t14"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -261,9 +261,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time15" class="form-control" id="time15" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t15"] ?>">
+                    <input type="number" name="time15" class="form-control" id="time15" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t15"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
@@ -284,9 +284,9 @@ if (isset($_GET["id"])) {
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada</span>
+                        <span class="input-group-text" id="inputGroup-sizing-default">Tempo de parada em minutos</span>
                     </div>
-                    <input type="time" name="time16" class="form-control" id="time16" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t16"] ?>">
+                    <input type="number" name="time16" class="form-control" id="time16" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $levantamento35["t16"] ?>">
 
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <div class="input-group-prepend">

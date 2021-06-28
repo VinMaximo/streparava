@@ -32,18 +32,21 @@ $obs15 = $_POST["obs15"];
 $prod16 = $_POST["numProd16"];
 $t16 = $_POST["time16"];
 $obs16 = $_POST["obs16"];
-$total = $_POST["numProdt"];
+$total = $prod7 + $prod8 + $prod9 + $prod10 + $prod11 + $prod12 + $prod13 + $prod14 + $prod15 + $prod16; 
+$tempo_total = $t7 + $t8 + $t9 + $t10 + $t11 + $t12 + $t13 + $t14 + $t15 + $t16;
 $etiqueta1 = $_POST["numEtiq1"];
 $etiqueta2 = $_POST["numEtiq2"];
 
 
 
-if (($t7 !== "00:00" && $obs7 == "") or ($t8 !== "00:00" && $obs8 == "") or ($t9 !== "00:00" && $obs9 == "") or ($t10 !== "00:00" && $obs10 == "") or ($t11 !== "00:00" && $obs11 == "") or ($t12 !== "00:00" && $obs12 == "") or ($t13 !== "00:00" && $obs13 == "") or ($t14 !== "00:00" && $obs14 == "") or ($t15 !== "00:00" && $obs15 == "") or ($t16 !== "00:00" && $obs16 == "")) {
-?>
-    <script>
+
+
+if (($t7 !== "0" && $obs7 == "") or ($t8 !== "0" && $obs8 == "") or ($t9 !== "0" && $obs9 == "") or ($t10 !== "0" && $obs10 == "") or ($t11 !== "0" && $obs11 == "") or ($t12 !== "0" && $obs12 == "") or ($t13 !== "0" && $obs13 == "") or ($t14 !== "0" && $obs14 == "") or ($t15 !== "0" && $obs15 == "") or ($t16 !== "0" && $obs16 == "")) {
+//?>
+   <script>
         alert("É necessário inserir uma observação após a inserção do tempo de parada");
-        window.location = '../final35/createFinal35.php';
-    </script>
+        //window.history.back
+    </script> 
     
     
 
@@ -52,7 +55,7 @@ if (($t7 !== "00:00" && $obs7 == "") or ($t8 !== "00:00" && $obs8 == "") or ($t9
 
 
 $sql = "INSERT INTO 
-    levantamento35f (data,prod7,t7,obs7,prod8,t8,obs8,prod9,t9,obs9,prod10,t10,obs10,prod11,t11,obs11,prod12,t12, obs12, prod13, t13, obs13, prod14, t14, obs14, prod15, t15, obs15, prod16, t16, obs16,total, etiqueta1, etiqueta2)
+    levantamento35f (data,prod7,t7,obs7,prod8,t8,obs8,prod9,t9,obs9,prod10,t10,obs10,prod11,t11,obs11,prod12,t12, obs12, prod13, t13, obs13, prod14, t14, obs14, prod15, t15, obs15, prod16, t16, obs16,total, tempo_total, etiqueta1, etiqueta2)
     VALUES(
         '$data', 
         '$prod7',
@@ -86,6 +89,7 @@ $sql = "INSERT INTO
         '$t16',
         '$obs16',
         '$total',
+        '$tempo_total',
         '$etiqueta1',
         '$etiqueta2'
 )";
@@ -94,7 +98,8 @@ $sql = "INSERT INTO
 
 $resultado = $connection->query($sql);
 
-if ($resultado) { ?>
+if ($resultado) {
+     ?>
     <script>
         alert("Levantamento diário cadastrado com sucesso");
         window.location = '../final35/listFinal35.php';

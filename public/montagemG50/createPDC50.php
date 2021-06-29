@@ -39,6 +39,34 @@ $row = $sql->fetch_row();
             <br>
 
             <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Código da gama</span>
+                </div>
+                <select class="form-select" name="txtCod" id="txtCod" disabled>
+                    <?php
+
+                    $sqlQuery = "SELECT * FROM codigo50 ORDER BY id_codigo DESC";
+
+                    $cod = $connection->query($sqlQuery);
+
+                    if ($cod->num_rows > 0) {
+
+                        while ($row2 = $cod->fetch_assoc()) {
+                    ?>
+
+                            <option value="<?php echo $row2["codigo"] ?>">
+                                <?php echo $row2["codigo"]  ?>
+                            </option>
+
+                    <?php
+                        }
+                    }
+                    ?>
+                </select>
+            </div>
+
+            <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Etiqueta</span>
                 </div>

@@ -29,28 +29,59 @@ $row = $sql->fetch_row();
         <form action="insertPDC.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <div>
                 <h3>Nova planilha de controle (G35-40)</h3>
-               
-                <p style="text-align: right;"> 
-                <input type="button" class="btn btn-success"  onclick="window.location.href='../etiqueta/alteraEtiqueta.php'"  value="Mudar número de início">
+
+                <p style="text-align: right;">
+                    <input type="button" class="btn btn-success" onclick="window.location.href='../etiqueta/alteraEtiqueta.php'" value="Mudar número de início">
                 </p>
 
-            
+
             </div>
             <br>
+
+            <div class="input-group mb-3">
+
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Código da gama</span>
+                </div>
+                <select class="form-select" name="txtCod" id="txtCod" disabled>
+                    <?php
+
+                    $sqlQuery = "SELECT * FROM codigo35 ORDER BY id_codigo DESC";
+
+                    $cod = $connection->query($sqlQuery);
+
+                    if ($cod->num_rows > 0) {
+
+                        while ($row2 = $cod->fetch_assoc()) {
+                    ?>
+
+                            <option value="<?php echo $row2["codigo"] ?>">
+                                <?php echo $row2["codigo"]  ?>
+                            </option>
+
+                    <?php
+                        }
+                    }
+                    ?>
+                </select>
+            </div>
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Etiqueta</span>
                 </div>
-                <input type="number" name="numEtiqueta" class="form-control" id="numEtiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0];?>" readonly>
+                <input type="number" name="numEtiqueta" class="form-control" id="numEtiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0]; ?>" readonly>
             </div>
-            
 
-            
+
+
+
+
             <div>
-            
-            <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
-           
+
+                <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
+
                 <table class="table">
 
                     <p style="text-align: center">
@@ -130,7 +161,7 @@ $row = $sql->fetch_row();
                 </table>
 
             </div>
-          
+
 
             <p style="text-align:center">
             <div class="input-group mb-3">
@@ -197,13 +228,13 @@ $row = $sql->fetch_row();
 
             </p>
 
-            <br> 
+            <br>
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio esquerdo</span>
                 </div>
-                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
 
             <br>
@@ -212,7 +243,7 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio direito</span>
                 </div>
-                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
 
             <br>
@@ -599,11 +630,11 @@ $row = $sql->fetch_row();
                             <td> 116 ÷ 142 </td>
                         </tr>
 
-                        
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         </tr>
 
 
@@ -676,7 +707,7 @@ $row = $sql->fetch_row();
 
 
 
-            
+
 
             <div class="input-group mb-3">
 
@@ -692,11 +723,11 @@ $row = $sql->fetch_row();
 
                     if ($travessa->num_rows > 0) {
 
-                        while ($row = $travessa->fetch_assoc()) {
+                        while ($row3 = $travessa->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["codigo"] ?>">
-                                <?php echo $row["codigo"]  ?>
+                            <option value="<?php echo $row3["codigo"] ?>">
+                                <?php echo $row3["codigo"]  ?>
                             </option>
 
                     <?php
@@ -713,7 +744,7 @@ $row = $sql->fetch_row();
                 <textarea name="txtObservacoes" id="txtObservacoes" placeholder="Digite as observações relacionadas às operações" cols="190" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1'></textarea>
             </div>
 
-            
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -723,7 +754,7 @@ $row = $sql->fetch_row();
             </div>
 
 
-            
+
 
 
 
@@ -746,4 +777,5 @@ $row = $sql->fetch_row();
 </body>
 <br>
 <br>
+
 </html>

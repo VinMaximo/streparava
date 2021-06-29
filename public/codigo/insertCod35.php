@@ -1,5 +1,5 @@
 <?php
-
+include("../auth/validaQualidade.php");
 include_once("../../data/connection.php");
 
 $codigo = $_POST["numCod"];

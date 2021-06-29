@@ -32,7 +32,7 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                     </div>
                     <div class="card-body">
-                        <h4  class="card-title">Montagem</h4>
+                        <h4 class="card-title">Montagem</h4>
                         <p class="card-text"></p>
                         <div class="buttons">
                             <a href="../montagem35/listPDC.php" class="btn btn-primary">Lista planilha de controle G35-40</a>
@@ -58,7 +58,7 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                             <a href="../final65/listFinal65.php" class="btn btn-primary">Levantamentos de produção G65</a>
 
-                            
+
 
                         </div>
 
@@ -67,13 +67,7 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                             <a href="../final70/listFinal70.php" class="btn btn-primary">Levantamentos de produção G70</a>
 
-                            <a href="../codigo/altera35.php" class="btn btn-primary">Aterar código da gama 35</a>
 
-                            <a href="../codigo/altera50.php" class="btn btn-primary">Aterar código da gama 50</a>
-
-                            <a href="../codigo/altera65.php" class="btn btn-primary">Aterar código da gama 65</a>
-
-                            <a href="../codigo/altera70.php" class="btn btn-primary">Aterar código da gama 70</a>
 
                         </div>
 
@@ -87,16 +81,16 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
                 <br>
                 <div class="card text-center">
                     <div class="card-header">
-                        
+
                     </div>
-                    <div class="card-body" >
-                    <h3>ATENÇÃO</h3>
-                    <br>
-                        Em caso de alteração do código da gama, solicite o admnistrador que faça a alteração necessária.
+                    <div class="card-body">
+                        <h3>ATENÇÃO</h3>
+                        <br>
+                        Em caso de alteração do código da gama, solicite um inspetor da qualidade que faça a alteração necessária.
 
-                        
 
-                        
+
+
                     </div>
                     <div class="card-footer text-muted">
 
@@ -153,8 +147,24 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
                             <a href="../aprovacao65/aprovar65.php" class="btn btn-primary">Aprovação Gama 65</a>
                             <a href="../aprovacao70/aprovar70.php" class="btn btn-primary">Aprovação Gama 70</a>
 
-                            <a href="../get35/list35.php" class="btn btn-primary">Planilhas 35</a>
 
+
+
+                            <div class="buttons">
+                                <br>
+
+                            <a href="../codigo/altera35.php" class="btn btn-primary">Aterar código da gama 35</a>
+
+                            <a href="../codigo/altera50.php" class="btn btn-primary">Aterar código da gama 50</a>
+
+                            <a href="../codigo/altera65.php" class="btn btn-primary">Aterar código da gama 65</a>
+
+                            <a href="../codigo/altera70.php" class="btn btn-primary">Aterar código da gama 70</a>
+
+
+
+                            </div>
+                            
                         </div>
                     </div>
                     <div class="card-footer text-muted">

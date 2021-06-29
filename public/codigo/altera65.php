@@ -1,6 +1,6 @@
 <?php include("../Template/header.php");
 include("../../data/connection.php");
-include("../auth/validaMontagem.php");
+include("../auth/validaQualidade.php");
 
 $dbcon = new mysqli($servername, $username, $password, $dbname);
 

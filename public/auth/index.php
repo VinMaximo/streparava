@@ -1,4 +1,8 @@
-<?php include("../Template/header.php")?>
+<?php include("../Template/header.php");
+
+   session_destroy();
+
+?>
 
 
 <html>
@@ -20,11 +24,10 @@
          <div class="login-form">
             <form class="form-signin" method="POST" action="login.php">
                <div class="form-group">
-                  <!-- 
-                     Prioridade = 0 : Administrador
-                     Prioridade = 1 : Medico
-                     Prioridade = 2 : Paciente 
-                  -->
+                  
+                     <h2>Login</h2>
+                     <br>
+                  
                   <label>Usuário</label>
                   <input name="user" type="text" class="form-control" placeholder="Username">
                </div>
@@ -42,4 +45,3 @@
 </body>
 
 </html>
-

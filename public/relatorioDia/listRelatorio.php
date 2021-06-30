@@ -5,7 +5,7 @@
 
 <br>
 <br>
-<br>
+
 
 <body>
     
@@ -24,7 +24,7 @@
 	<div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Pesquisar relatórios</span>
                 </div>
-				<input type="text" name="pesquisa" class="form-control" id="pesquisa" aria-label="Default" placeholder="Digite nome do inspetor" aria-describedby="inputGroup-sizing-default">
+				<input type="text" name="pesquisa" class="form-control" id="pesquisa" aria-label="Default" placeholder="Digite a data no formato (Formato de pesquisa ''ano-mês-dia'')" aria-describedby="inputGroup-sizing-default">
 	</div>
     </div>
 		

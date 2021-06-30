@@ -7,7 +7,6 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 <?php
 
     include("../../data/connection.php");
-
     $sql = "SELECT *, DATE_FORMAT(data,'%d/%m/%Y') as datas FROM g35 WHERE etiqueta LIKE '%$usuarios%' ";
     $dadosPDCa = $connection -> query($sql);
 

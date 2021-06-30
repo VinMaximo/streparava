@@ -56,6 +56,7 @@ if ($dadosTravessa->num_rows > 0) {
 <?php
 } else {?>
     <div style="margin-left: 100px; margin-right: 100px;">
+    <br>
     <?php
     echo "Nenhum registro encontrado.";
 }

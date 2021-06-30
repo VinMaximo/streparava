@@ -29,12 +29,12 @@ $row = $sql->fetch_row();
         <form action="insertPDC50.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <div>
                 <h3>Nova planilha de controle (G50)</h3>
-               
-                <p style="text-align: right;"> 
-                <input type="button" class="btn btn-success"  onclick="window.location.href='../etiqueta/alteraEtiqueta50.php'"  value="Mudar número de início">
+
+                <p style="text-align: right;">
+                    <input type="button" class="btn btn-success" onclick="window.location.href='../etiqueta/alteraEtiqueta50.php'" value="Mudar número de início">
                 </p>
 
-            
+
             </div>
             <br>
 
@@ -70,14 +70,14 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Etiqueta</span>
                 </div>
-                <input type="number" name="numEtiqueta" class="form-control" id="numEtiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0];?>" readonly>
+                <input type="number" name="numEtiqueta" class="form-control" id="numEtiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0]; ?>" readonly>
             </div>
-            
-            
+
+
             <div>
-            
-            <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
-           
+
+                <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
+
                 <table class="table">
 
                     <p style="text-align: center">
@@ -157,7 +157,7 @@ $row = $sql->fetch_row();
                 </table>
 
             </div>
-          
+
 
             <p style="text-align:center">
             <div class="input-group mb-3">
@@ -229,7 +229,7 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio esquerdo</span>
                 </div>
-                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
             </div>
 
             <br>
@@ -238,11 +238,11 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio direito</span>
                 </div>
-                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
             </div>
 
             <br>
-            
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -625,11 +625,11 @@ $row = $sql->fetch_row();
                             <td> 116 ÷ 142 </td>
                         </tr>
 
-                        
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         </tr>
 
 
@@ -702,7 +702,7 @@ $row = $sql->fetch_row();
 
 
 
-            
+
 
             <div class="input-group mb-3">
 
@@ -739,7 +739,7 @@ $row = $sql->fetch_row();
                 <textarea name="txtObservacoes" id="txtObservacoes" placeholder="Digite as observações relacionadas às operações" cols="190" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1'></textarea>
             </div>
 
-            
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -747,7 +747,7 @@ $row = $sql->fetch_row();
                 </div>
                 <input type="date" name="date" class="form-control" id="date" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
             </div>
-            
+
 
 
 
@@ -771,4 +771,5 @@ $row = $sql->fetch_row();
 </body>
 <br>
 <br>
+
 </html>

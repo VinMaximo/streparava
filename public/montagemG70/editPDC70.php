@@ -244,7 +244,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio esquerdo</span>
                 </div>
-                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["oscilacao_esq"] ?>" >
             </div>
 
             <br>
@@ -253,7 +253,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio direito</span>
                 </div>
-                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" >
+                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["oscilacao_dir"] ?>" >
             </div>
             <br>
 

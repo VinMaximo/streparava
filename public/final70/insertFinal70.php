@@ -45,7 +45,7 @@ if (($t7 !== "0" && $obs7 == "") or ($t8 !== "0" && $obs8 == "") or ($t9 !== "0"
 //?>
    <script>
         alert("É necessário inserir uma observação após a inserção do tempo de parada");
-        //window.history.back
+        window.history.back
     </script> 
     
     

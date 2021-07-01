@@ -9,7 +9,7 @@
 
 	<div style="margin-left: 100px; margin-right: 100px;">
 
-		<div class="card text-center">
+	<div class="card text-center">
 			<div class="card-header">
 
 			</div>
@@ -25,12 +25,12 @@
 		</div>
 		<br>
 
-		<h2>Acessar relatórios</h2>
+		<h2>Acessar relatórios mensais</h2>
 
 		<br>
 
 		<div class="buttons">
-			<a href="../relatorioDia/createRelatorio.php" class="btn btn-primary">Gere um relatório</a>
+			<a href="../relatorioMes/createRelatorio.php" class="btn btn-primary">Gere um relatório mensal</a>
 		</div>
 
 		<br>
@@ -39,7 +39,7 @@
 				<div class="input-group-prepend">
 					<span class="input-group-text" id="inputGroup-sizing-default">Pesquisar relatórios</span>
 				</div>
-				<input type="text" name="pesquisa" class="form-control" id="pesquisa" aria-label="Default" placeholder="Digite a data no formato (Formato de pesquisa ''ano-mês-dia'')" aria-describedby="inputGroup-sizing-default">
+				<input type="text" name="pesquisa" class="form-control" id="pesquisa" aria-label="Default" placeholder="Digite o ano ou o número do mês" aria-describedby="inputGroup-sizing-default">
 			</div>
 	</div>
 

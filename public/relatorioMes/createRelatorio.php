@@ -21,7 +21,7 @@ include("../../data/connection.php");
 
     
     <div class="form">
-        <form action="insertTravessa.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
+        <form action="../relatorioMes/insertRelatorio.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <h3>Digite o dia ou o mês que deseja emitir o relatório</h3>
             <br>
 
@@ -32,7 +32,7 @@ include("../../data/connection.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Mês</span>
                 </div>
-                <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
+                <select class="form-select" name="numMes" id="numMes">
 
                     <option value="1">
                         <?php echo "Janeiro"  ?>
@@ -73,6 +73,13 @@ include("../../data/connection.php");
 
 
                 </select>
+            </div>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Digite o ano</span>
+                </div>
+                <input type="number" name="numAno" class="form-control" id="numAno" aria-label="Default" aria-describedby="inputGroup-sizing-default">
             </div>
             
 

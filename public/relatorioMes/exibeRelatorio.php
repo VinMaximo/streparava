@@ -6,6 +6,8 @@ $total35 = 0;
 $total50 = 0;
 $total65 = 0;
 $total70 = 0;
+$totalref = 0;
+$totalret = 0;
 
 
 if (isset($_GET["mes"])) {
@@ -24,10 +26,14 @@ if (isset($_GET["mes"])) {
         if ($dadosRelatorio->num_rows > 0) {
         ?>
             <div style="margin-left: 100px; margin-right: 100px;">
+
+                <br> 
+                <br>
+                <h1>Mês <?php echo $mes ?> do ano <?php echo $ano ?></h1>
                 <br>
                 <br>
 
-                <h3>Relatório mensal do mês <?php echo $mes ?> do ano <?php echo $ano ?> da Gama 35</h3>
+                <h3>Gama 35</h3>
 
                 <br>
 
@@ -93,7 +99,7 @@ if (isset($_GET["mes"])) {
                     <br>
                     <br>
 
-                    <h3>Relatório mensal do mês <?php echo $mes ?> do ano <?php echo $ano ?> da Gama 50</h3>
+                    <h3>Gama 50</h3>
 
                     <br>
 
@@ -160,7 +166,7 @@ if (isset($_GET["mes"])) {
                         <br>
                         <br>
 
-                        <h3>Relatório mensal do mês <?php echo $mes ?> do ano <?php echo $ano ?> da Gama 65</h3>
+                        <h3>Gama 65</h3>
 
                         <br>
 
@@ -226,7 +232,7 @@ if (isset($_GET["mes"])) {
                             <br>
                             <br>
 
-                            <h3>Relatório mensal do mês <?php echo $mes ?> do ano <?php echo $ano ?> da Gama 70</h3>
+                            <h3>Gama 70</h3>
 
                             <br>
 
@@ -282,6 +288,90 @@ if (isset($_GET["mes"])) {
 
                         </div>
                         </div>
+                        
+
+                    <?php
+
+                    } else {
+                    ?>
+                        <br>
+                        <div style="margin-left: 100px; margin-right: 100px;">
+                <?php
+                        echo "Nenhum registro encontrado.";
+                    }
+
+                     $sql = "SELECT *,DATE_FORMAT(data,'%d/%m/%Y') as datas FROM refret WHERE MONTH(data) = $mes AND YEAR(data) = $ano";
+                //echo $sql;
+                $dadosRelatorio = $connection->query($sql);
+
+                    ?>
+
+                    <?php
+                    if ($dadosRelatorio->num_rows > 0) {
+                    ?>
+                        <div style="margin-left: 100px; margin-right: 100px;">
+                            <br>
+                            <br>
+
+                            <h3>Refugo e retrabalho</h3>
+
+                            <br>
+
+                            <table class="table" style="text-align: center;">
+                                <tr>
+                                    <th>Data</th>
+                                    <th>Total retrabalho</th>
+                                    <th>Total total refugo</th>
+
+                                </tr>
+
+                                <?php
+                                while ($exibir = $dadosRelatorio->fetch_assoc()) {
+                                ?>
+                                    <tr>
+                                        <td><?php echo $exibir["datas"] ?></td>
+                                        <td><?php echo $exibir["total_retrabalho"] ?></td>
+                                        <td><?php echo $exibir["total_refugo"] ?></td>
+                                        <?php $totalref += $exibir["total_refugo"]; ?>
+                                        <?php $totalret += $exibir["total_retrabalho"]; ?>
+
+
+
+
+                                    </tr>
+                                <?php
+                                }
+                                ?>
+                            </table>
+
+                            <div class="input-group mb-3">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Total retrabalho</span>
+                                </div>
+                                <input type="number" name="numMes" class="form-control" id="numMes" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $totalret ?>" readonly>
+
+                            </div>
+
+                            <div class="input-group mb-3">
+
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">Total refugo</span>
+                                </div>
+                                <input type="number" name="numMes" class="form-control" id="numMes" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $totalref ?>" readonly>
+
+                            </div>
+
+                        </div>
+
+                        <?php
+
+
+                       
+
+
+                        ?>
+                        
                         
 
                     <?php

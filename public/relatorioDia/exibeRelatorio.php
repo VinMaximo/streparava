@@ -1921,6 +1921,267 @@ if (isset($_GET["data"])) {
         <br>
 
         </html>
+
+    <?php
+    }
+    $sql = "SELECT * FROM refret WHERE data = '" . $dt . "'";
+
+    $resultado = $connection->query($sql);
+    $refret = $resultado->fetch_assoc();
+
+    if ($refret != null) {
+
+    ?>
+
+
+
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Levantamento de produção final G70</title>
+        </head>
+
+        <body>
+            <br>
+            <br>
+
+
+            <div class="form" style="margin-left: 100px; margin-right: 100px;">
+
+                <div>
+                    <h2>Refugo/Retrabalho</h2>
+
+                </div>
+                <br>
+
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">ID do levantamento</span>
+                    </div>
+                    <input type="number" name="numId" class="form-control" id="numId" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["id_refret"] ?>" readonly>
+
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Data</span>
+                    </div>
+                    <input type="date" name="date" class="form-control" id="date" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["data"] ?>" readonly>
+                </div>
+
+                <?php
+                if ($refret["retrabalho_braco"] != 0 && $refret["refugo_braco"] != 0) {
+                ?>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
+                        </div>
+                        <input type="number" name="numRet" class="form-control" id="numRet" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["retrabalho_braco"] ?>" readonly>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Refugo</span>
+                        </div>
+                        <input type="number" name="numRef" class="form-control" id="numRef" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["refugo_braco"] ?>" readonly>
+
+
+                    </div>
+
+                <?php
+                }
+                ?>
+
+                <?php
+                if ($refret["retrabalho_tirante"] != 0 && $refret["refugo_tirante"] != 0) {
+                ?>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
+                        </div>
+                        <input type="number" name="numRet" class="form-control" id="numRet" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["retrabalho_braco"] ?>" readonly>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Refugo</span>
+                        </div>
+                        <input type="number" name="numRef" class="form-control" id="numRef" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["refugo_braco"] ?>" readonly>
+
+
+                    </div>
+
+                <?php
+                }
+                ?>
+
+                <?php
+                if ($refret["retrabalho_travessa"] != 0 && $refret["refugo_travessa"] != 0) {
+                ?>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
+                        </div>
+                        <input type="number" name="numRet" class="form-control" id="numRet" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["retrabalho_braco"] ?>" readonly>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Refugo</span>
+                        </div>
+                        <input type="number" name="numRef" class="form-control" id="numRef" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["refugo_braco"] ?>" readonly>
+
+
+                    </div>
+
+                <?php
+                }
+                ?>
+
+                <?php
+                if ($refret["retrabalho_roda"] != 0 && $refret["refugo_roda"] != 0) {
+                ?>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
+                        </div>
+                        <input type="number" name="numRet" class="form-control" id="numRet" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["retrabalho_braco"] ?>" readonly>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Refugo</span>
+                        </div>
+                        <input type="number" name="numRef" class="form-control" id="numRef" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["refugo_braco"] ?>" readonly>
+
+
+                    </div>
+
+                <?php
+                }
+                ?>
+
+                <?php
+                if ($refret["retrabalho_montagem"] != 0 && $refret["refugo_montagem"] != 0) {
+                ?>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
+                        </div>
+                        <input type="number" name="numRet" class="form-control" id="numRet" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["retrabalho_braco"] ?>" readonly>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Refugo</span>
+                        </div>
+                        <input type="number" name="numRef" class="form-control" id="numRef" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["refugo_braco"] ?>" readonly>
+
+
+                    </div>
+
+                <?php
+                }
+                ?>
+
+                <?php
+                if ($refret["retrabalho_pintura"] != 0 && $refret["refugo_pintura"] != 0) {
+                ?>
+
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                        </div>
+
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
+                        </div>
+                        <input type="number" name="numRet" class="form-control" id="numRet" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["retrabalho_braco"] ?>" readonly>
+
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroup-sizing-default">Refugo</span>
+                        </div>
+                        <input type="number" name="numRef" class="form-control" id="numRef" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["refugo_braco"] ?>" readonly>
+
+
+                    </div>
+
+                <?php
+                }
+                ?>
+
+
+
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Total retrabalho</span>
+                    </div>
+                    <input type="number" name="numRetf" class="form-control" id="numRetf" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["total_retrabalho"] ?>" readonly>
+
+                </div>
+
+                <div class="input-group mb-3">
+
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroup-sizing-default">Total refugo</span>
+                    </div>
+                    <input type="number" name="numReft" class="form-control" id="numReft" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $refret["total_refugo"] ?>" readonly>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+        </body>
+        <br>
+        <br>
+
+        </html>
 <?php
     }
 }

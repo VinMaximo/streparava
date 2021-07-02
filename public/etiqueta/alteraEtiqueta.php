@@ -25,6 +25,10 @@ $row = $sql->fetch_row();
 
     <div class="form">
         <form action="insertEtiqueta.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
+
+
+    
+
             <h3>Cadastrar um novo número de etiqueta</h3>
             <br>
 

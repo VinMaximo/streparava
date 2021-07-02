@@ -1,5 +1,5 @@
 <?php
-
+include("../auth/validaMontagem.php");
 $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 ?>
 

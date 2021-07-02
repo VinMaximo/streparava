@@ -4,7 +4,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 ?>
 
 <?php
-
+include("../auth/validaMontagem.php");
 include("../../data/connection.php");
 
 $sql = "SELECT *, DATE_FORMAT(data,'%d/%m/%Y') as datas FROM levantamento35f WHERE data  and (data LIKE '%$usuarios%' or etiqueta1 LIKE '%$usuarios%' or etiqueta2 LIKE '%$usuarios%') order by data DESC";

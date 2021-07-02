@@ -17,7 +17,7 @@ $resultado = $connection -> query($sql);
 if ($resultado){ ?>
     <script>
         alert("Código alterado com sucesso");
-        window.location = '../montagemG50/listPDC50.php';
+        window.location = ('../home/home.php');
     </script>
 <?php
 } else {

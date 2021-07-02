@@ -1,5 +1,6 @@
 <?php include("../Template/header.php");
 include("../../data/connection.php");
+include("../auth/validaADM.php");
 
 if (isset($_GET["data"])) {
     $dt = $_GET["data"];

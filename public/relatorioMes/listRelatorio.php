@@ -1,6 +1,6 @@
 <?php include("../Template/header.php") ?>
 <?php include("../../data/connection.php") ?>
-
+<?php include("../auth/validaADM.php");?>
 <br>
 <br>
 

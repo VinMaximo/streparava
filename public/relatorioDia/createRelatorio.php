@@ -1,6 +1,7 @@
 <br>
 <?php include("../Template/header.php");
 include("../../data/connection.php");
+include("../auth/validaADM.php");
 
 
 

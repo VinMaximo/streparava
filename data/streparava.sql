@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 01-Jul-2021 às 19:14
+-- Tempo de geração: 02-Jul-2021 às 17:01
 -- Versão do servidor: 10.4.19-MariaDB
 -- versão do PHP: 7.4.19
 
@@ -39,7 +39,15 @@ CREATE TABLE `codigo35` (
 
 INSERT INTO `codigo35` (`id_codigo`, `codigo`, `data`) VALUES
 (1, 87985856, '2021-06-29'),
-(2, 45, '2021-06-29');
+(2, 45, '2021-06-29'),
+(3, 5802370087, '2021-07-02'),
+(4, 5802370087, '2021-07-02'),
+(5, 5802370087, '2021-07-02'),
+(6, 5802370087, '2021-07-02'),
+(7, 5802370087, '2021-07-02'),
+(8, 5802370087, '2021-07-02'),
+(9, 5802370087, '2021-07-02'),
+(10, 5802370087, '2021-07-02');
 
 -- --------------------------------------------------------
 
@@ -349,10 +357,7 @@ CREATE TABLE `levantamento35f` (
 --
 
 INSERT INTO `levantamento35f` (`id_levantamento35`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
-(31, '2021-06-28', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2802500357, 2802500357),
-(32, '2021-06-29', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 40, 0, 2802500357, 2802500357),
-(33, '2021-06-28', 2, 0, '', 2, 0, '', 2, 1, 'Tava tenso', 2, 3, 'Tava complicado', 2, 5, 'Tava difícil', 2, 1, 'Não deu', 2, 0, '', 2, 0, '', 2, 0, '', 2, 0, '', 20, 10, 2802500357, 2802500357),
-(34, '2021-06-30', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 3, 4, 'a', 30, 40, 2802500357, 2802500358);
+(36, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2802500357, 2802500357);
 
 -- --------------------------------------------------------
 
@@ -404,7 +409,8 @@ CREATE TABLE `levantamento50f` (
 --
 
 INSERT INTO `levantamento50f` (`id_levantamento50`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
-(34, '2021-06-30', 1, 0, '', 2, 0, '', 3, 0, '', 4, 0, '', 5, 0, '', 6, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 21, 0, 2082500488, 2082500488);
+(34, '2021-06-30', 1, 0, '', 2, 0, '', 3, 0, '', 4, 0, '', 5, 0, '', 6, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 21, 0, 2082500488, 2082500488),
+(35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2082500488, 2082500488);
 
 -- --------------------------------------------------------
 
@@ -456,10 +462,7 @@ CREATE TABLE `levantamento65f` (
 --
 
 INSERT INTO `levantamento65f` (`id_levantamento65`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
-(31, '2021-06-28', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2802500357, 2802500357),
-(32, '2021-06-29', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 40, 0, 2802500357, 2802500357),
-(33, '2021-06-28', 2, 0, '', 2, 0, '', 2, 1, 'Tava tenso', 2, 3, 'Tava complicado', 2, 5, 'Tava difícil', 2, 1, 'Não deu', 2, 0, '', 2, 0, '', 2, 0, '', 2, 0, '', 20, 10, 2802500357, 2802500357),
-(34, '2021-06-30', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 3, 0, '', 30, 0, 20827000257, 20827000257);
+(35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 20827000257, 20827000257);
 
 -- --------------------------------------------------------
 
@@ -511,10 +514,7 @@ CREATE TABLE `levantamento70f` (
 --
 
 INSERT INTO `levantamento70f` (`id_levantamento70`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
-(31, '2021-06-28', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2802500357, 2802500357),
-(32, '2021-06-29', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 4, 0, '', 40, 0, 2802500357, 2802500357),
-(33, '2021-06-28', 2, 0, '', 2, 0, '', 2, 1, 'Tava tenso', 2, 3, 'Tava complicado', 2, 5, 'Tava difícil', 2, 1, 'Não deu', 2, 0, '', 2, 0, '', 2, 0, '', 2, 0, '', 20, 10, 2802500357, 2802500357),
-(34, '2021-06-30', 1, 0, '', 1, 0, '', 1, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 3, 0, 2502700457, 2502700457);
+(35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2502700457, 2502700457);
 
 -- --------------------------------------------------------
 
@@ -546,6 +546,40 @@ INSERT INTO `operadores` (`matricula`, `nome`, `situacao`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Estrutura da tabela `refret`
+--
+
+CREATE TABLE `refret` (
+  `id_refret` int(11) NOT NULL,
+  `data` date NOT NULL,
+  `retrabalho_braco` int(11) NOT NULL,
+  `refugo_braco` int(11) NOT NULL,
+  `retrabalho_tirante` int(11) NOT NULL,
+  `refugo_tirante` int(11) NOT NULL,
+  `retrabalho_travessa` int(11) NOT NULL,
+  `refugo_travessa` int(11) NOT NULL,
+  `retrabalho_roda` int(11) NOT NULL,
+  `refugo_roda` int(11) NOT NULL,
+  `retrabalho_montagem` int(11) NOT NULL,
+  `refugo_montagem` int(11) NOT NULL,
+  `retrabalho_pintura` int(11) NOT NULL,
+  `refugo_pintura` int(11) NOT NULL,
+  `total_retrabalho` int(11) NOT NULL,
+  `total_refugo` int(11) NOT NULL,
+  `observacoes` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `refret`
+--
+
+INSERT INTO `refret` (`id_refret`, `data`, `retrabalho_braco`, `refugo_braco`, `retrabalho_tirante`, `refugo_tirante`, `retrabalho_travessa`, `refugo_travessa`, `retrabalho_roda`, `refugo_roda`, `retrabalho_montagem`, `refugo_montagem`, `retrabalho_pintura`, `refugo_pintura`, `total_retrabalho`, `total_refugo`, `observacoes`) VALUES
+(7, '2021-07-02', 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 18, 0, '1'),
+(8, '2021-07-02', 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 6, 12, '15');
+
+-- --------------------------------------------------------
+
+--
 -- Estrutura da tabela `relatoriodia`
 --
 
@@ -561,7 +595,8 @@ CREATE TABLE `relatoriodia` (
 
 INSERT INTO `relatoriodia` (`id_levantamento`, `data`, `total`) VALUES
 (3, '2021-06-30', 0),
-(6, '2021-06-29', 0);
+(6, '2021-06-29', 0),
+(7, '2021-07-02', 0);
 
 -- --------------------------------------------------------
 
@@ -582,7 +617,8 @@ CREATE TABLE `relatoriomes` (
 INSERT INTO `relatoriomes` (`id_relatorio`, `mes`, `ano`) VALUES
 (1, 1, 2021),
 (2, 1, 2021),
-(3, 6, 2021);
+(3, 6, 2021),
+(4, 7, 2021);
 
 -- --------------------------------------------------------
 
@@ -689,25 +725,35 @@ ALTER TABLE `inspetor`
 -- Índices para tabela `levantamento35f`
 --
 ALTER TABLE `levantamento35f`
-  ADD PRIMARY KEY (`id_levantamento35`);
+  ADD PRIMARY KEY (`id_levantamento35`),
+  ADD UNIQUE KEY `data` (`data`);
 
 --
 -- Índices para tabela `levantamento50f`
 --
 ALTER TABLE `levantamento50f`
-  ADD PRIMARY KEY (`id_levantamento50`);
+  ADD PRIMARY KEY (`id_levantamento50`),
+  ADD UNIQUE KEY `data` (`data`);
 
 --
 -- Índices para tabela `levantamento65f`
 --
 ALTER TABLE `levantamento65f`
-  ADD PRIMARY KEY (`id_levantamento65`);
+  ADD PRIMARY KEY (`id_levantamento65`),
+  ADD UNIQUE KEY `data` (`data`);
 
 --
 -- Índices para tabela `levantamento70f`
 --
 ALTER TABLE `levantamento70f`
-  ADD PRIMARY KEY (`id_levantamento70`);
+  ADD PRIMARY KEY (`id_levantamento70`),
+  ADD UNIQUE KEY `data` (`data`);
+
+--
+-- Índices para tabela `refret`
+--
+ALTER TABLE `refret`
+  ADD PRIMARY KEY (`id_refret`);
 
 --
 -- Índices para tabela `relatoriodia`
@@ -742,7 +788,7 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `codigo35`
 --
 ALTER TABLE `codigo35`
-  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de tabela `codigo50`
@@ -790,37 +836,43 @@ ALTER TABLE `g70`
 -- AUTO_INCREMENT de tabela `levantamento35f`
 --
 ALTER TABLE `levantamento35f`
-  MODIFY `id_levantamento35` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_levantamento35` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
 
 --
 -- AUTO_INCREMENT de tabela `levantamento50f`
 --
 ALTER TABLE `levantamento50f`
-  MODIFY `id_levantamento50` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_levantamento50` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT de tabela `levantamento65f`
 --
 ALTER TABLE `levantamento65f`
-  MODIFY `id_levantamento65` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_levantamento65` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
 
 --
 -- AUTO_INCREMENT de tabela `levantamento70f`
 --
 ALTER TABLE `levantamento70f`
-  MODIFY `id_levantamento70` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id_levantamento70` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
+
+--
+-- AUTO_INCREMENT de tabela `refret`
+--
+ALTER TABLE `refret`
+  MODIFY `id_refret` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `relatoriodia`
 --
 ALTER TABLE `relatoriodia`
-  MODIFY `id_levantamento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_levantamento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT de tabela `relatoriomes`
 --
 ALTER TABLE `relatoriomes`
-  MODIFY `id_relatorio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_relatorio` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `travessa`

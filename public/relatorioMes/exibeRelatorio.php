@@ -1,7 +1,7 @@
 <?php
 include("../Template/header.php");
 include("../../data/connection.php");
-
+include("../auth/validaADM.php");
 $total35 = 0;
 $total50 = 0;
 $total65 = 0;

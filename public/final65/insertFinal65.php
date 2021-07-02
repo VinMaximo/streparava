@@ -1,6 +1,6 @@
 <?php
 include_once("../../data/connection.php");
-
+include("../auth/validaMontagem.php");
 $data = $_POST["date"];
 $prod7 = $_POST["numProd7"];
 $t7 = $_POST["time7"];

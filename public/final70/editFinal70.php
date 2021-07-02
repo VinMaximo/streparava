@@ -1,6 +1,6 @@
 <?php include("../Template/header.php");
 include("../../data/connection.php");
-
+include("../auth/validaMontagem.php");
 if (isset($_GET["id"])) {
     $id = $_GET["id"];
 

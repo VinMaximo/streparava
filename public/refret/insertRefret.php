@@ -1,6 +1,6 @@
 <?php
 include_once("../../data/connection.php");
-
+include("../auth/validaQualidade.php");
 $data = $_POST["date"];
 $retrabalho_braco = $_POST["numBra"];
 $refugo_braco = $_POST["numBrar"];

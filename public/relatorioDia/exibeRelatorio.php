@@ -1981,7 +1981,7 @@ if (isset($_GET["data"])) {
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
                         </div>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
@@ -2008,9 +2008,9 @@ if (isset($_GET["data"])) {
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                            <span class="input-group-text" id="inputGroup-sizing-default">Suporte/tirante</span>
                         </div>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
@@ -2037,9 +2037,9 @@ if (isset($_GET["data"])) {
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                            <span class="input-group-text" id="inputGroup-sizing-default">Travessa</span>
                         </div>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
@@ -2066,9 +2066,9 @@ if (isset($_GET["data"])) {
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                            <span class="input-group-text" id="inputGroup-sizing-default">Grupo roda</span>
                         </div>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
@@ -2095,9 +2095,9 @@ if (isset($_GET["data"])) {
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                            <span class="input-group-text" id="inputGroup-sizing-default">Montagem final</span>
                         </div>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
@@ -2124,9 +2124,9 @@ if (isset($_GET["data"])) {
 
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroup-sizing-default">Braço</span>
+                            <span class="input-group-text" id="inputGroup-sizing-default">Pintura</span>
                         </div>
-
+                        &nbsp;&nbsp;&nbsp;&nbsp;
 
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroup-sizing-default">Retrabalho</span>
@@ -2183,6 +2183,7 @@ if (isset($_GET["data"])) {
         <br>
 
         </html>
+        <br>
 <?php
     }
 }

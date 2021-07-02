@@ -83,7 +83,7 @@ if (isset($_GET["mes"])) {
             <br>
             <div style="margin-left: 100px; margin-right: 100px;">
             <?php
-            echo "Nenhum registro encontrado.";
+            
         }
 
         $sql = "SELECT *,DATE_FORMAT(data,'%d/%m/%Y') as datas FROM levantamento50f WHERE MONTH(data) = $mes AND YEAR(data) = $ano";
@@ -149,7 +149,7 @@ if (isset($_GET["mes"])) {
                 <br>
                 <div style="margin-left: 100px; margin-right: 100px;">
                 <?php
-                echo "Nenhum registro encontrado.";
+                
             }
 
 
@@ -216,7 +216,7 @@ if (isset($_GET["mes"])) {
                     <br>
                     <div style="margin-left: 100px; margin-right: 100px;">
                     <?php
-                    echo "Nenhum registro encontrado.";
+                    
                 }
 
                 $sql = "SELECT *,DATE_FORMAT(data,'%d/%m/%Y') as datas FROM levantamento70f WHERE MONTH(data) = $mes AND YEAR(data) = $ano";
@@ -282,7 +282,7 @@ if (isset($_GET["mes"])) {
                         <div class="input-group mb-3">
 
                             <div class="input-group-prepend">
-                                <span class="input-group-text" id="inputGroup-sizing-default">Total do mês</span>
+                                <span class="input-group-text" id="inputGroup-sizing-default">Total de todas as gamas no mês</span>
                             </div>
                             <input type="number" name="numTotal" class="form-control" id="numTotal" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $total ?>" readonly>
 
@@ -297,7 +297,7 @@ if (isset($_GET["mes"])) {
                         <br>
                         <div style="margin-left: 100px; margin-right: 100px;">
                 <?php
-                        echo "Nenhum registro encontrado.";
+                        
                     }
 
                      $sql = "SELECT *,DATE_FORMAT(data,'%d/%m/%Y') as datas FROM refret WHERE MONTH(data) = $mes AND YEAR(data) = $ano";
@@ -381,7 +381,7 @@ if (isset($_GET["mes"])) {
                         <br>
                         <div style="margin-left: 100px; margin-right: 100px;">
                 <?php
-                        echo "Nenhum registro encontrado.";
+
                     }
 
 
@@ -410,5 +410,6 @@ if (isset($_GET["mes"])) {
                     //<-------------------------------------------------- (IF's isset) --------------------------------------------
                 }
             }
-                ?>
+                ?>  
+                        <br>
                         </div>

@@ -34,11 +34,11 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 
                         
                         <td>
-                            <button type="button" class="btn btn-primary btn-sm">
+                            <button type="button" class="btn btn-primary ">
                                 <a href="editInspetor.php?matricula=<?php echo $exibir["matricula"]?>" style="text-decoration: none; color: white">Editar</a>
                             </button>
                         
-                            <button type="submit" class="btn btn-danger btn-sm" formmethod="post">
+                            <button type="submit" class="btn btn-danger " formmethod="post">
                                  <a href="deleteInspetor.php?matricula=<?php echo $exibir ["matricula"] ?>" style="text-decoration: none; color: white"> Excluir </a> 
                                 
                             </button>

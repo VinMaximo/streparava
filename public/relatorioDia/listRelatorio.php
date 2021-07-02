@@ -17,7 +17,8 @@ include("../auth/validaADM.php"); ?>
 			<div class="card-body">
 				<h5 class="card-title">OBSERVAÇÃO!</h5>
 				<p class="card-text"></p>
-				Para criar um relatório, selecione o botão "Gere um relatório", e em seguida selecione-o na tabela.<br> <br>
+				1º Para criar um relatório, selecione o botão "Gere um relatório", e em seguida selecione-o na tabela.<br>
+				2º Caso não apareça nada ao abrir o relatório, não houve levantamento diário no dia em questão <br>
 
 			</div>
 			<div class="card-footer text-muted">

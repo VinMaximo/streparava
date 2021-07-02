@@ -41,7 +41,7 @@ if ($dadosTravessa->num_rows > 0) {
                     <td><?php echo $exibir["data"] ?></td>
 
                     <td>
-                        <button type="button" class="btn btn-primary btn-sm">
+                        <button type="button" class="btn btn-primary ">
                             <a href="editTravessa.php?id=<?php echo $exibir["id_travessa"] ?>" style="text-decoration: none; color: white">Editar</a>
                         </button>
 

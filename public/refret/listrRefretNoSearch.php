@@ -32,11 +32,11 @@ if ($dadosRefret->num_rows > 0) {
                     <td><?php echo $exibir["total_refugo"] ?></td>
                   
                     <td>
-                        <button type="button" class="btn btn-primary btn-sm">
+                        <button type="button" class="btn btn-primary ">
                             <a href="editRefret.php?id=<?php echo $exibir["id_refret"] ?>" style="text-decoration: none; color: white">Editar</a>
                         </button>
 
-                        <button type="submit" class="btn btn-danger btn-sm" formmethod="post">
+                        <button type="submit" class="btn btn-danger " formmethod="post">
                             <a href="deleteRefret.php?id=<?php echo $exibir["id_refret"] ?>" style="text-decoration: none; color: white"> Excluir </a>
                         </button>
 

@@ -32,11 +32,11 @@ if ($dadosLevantamento70->num_rows > 0) {
                     <td><?php echo $exibir["etiqueta2"] ?></td>
 
                     <td>
-                        <button type="button" class="btn btn-primary btn-sm">
+                        <button type="button" class="btn btn-primary ">
                             <a href="editFinal70.php?id=<?php echo $exibir["id_levantamento70"] ?>" style="text-decoration: none; color: white">Editar</a>
                         </button>
 
-                        <button type="submit" class="btn btn-danger btn-sm" formmethod="post">
+                        <button type="submit" class="btn btn-danger " formmethod="post">
                             <a href="deleteFinal70.php?id=<?php echo $exibir["id_levantamento70"] ?>" style="text-decoration: none; color: white"> Excluir </a>
                         </button>
 

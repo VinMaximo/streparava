@@ -5,6 +5,7 @@ include("../auth/validaADM.php");
 
 
 
+
 //"SELECT coalesce( max( etiqueta ), 0) + 1 FROM controle_montagem"
 
 ?>

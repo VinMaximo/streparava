@@ -118,6 +118,10 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
 
                             <a href="../operador/listOperador.php" class="btn btn-primary">Lista de operadores</a>
 
+                            <a href="../relatorioDia/listRelatorio.php" class="btn btn-primary">Relatório diário</a>
+
+                            <a href="../relatorioMes/listRelatorio.php" class="btn btn-primary">Relatório mensal</a>
+
                         </div>
                     </div>
                     <div class="card-footer text-muted">
@@ -160,6 +164,17 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
                             <a href="../codigo/altera65.php" class="btn btn-primary">Aterar código da gama 65</a>
 
                             <a href="../codigo/altera70.php" class="btn btn-primary">Aterar código da gama 70</a>
+
+
+
+                            </div>
+
+                            <div class="buttons">
+                                <br>
+
+                            <a href="../refret/listRefret.php" class="btn btn-primary">Levantamento diário de refugo</a>
+
+                            
 
 
 

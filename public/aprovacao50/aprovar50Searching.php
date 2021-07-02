@@ -35,7 +35,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                         <td><?php echo $exibir["inspetor"] ?></td>
                         
                         <td>
-                            <button type="button" class="btn btn-primary btn-sm">
+                            <button type="button" class="btn btn-primary ">
                                 <a href="editAprovar50.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Aprovar</a>
                             </button>
                         

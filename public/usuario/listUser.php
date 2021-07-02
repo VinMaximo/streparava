@@ -46,7 +46,7 @@ if ($dadosUsuario->num_rows > 0) {
                     <td><?php echo $exibir["prioridade"] ?></td>
 
                     <td>
-                        <button type="button" class="btn btn-primary btn-sm">
+                        <button type="button" class="btn btn-primary ">
                             <a href="editUser.php?id=<?php echo $exibir["id_usuario"] ?>" style="text-decoration: none; color: white">Editar</a>
                         </button>
 

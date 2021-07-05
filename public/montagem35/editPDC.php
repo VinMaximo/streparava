@@ -271,15 +271,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador"] === $row["nome"]) {
+                            if ($pdc["operador"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -309,15 +309,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador2"] === $row["nome"]) {
+                            if ($pdc["operador2"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -347,15 +347,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador3"] === $row["nome"]) {
+                            if ($pdc["operador3"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -433,9 +433,9 @@ if (isset($_GET["etiqueta"])) {
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
-                    <span class="input-group-text" id="inputGroup-sizing-default">Visto </span>
+                    <span class="input-group-text" id="inputGroup-sizing-default">Visto</span>
                 </div>
-                <select class="form-select" name="txtVisto1" id="txtVisto1">
+                <select class="form-select" name="txtVisto2" id="txtVisto2">
 
                     <?php
 
@@ -446,13 +446,26 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao1"] === $row["matricula"]) {
                     ?>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["matricula"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -461,9 +474,8 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
-
-                <select class="form-select" name="txtVisto1op" id="txtVisto1op">
-                    <option value="Nulo" selected>Selecione o operador</option>
+                <select class="form-select" name="txtVisto2op" id="txtVisto2op">
+                    <option value="-1" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -473,13 +485,26 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao1op"] === $row["matricula"]) {
                     ?>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["matricula"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -571,7 +596,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto</span>
                 </div>
-                <select class="form-select" name="txtVisto2" id="txtVisto2">
+                <select class="form-select" name="txtVisto1" id="txtVisto1">
 
                     <?php
 
@@ -582,15 +607,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao2"] === $row["nome"]) {
+                            if ($pdc["operacao2"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -610,7 +635,7 @@ if (isset($_GET["etiqueta"])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
-                <select class="form-select" name="txtVisto2op" id="txtVisto2op">
+                <select class="form-select" name="txtVisto1op" id="txtVisto1op">
                     <option value="-1" selected>Selecione o operador</option>
                     <?php
 
@@ -621,15 +646,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao2op"] === $row["nome"]) {
+                            if ($pdc["operacao2op"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -734,15 +759,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao3"] === $row["nome"]) {
+                            if ($pdc["operacao3"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -773,15 +798,15 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao3op"] === $row["nome"]) {
+                            if ($pdc["operacao3op"] === $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 

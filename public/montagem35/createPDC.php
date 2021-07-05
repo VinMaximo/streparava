@@ -266,7 +266,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"]  ?>">
+                            <option value="<?php echo $row["matricula"]  ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -292,7 +292,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -318,7 +318,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -404,7 +404,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -431,7 +431,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -540,7 +540,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -566,7 +566,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -666,7 +666,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -692,7 +692,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 

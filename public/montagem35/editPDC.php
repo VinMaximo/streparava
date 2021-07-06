@@ -55,14 +55,10 @@ if (isset($_GET["etiqueta"])) {
                         </tr>
 
                         <tr>
-                            <td>Torque parafuso cubo roda (G35/G40/G50) </td>
+                            <td>Torque parafuso cubo roda </td>
                             <td>109 - 128 nm</td>
                         </tr>
 
-                        <tr>
-                            <td>Torque parafuso cubo roda (G65/70) </td>
-                            <td>250 - 295 nm</td>
-                        </tr>
 
                         <tr>
                             <td>Oscilação disco de freio</td>
@@ -75,14 +71,10 @@ if (isset($_GET["etiqueta"])) {
                         </tr>
 
                         <tr>
-                            <td>Torque parafuso das pinças (G35/G40/G50)</td>
+                            <td>Torque parafuso das pinças</td>
                             <td>217 - 256 nm</td>
                         </tr>
 
-                        <tr>
-                            <td>Torque parafuso das pinças (G65/G70)</td>
-                            <td>140 - 165 nm</td>
-                        </tr>
 
                         <tr>
                             <td>Código pivô</td>
@@ -271,7 +263,7 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador"] === $row["matricula"]) {
+                            if ($pdc["operador1"] === $row["matricula"]) {
                     ?>
                                 <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
@@ -475,7 +467,7 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto2op" id="txtVisto2op">
-                    <option value="-1" selected>Selecione o operador</option>
+                    <option value="Nulo" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -545,7 +537,7 @@ if (isset($_GET["etiqueta"])) {
                         </tr>
 
                         <tr>
-                            <td>Calibração porca pivô do tirante</td>
+                            <td>Calibração porcas fixação da barra de torção</td>
                             <td>2</td>
                             <td>17039021</td>
                             <td>83 ÷ 93<br>186 ÷ 203
@@ -636,7 +628,7 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto1op" id="txtVisto1op">
-                    <option value="-1" selected>Selecione o operador</option>
+                    <option value="Nulo" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -700,30 +692,32 @@ if (isset($_GET["etiqueta"])) {
                             <td>Calibração porca para parafuso dos braços/distancial/buchas</td>
                             <td>2</td>
                             <td>17155731</td>
-                            <td>50 ÷ 61</td>
+                            <td>206 ÷ 252</td>
 
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso dos tirantes inferiores</td>
-                            <td>2</td>
+                            <td>Calibração porcas para parafuso dos tirantes sup/inf</td>
+                            <td>4</td>
                             <td>17155731</td>
-                            <td>192 ÷ 235</td>
-                        </tr>
-
-                        <tr>
-                            <td>Calibração porcas para parafuso dos tirantes superiores</td>
-                            <td>2</td>
-                            <td>17155531</td>
                             <td>150 ÷ 183</td>
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso das travessas/amortecedores (amortecedores dos braços G65/G70)</td>
-                            <td> 2 </td>
-                            <td> 16984631 </td>
-                            <td> 116 ÷ 142 </td>
+                            <td>Calibração porcas para parafuso da travessa/amortecedores</td>
+                            <td>2</td>
+                            <td>16984631</td>
+                            <td>116 ÷ 142</td>
                         </tr>
+
+                        <tr>
+                            <td>Calibração porcas para parafuso dos amortecedores/braços</td>
+                            <td>2</td>
+                            <td>16984631</td>
+                            <td>116 ÷ 142</td>
+                        </tr>
+
+                        
 
 
                         <td></td>
@@ -749,7 +743,7 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto</span>
                 </div>
                 <select class="form-select" name="txtVisto3" id="txtVisto3">
-                    <option value="-1" selected>Nenhum</option>
+                    
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -788,7 +782,7 @@ if (isset($_GET["etiqueta"])) {
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto3op" id="txtVisto3op">
-                    <option value="-1" selected>Selecione o operador</option>
+                    <option value="Nulo" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";

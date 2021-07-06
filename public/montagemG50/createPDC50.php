@@ -99,14 +99,10 @@ $row = $sql->fetch_row();
                         </tr>
 
                         <tr>
-                            <td>Torque parafuso cubo roda (G35/G40/G50) </td>
+                            <td>Torque parafuso cubo roda </td>
                             <td>109 - 128 nm</td>
                         </tr>
 
-                        <tr>
-                            <td>Torque parafuso cubo roda (G65/70) </td>
-                            <td>250 - 295 nm</td>
-                        </tr>
 
                         <tr>
                             <td>Oscilação disco de freio</td>
@@ -119,13 +115,8 @@ $row = $sql->fetch_row();
                         </tr>
 
                         <tr>
-                            <td>Torque parafuso das pinças (G35/G40/G50)</td>
+                            <td>Torque parafuso das pinças</td>
                             <td>217 - 256 nm</td>
-                        </tr>
-
-                        <tr>
-                            <td>Torque parafuso das pinças (G65/G70)</td>
-                            <td>140 - 165 nm</td>
                         </tr>
 
                         <tr>
@@ -261,7 +252,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"]  ?>">
+                            <option value="<?php echo $row["matricula"]  ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -287,7 +278,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -313,7 +304,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -399,7 +390,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -426,7 +417,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -474,8 +465,14 @@ $row = $sql->fetch_row();
                             <td>Calibração porca pivô do tirante</td>
                             <td>2</td>
                             <td>17039021</td>
-                            <td>83 ÷ 93<br>186 ÷ 203
-                            </td>
+                            <td>84 ÷ 103</td>
+                        </tr>
+
+                        <tr>
+                            <td>Travamento do grampo da barra de torção</td>
+                            <td>2</td>
+                            <td>16858601</td>
+                            <td>ND</td>
                         </tr>
 
                         <tr>
@@ -535,7 +532,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -561,7 +558,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -600,26 +597,25 @@ $row = $sql->fetch_row();
                             <td>Calibração porca para parafuso dos braços/distancial/buchas</td>
                             <td>2</td>
                             <td>17155731</td>
-                            <td>50 ÷ 61</td>
-
+                            <td>206 ÷ 252</td>
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso dos tirantes inferiores</td>
-                            <td>2</td>
+                            <td>Calibração porcas para parafuso dos tirantes superiores/inferiores</td>
+                            <td>4</td>
                             <td>17155731</td>
-                            <td>192 ÷ 235</td>
+                            <td>206 ÷ 252</td>
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso dos tirantes superiores</td>
+                            <td>Calibração porcas para parafuso da travessa/amortecedores</td>
                             <td>2</td>
-                            <td>17155531</td>
-                            <td>150 ÷ 183</td>
+                            <td>16984631</td>
+                            <td>116 ÷ 142</td>
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso das travessas/amortecedores (amortecedores dos braços G65/G70)</td>
+                            <td>Calibração porcas para parafuso dos amortecedores/braços</td>
                             <td> 2 </td>
                             <td> 16984631 </td>
                             <td> 116 ÷ 142 </td>
@@ -661,7 +657,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -687,7 +683,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 

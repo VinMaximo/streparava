@@ -29,12 +29,12 @@ $row = $sql->fetch_row();
         <form action="insertPDC70.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <div>
                 <h3>Nova planilha de controle (G70)</h3>
-               
-                <p style="text-align: right;"> 
-                <input type="button" class="btn btn-success"  onclick="window.location.href='../etiqueta/alteraEtiqueta70.php'"  value="Mudar número de início">
+
+                <p style="text-align: right;">
+                    <input type="button" class="btn btn-success" onclick="window.location.href='../etiqueta/alteraEtiqueta70.php'" value="Mudar número de início">
                 </p>
 
-            
+
             </div>
             <br>
 
@@ -70,14 +70,14 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Etiqueta</span>
                 </div>
-                <input type="number" name="numEtiqueta" class="form-control" id="numEtiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0];?>" readonly>
+                <input type="number" name="numEtiqueta" class="form-control" id="numEtiqueta" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0]; ?>" readonly>
             </div>
-            
-            
+
+
             <div>
-            
-            <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
-           
+
+                <HR style="height:2px;border-width:0;color:gray;background-color:gray" WIDTH=100%>
+
                 <table class="table">
 
                     <p style="text-align: center">
@@ -99,12 +99,7 @@ $row = $sql->fetch_row();
                         </tr>
 
                         <tr>
-                            <td>Torque parafuso cubo roda (G35/G40/G50) </td>
-                            <td>109 - 128 nm</td>
-                        </tr>
-
-                        <tr>
-                            <td>Torque parafuso cubo roda (G65/70) </td>
+                            <td>Torque parafuso cubo roda </td>
                             <td>250 - 295 nm</td>
                         </tr>
 
@@ -115,16 +110,12 @@ $row = $sql->fetch_row();
 
                         <tr>
                             <td>Torque porca dos braços</td>
-                            <td>117 - 209 nm</td>
+                            <td>177 - 209 nm</td>
                         </tr>
 
-                        <tr>
-                            <td>Torque parafuso das pinças (G35/G40/G50)</td>
-                            <td>217 - 256 nm</td>
-                        </tr>
 
                         <tr>
-                            <td>Torque parafuso das pinças (G65/G70)</td>
+                            <td>Torque parafuso das pinças</td>
                             <td>140 - 165 nm</td>
                         </tr>
 
@@ -157,7 +148,7 @@ $row = $sql->fetch_row();
                 </table>
 
             </div>
-            
+
 
             <p style="text-align:center">
             <div class="input-group mb-3">
@@ -261,7 +252,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"]  ?>">
+                            <option value="<?php echo $row["matricula"]  ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -287,7 +278,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -313,7 +304,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -399,7 +390,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -426,7 +417,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -474,7 +465,7 @@ $row = $sql->fetch_row();
                             <td>Calibração porca pivô do tirante</td>
                             <td>2</td>
                             <td>17039021</td>
-                            <td>83 ÷ 93<br>186 ÷ 203
+                            <td>84 ÷ 103<br>186 ÷ 206
                             </td>
                         </tr>
 
@@ -489,14 +480,14 @@ $row = $sql->fetch_row();
                             <td>Convergência das rodas</td>
                             <td> ND </td>
                             <td> ND </td>
-                            <td> 1 ÷ 2 (mm)</td>
+                            <td> 2 ÷ 4 (mm)</td>
                         </tr>
 
                         <tr>
                             <td>Calibração porca de registro de convergência</td>
                             <td> 2 </td>
-                            <td> 99477984 </td>
-                            <td> 75 ÷ 98 </td>
+                            <td> ND </td>
+                            <td> 80 ÷ 115 </td>
                         </tr>
 
                         <tr>
@@ -535,7 +526,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -561,7 +552,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -600,7 +591,7 @@ $row = $sql->fetch_row();
                             <td>Calibração porca para parafuso dos braços/distancial/buchas</td>
                             <td>2</td>
                             <td>17155731</td>
-                            <td>50 ÷ 61</td>
+                            <td>206 ÷ 252</td>
 
                         </tr>
 
@@ -619,17 +610,24 @@ $row = $sql->fetch_row();
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso das travessas/amortecedores (amortecedores dos braços G65/G70)</td>
+                            <td>Calibração porcas para parafuso das travessas/amortecedores</td>
                             <td> 2 </td>
                             <td> 16984631 </td>
                             <td> 116 ÷ 142 </td>
                         </tr>
 
-                        
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                        <tr>
+                            <td>Calibração porcas para parafuso dos amortecedores dos braços</td>
+                            <td> 2 </td>
+                            <td> 16984631 </td>
+                            <td> 116 ÷ 142 </td>
+                        </tr>
+
+
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         </tr>
 
 
@@ -661,7 +659,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -687,7 +685,7 @@ $row = $sql->fetch_row();
                         while ($row = $operadores->fetch_assoc()) {
                     ?>
 
-                            <option value="<?php echo $row["nome"] ?>">
+                            <option value="<?php echo $row["matricula"] ?>">
                                 <?php echo $row["nome"]  ?>
                             </option>
 
@@ -702,7 +700,7 @@ $row = $sql->fetch_row();
 
 
 
-            
+
 
             <div class="input-group mb-3">
 
@@ -739,7 +737,7 @@ $row = $sql->fetch_row();
                 <textarea name="txtObservacoes" id="txtObservacoes" placeholder="Digite as observações relacionadas às operações" cols="190" oninput='if(this.scrollHeight > this.offsetHeight) this.rows += 1'></textarea>
             </div>
 
-            
+
 
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
@@ -748,7 +746,7 @@ $row = $sql->fetch_row();
                 <input type="date" name="date" class="form-control" id="date" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
             </div>
 
-            
+
 
 
 
@@ -772,4 +770,5 @@ $row = $sql->fetch_row();
 </body>
 <br>
 <br>
+
 </html>

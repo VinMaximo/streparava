@@ -3,14 +3,13 @@ include("../Template/header.php");
 include_once("../../data/connection.php");
 include("../auth/validaMontagem.php");
 
-if (isset ($_GET["etiqueta"])) 
-    {
-        $etiqueta = $_GET["etiqueta"];
-        
-        $sql = "SELECT * FROM g65 WHERE etiqueta = '" . $etiqueta . "'";
-        //echo $sql;
-        $resultado = $connection->query($sql);
-        $pdc = $resultado->fetch_assoc();
+if (isset($_GET["etiqueta"])) {
+    $etiqueta = $_GET["etiqueta"];
+
+    $sql = "SELECT * FROM g65 WHERE etiqueta = '" . $etiqueta . "'";
+    //echo $sql;
+    $resultado = $connection->query($sql);
+    $pdc = $resultado->fetch_assoc();
 
 
 
@@ -18,9 +17,9 @@ if (isset ($_GET["etiqueta"]))
 
 
 
-<div class="form">
-    <form action="updatePDC65.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
-    <br>
+    <div class="form">
+        <form action="updatePDC65.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
+            <br>
             <br>
             <h3>Editar planilha de controle</h3>
 
@@ -58,12 +57,7 @@ if (isset ($_GET["etiqueta"]))
                         </tr>
 
                         <tr>
-                            <td>Torque parafuso cubo roda (G35/G40/G50) </td>
-                            <td>109 - 128 nm</td>
-                        </tr>
-
-                        <tr>
-                            <td>Torque parafuso cubo roda (G65/70) </td>
+                            <td>Torque parafuso cubo roda </td>
                             <td>250 - 295 nm</td>
                         </tr>
 
@@ -74,16 +68,12 @@ if (isset ($_GET["etiqueta"]))
 
                         <tr>
                             <td>Torque porca dos braços</td>
-                            <td>117 - 209 nm</td>
+                            <td>177 - 209 nm</td>
                         </tr>
 
-                        <tr>
-                            <td>Torque parafuso das pinças (G35/G40/G50)</td>
-                            <td>217 - 256 nm</td>
-                        </tr>
 
                         <tr>
-                            <td>Torque parafuso das pinças (G65/G70)</td>
+                            <td>Torque parafuso das pinças</td>
                             <td>140 - 165 nm</td>
                         </tr>
 
@@ -115,8 +105,9 @@ if (isset ($_GET["etiqueta"]))
 
                 </table>
 
+
             </div>
-     
+
 
             <p style="text-align:center">
             <div class="input-group mb-3">
@@ -124,24 +115,24 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 esquerdo</span>
                 </div>
                 <select class="form-select" name="txtEsmagamentoe" id="txtEsmagamentoe">
-                    <?php 
-                    if($pdc["esmagamento_esq"] === "NOK") {
+                    <?php
+                    if ($pdc["esmagamento_esq"] === "NOK") {
                     ?>
-                    <option value="NOK" selected>
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK">
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK" selected>
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK">
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     } else {
                     ?>
-                        <option value="NOK" >
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK"selected>
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK">
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK" selected>
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     }
                     ?>
@@ -152,24 +143,24 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota esquerdo</span>
                 </div>
                 <select class="form-select" name="txtMontageme" id="txtMontageme">
-                    <?php 
-                    if($pdc["montagem_esq"] === "NOK") {
+                    <?php
+                    if ($pdc["montagem_esq"] === "NOK") {
                     ?>
-                    <option value="NOK" selected>
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK">
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK" selected>
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK">
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     } else {
                     ?>
-                        <option value="NOK" >
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK"selected>
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK">
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK" selected>
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     }
                     ?>
@@ -184,24 +175,24 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Esmagamento colarinho M33 direito</span>
                 </div>
                 <select class="form-select" name="txtEsmagamentod" id="txtEsmagamentod">
-                    <?php 
-                    if($pdc["esmagamento_dir"] === "NOK") {
+                    <?php
+                    if ($pdc["esmagamento_dir"] === "NOK") {
                     ?>
-                    <option value="NOK" selected>
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK">
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK" selected>
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK">
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     } else {
                     ?>
-                        <option value="NOK" >
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK"selected>
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK">
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK" selected>
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     }
                     ?>
@@ -212,24 +203,24 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Montagem da calota direito</span>
                 </div>
                 <select class="form-select" name="txtMontagemd" id="txtMontagemd">
-                    <?php 
-                    if($pdc["montagem_dir"] === "NOK") {
+                    <?php
+                    if ($pdc["montagem_dir"] === "NOK") {
                     ?>
-                    <option value="NOK" selected>
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK">
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK" selected>
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK">
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     } else {
                     ?>
-                        <option value="NOK" >
-                        <?php echo "NOK"  ?>
-                    </option>
-                    <option value="OK"selected>
-                        <?php echo "OK"  ?>
-                    </option>
+                        <option value="NOK">
+                            <?php echo "NOK"  ?>
+                        </option>
+                        <option value="OK" selected>
+                            <?php echo "OK"  ?>
+                        </option>
                     <?php
                     }
                     ?>
@@ -238,12 +229,12 @@ if (isset ($_GET["etiqueta"]))
             </div>
 
             </p>
-            <br>           
+            <br>
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio esquerdo</span>
                 </div>
-                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["oscilacao_esq"] ?>" >
+                <input type="number" name="numOscilacaoe" step="0.01" class="form-control" id="numOscilacaoe" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["oscilacao_esq"] ?>">
             </div>
 
             <br>
@@ -252,7 +243,7 @@ if (isset ($_GET["etiqueta"]))
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Oscilação disco de freio direito</span>
                 </div>
-                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["oscilacao_dir"] ?>" >
+                <input type="number" name="numOscilacaod" step="0.01" class="form-control" id="numOscilacaod" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $pdc["oscilacao_dir"] ?>">
             </div>
             <br>
 
@@ -272,15 +263,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador"] === $row["nome"]) {
+                            if ($pdc["operador"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -310,15 +301,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador2"] === $row["nome"]) {
+                            if ($pdc["operador2"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -348,15 +339,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador3"] === $row["nome"]) {
+                            if ($pdc["operador3"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -447,13 +438,26 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao1"] == $row["matricula"]) {
                     ?>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["matricula"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -474,13 +478,26 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
+                            if ($pdc["operacao1op"] == $row["matricula"]) {
                     ?>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
+                                    <?php echo $row["nome"]  ?>
+                                </option>
+                            <?php
+                            } else {
+                            ?>
+                                <option value="<?php echo $row["matricula"] ?>">
+                                    <?php echo $row["nome"]  ?>
+                                </option>
 
-                            <option value="<?php echo $row["nome"] ?>">
-                                <?php echo $row["nome"]  ?>
-                            </option>
+
+
+                                ?>
+
+
 
                     <?php
+                            }
                         }
                     }
                     ?>
@@ -524,7 +541,7 @@ if (isset ($_GET["etiqueta"]))
                             <td>Calibração porca pivô do tirante</td>
                             <td>2</td>
                             <td>17039021</td>
-                            <td>83 ÷ 93<br>186 ÷ 203
+                            <td>84 ÷ 103<br>186 ÷ 206
                             </td>
                         </tr>
 
@@ -539,14 +556,14 @@ if (isset ($_GET["etiqueta"]))
                             <td>Convergência das rodas</td>
                             <td> ND </td>
                             <td> ND </td>
-                            <td> 1 ÷ 2 (mm)</td>
+                            <td> 2 ÷ 4 (mm)</td>
                         </tr>
 
                         <tr>
                             <td>Calibração porca de registro de convergência</td>
                             <td> 2 </td>
-                            <td> 99477984 </td>
-                            <td> 75 ÷ 98 </td>
+                            <td> ND </td>
+                            <td> 80 ÷ 115 </td>
                         </tr>
 
                         <tr>
@@ -583,15 +600,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao2"] === $row["nome"]) {
+                            if ($pdc["operacao2"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -612,7 +629,7 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto2op" id="txtVisto2op">
-                    <option value="-1" selected>Selecione o operador</option>
+                    <option value="Nulo" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -622,15 +639,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao2op"] === $row["nome"]) {
+                            if ($pdc["operacao2op"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -676,7 +693,7 @@ if (isset ($_GET["etiqueta"]))
                             <td>Calibração porca para parafuso dos braços/distancial/buchas</td>
                             <td>2</td>
                             <td>17155731</td>
-                            <td>50 ÷ 61</td>
+                            <td>206 ÷ 252</td>
 
                         </tr>
 
@@ -695,17 +712,24 @@ if (isset ($_GET["etiqueta"]))
                         </tr>
 
                         <tr>
-                            <td>Calibração porcas para parafuso das travessas/amortecedores (amortecedores dos braços G65/G70)</td>
+                            <td>Calibração porcas para parafuso das travessas/amortecedores</td>
                             <td> 2 </td>
                             <td> 16984631 </td>
                             <td> 116 ÷ 142 </td>
                         </tr>
 
+                        <tr>
+                            <td>Calibração porcas para parafuso dos amortecedores dos braços</td>
+                            <td> 2 </td>
+                            <td> 16984631 </td>
+                            <td> 116 ÷ 142 </td>
+                        </tr>
 
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
 
 
@@ -725,7 +749,7 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto</span>
                 </div>
                 <select class="form-select" name="txtVisto3" id="txtVisto3">
-                    <option value="-1" selected>Nenhum</option>
+                    
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -735,15 +759,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao3"] === $row["nome"]) {
+                            if ($pdc["operacao3"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -764,7 +788,7 @@ if (isset ($_GET["etiqueta"]))
                     <span class="input-group-text" id="inputGroup-sizing-default">Visto (opcional)</span>
                 </div>
                 <select class="form-select" name="txtVisto3op" id="txtVisto3op">
-                    <option value="-1" selected>Selecione o operador</option>
+                    <option value="Nulo" selected>Selecione o operador</option>
                     <?php
 
                     $sqlQuery = "SELECT * FROM operadores ORDER BY nome";
@@ -774,15 +798,15 @@ if (isset ($_GET["etiqueta"]))
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operacao3op"] === $row["nome"]) {
+                            if ($pdc["operacao3op"] == $row["matricula"]) {
                     ?>
-                                <option value="<?php echo $row["nome"] ?>" selected>
+                                <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
                                 </option>
                             <?php
                             } else {
                             ?>
-                                <option value="<?php echo $row["nome"] ?>">
+                                <option value="<?php echo $row["matricula"] ?>">
                                     <?php echo $row["nome"]  ?>
                                 </option>
 
@@ -868,20 +892,20 @@ if (isset ($_GET["etiqueta"]))
 
 
 
-        <div class="buttons">
+            <div class="buttons">
 
-            <input type="submit" class="btn btn-success" value="Atualizar">
-            <input type="reset" class="btn btn-danger" onclick="window.location.href='../montagemG65/listPDC65.php'" value="Cancelar">
+                <input type="submit" class="btn btn-success" value="Atualizar">
+                <input type="reset" class="btn btn-danger" onclick="window.location.href='../montagemG65/listPDC65.php'" value="Cancelar">
 
-        </div>
-
-
+            </div>
 
 
-    </form>
-</div>
+
+
+        </form>
+    </div>
 
 
 <?php
-    }
+}
 ?>

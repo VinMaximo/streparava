@@ -43,10 +43,10 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Código da gama</span>
                 </div>
-                <select class="form-select" name="txtCod" id="txtCod" disabled>
+                <select class="form-select" name="txtCod" id="txtCod" >
                     <?php
 
-                    $sqlQuery = "SELECT * FROM codigo65 ORDER BY id_codigo DESC";
+                    $sqlQuery = "SELECT * FROM codigo65 ORDER BY id_codigo DESC  LIMIT 1";
 
                     $cod = $connection->query($sqlQuery);
 

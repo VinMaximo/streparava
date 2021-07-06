@@ -40,8 +40,7 @@ if (isset($_GET["etiqueta"])) {
     $domPDF = new Dompdf();
 
     $html = '
-        <!DOCTYPE html>
-        <html>
+    <html>
 
 <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type">
@@ -56,7 +55,7 @@ if (isset($_GET["etiqueta"])) {
             padding: 0
         }
 
-        .c26 {
+        .c33 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
@@ -69,192 +68,12 @@ if (isset($_GET["etiqueta"])) {
             border-top-style: solid;
             border-left-style: solid;
             border-bottom-width: 1pt;
-            width: 54pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c41 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 451.4pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c0 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 122.2pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c37 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 144.8pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c15 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 185.2pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c8 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 150.5pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c18 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: middle;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 87.8pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c6 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: middle;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 73.5pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c20 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 327.8pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c40 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: middle;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 95.2pt;
+            width: 200.2pt;
             border-top-color: #000000;
             border-bottom-style: solid
         }
 
         .c23 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: middle;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 83.2pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c31 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
@@ -272,7 +91,25 @@ if (isset($_GET["etiqueta"])) {
             border-bottom-style: solid
         }
 
-        .c38 {
+        .c7 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 203.2pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c18 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
@@ -285,7 +122,205 @@ if (isset($_GET["etiqueta"])) {
             border-top-style: solid;
             border-left-style: solid;
             border-bottom-width: 1pt;
+            width: 144.8pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c36 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 73.5pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c12 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 87.8pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c5 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 150.5pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c32 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 198.8pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c29 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 54pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c14 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 82.5pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c20 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 451.4pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c3 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 225.7pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c27 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
             width: 72pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c38 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 77.2pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c40 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 185.2pt;
             border-top-color: #000000;
             border-bottom-style: solid
         }
@@ -308,7 +343,43 @@ if (isset($_GET["etiqueta"])) {
             border-bottom-style: solid
         }
 
-        .c33 {
+        .c34 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: middle;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 95.2pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c21 {
+            border-right-style: solid;
+            padding: 5pt 5pt 5pt 5pt;
+            border-bottom-color: #000000;
+            border-top-width: 1pt;
+            border-right-width: 1pt;
+            border-left-color: #000000;
+            vertical-align: top;
+            border-right-color: #000000;
+            border-left-width: 1pt;
+            border-top-style: solid;
+            border-left-style: solid;
+            border-bottom-width: 1pt;
+            width: 122.2pt;
+            border-top-color: #000000;
+            border-bottom-style: solid
+        }
+
+        .c24 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
@@ -326,25 +397,25 @@ if (isset($_GET["etiqueta"])) {
             border-bottom-style: solid
         }
 
-        .c24 {
+        .c26 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
             border-top-width: 1pt;
             border-right-width: 1pt;
             border-left-color: #000000;
-            vertical-align: middle;
+            vertical-align: top;
             border-right-color: #000000;
             border-left-width: 1pt;
             border-top-style: solid;
             border-left-style: solid;
             border-bottom-width: 1pt;
-            width: 86.2pt;
+            width: 327.8pt;
             border-top-color: #000000;
             border-bottom-style: solid
         }
 
-        .c9 {
+        .c15 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
@@ -362,24 +433,6 @@ if (isset($_GET["etiqueta"])) {
             border-bottom-style: solid
         }
 
-        .c13 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: middle;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 203.2pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
         .c30 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
@@ -387,18 +440,18 @@ if (isset($_GET["etiqueta"])) {
             border-top-width: 1pt;
             border-right-width: 1pt;
             border-left-color: #000000;
-            vertical-align: middle;
+            vertical-align: top;
             border-right-color: #000000;
             border-left-width: 1pt;
             border-top-style: solid;
             border-left-style: solid;
             border-bottom-width: 1pt;
-            width: 77.2pt;
+            width: 72pt;
             border-top-color: #000000;
             border-bottom-style: solid
         }
 
-        .c36 {
+        .c42 {
             border-right-style: solid;
             padding: 5pt 5pt 5pt 5pt;
             border-bottom-color: #000000;
@@ -411,7 +464,7 @@ if (isset($_GET["etiqueta"])) {
             border-top-style: solid;
             border-left-style: solid;
             border-bottom-width: 1pt;
-            width: 72pt;
+            width: 83.2pt;
             border-top-color: #000000;
             border-bottom-style: solid
         }
@@ -429,106 +482,32 @@ if (isset($_GET["etiqueta"])) {
             border-top-style: solid;
             border-left-style: solid;
             border-bottom-width: 1pt;
-            width: 82.5pt;
+            width: 86.2pt;
             border-top-color: #000000;
             border-bottom-style: solid
         }
 
-        .c2 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 225.7pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
+        .c0 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c10 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 12pt;
+            font-family: "Arial";
+            font-style: normal
         }
 
         .c28 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: top;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 200.2pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c16 {
-            border-right-style: solid;
-            padding: 5pt 5pt 5pt 5pt;
-            border-bottom-color: #000000;
-            border-top-width: 1pt;
-            border-right-width: 1pt;
-            border-left-color: #000000;
-            vertical-align: middle;
-            border-right-color: #000000;
-            border-left-width: 1pt;
-            border-top-style: solid;
-            border-left-style: solid;
-            border-bottom-width: 1pt;
-            width: 198.8pt;
-            border-top-color: #000000;
-            border-bottom-style: solid
-        }
-
-        .c27 {
-            color: #000000;
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 14pt;
-            font-family: "Arial";
-            font-style: normal
-        }
-
-        .c12 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 12pt;
-            font-family: "Arial";
-            font-style: normal
-        }
-
-        .c5 {
-            color: #000000;
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal
-        }
-
-        .c7 {
-            color: #000000;
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal
-        }
-
-        .c22 {
             color: #000000;
             font-weight: 700;
             text-decoration: none;
@@ -538,12 +517,42 @@ if (isset($_GET["etiqueta"])) {
             font-style: normal
         }
 
-        .c29 {
+        .c43 {
             color: #000000;
             font-weight: 700;
             text-decoration: none;
             vertical-align: baseline;
             font-size: 5pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c2 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: left;
+            height: 11pt
+        }
+
+        .c8 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 11pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c9 {
+            color: #000000;
+            font-weight: 400;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 10pt;
             font-family: "Arial";
             font-style: normal
         }
@@ -554,11 +563,40 @@ if (isset($_GET["etiqueta"])) {
             line-height: 1.15;
             orphans: 2;
             widows: 2;
-            text-align: left;
+            text-align: center;
             height: 11pt
         }
 
-        .c35 {
+        .c25 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 10pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c17 {
+            color: #000000;
+            font-weight: 700;
+            text-decoration: none;
+            vertical-align: baseline;
+            font-size: 13pt;
+            font-family: "Arial";
+            font-style: normal
+        }
+
+        .c16 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.15;
+            orphans: 2;
+            widows: 2;
+            text-align: center
+        }
+
+        .c37 {
             padding-top: 0pt;
             padding-bottom: 0pt;
             line-height: 1.15;
@@ -567,62 +605,53 @@ if (isset($_GET["etiqueta"])) {
             text-align: left
         }
 
-        .c10 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            text-align: center
-        }
-
-        .c25 {
-            border-spacing: 0;
-            border-collapse: collapse;
-            margin-right: auto
-        }
-
-        .c3 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.0;
-            text-align: center
-        }
-
-        .c34 {
+        .c31 {
             margin-left: auto;
             border-spacing: 0;
             border-collapse: collapse;
             margin-right: auto
         }
 
-        .c17 {
+        .c22 {
             padding-top: 0pt;
             padding-bottom: 0pt;
             line-height: 1.0;
             text-align: left
         }
 
-        .c21 {
+        .c35 {
+            border-spacing: 0;
+            border-collapse: collapse;
+            margin-right: auto
+        }
+
+        .c4 {
+            padding-top: 0pt;
+            padding-bottom: 0pt;
+            line-height: 1.0;
+            text-align: center
+        }
+
+        .c41 {
             background-color: #ffffff;
             max-width: 451.4pt;
             padding: 49.6pt 72pt 72pt 72pt
         }
 
-        .c39 {
+        .c13 {
+            height: 0pt
+        }
+
+        .c44 {
             height: 21.6pt
         }
 
-        .c14 {
+        .c6 {
             height: 11pt
         }
 
-        .c32 {
+        .c39 {
             height: 21pt
-        }
-
-        .c4 {
-            height: 0pt
         }
 
         .title {
@@ -745,564 +774,560 @@ if (isset($_GET["etiqueta"])) {
     </style>
 </head>
 
-<body class="c21">
-    <p class="c10"><span class="c27">PLANILHA DE CONTROLE - MONTAGEM G.50</span></p>
-    <p class="c10"><span class="c27">SUSPENS&Atilde;O ANTERIOR S 2007</span></p>
-    <p class="c10"><span class="c27">VERIFICA&Ccedil;&Otilde;ES E CONTROLES</span></p>
-    <p class="c35"><span
-            class="c29">__________________________________________________________________________________________________________________________________________________________________</span>
+<body class="c41">
+    <p class="c16"><span class="c17">PLANILHA DE CONTROLE - MONTAGEM G.50</span></p>
+    <p class="c16"><span class="c17">SUSPENS&Atilde;O ANTERIOR S 2007</span></p>
+    <p class="c16"><span class="c17">VERIFICA&Ccedil;&Otilde;ES E CONTROLES</span></p>
+    <p class="c37"><span
+            class="c43">__________________________________________________________________________________________________________________________________________________________________<br></span>
     </p>
-    <p class="c1"><span class="c29"></span></p>
-    <p class="c10"><span class="c22">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE OS SUBGRUPOS RODA:</span></p>
-    <p class="c10 c14"><span class="c22"></span></p>
-    <p class="c10"><span class="c22">CONTROLE GRUPO RODA (ESQUERDO/DIREITO)</span></p><a
+    <p class="c16"><span class="c8">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE OS SUBGRUPOS RODA:</span></p>
+    <p class="c1"><span class="c8"></span></p>
+    <p class="c16"><span class="c8">CONTROLE GRUPO RODA (ESQUERDO/DIREITO)</span></p><a
         id="t.a3351bdab0f315c4d235671b6a031e0319d6ba1c"></a><a id="t.0"></a>
-    <table class="c25">
+    <table class="c35">
         <tbody>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Torque parafuso fixa&ccedil;&atilde;o reparo</span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Torque parafuso fixa&ccedil;&atilde;o reparo</span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">7 - 10 nm</span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Torque porca M33</span></p>
-                </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">384 - 454 nm</span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">7 - 10 nm</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Esmagamento colarinho M33 (esquerdo)</span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Torque porca M33</span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Esmagamento colarinho M33 (direito)</span></p>
-                </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">384 - 454 nm</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Torque parafuso cubo roda</span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Esmagamento colarinho M33 (esquerdo)</span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">109 - 128 nm</span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Montagem da calota (esquerdo)</span></p>
-                </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c9">'.$esmagamento_esq.'</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Montagem da calota (direito)</span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Esmagamento colarinho M33 (direito)</span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c9">'.$esmagamento_dir.'</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Oscila&ccedil;&atilde;o disco de freio max 0,11 nm (esquerdo)</span>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Torque parafuso cubo roda</span></p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">109 - 128 nm</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Montagem da calota (esquerdo)</span></p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c9">'.$montagem_esq.'</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Montagem da calota (direito)</span></p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c9">'.$montagem_dir.'</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Oscila&ccedil;&atilde;o disco de freio max 0,11 nm (esquerdo)</span>
                     </p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c9"></span>'.$oscilacao_esq.'</p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Oscila&ccedil;&atilde;o disco de freio max 0,11 nm (direito)</span>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Oscila&ccedil;&atilde;o disco de freio max 0,11 nm (direito)</span>
                     </p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c9"></span>'.$oscilacao_dir.'</p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Torque porca dos bra&ccedil;os</span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Torque porca dos bra&ccedil;os</span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">117 - 209 nm</span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Torque parafuso das pin&ccedil;as</span></p>
-                </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">217 - 256 nm</span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">117 - 209 nm</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">C&oacute;digo piv&ocirc; </span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Torque parafuso das pin&ccedil;as</span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">W076</span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">C&oacute;digo do bra&ccedil;o superior</span></p>
-                </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">GFM</span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">217 - 256 nm</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">C&oacute;digo do bra&ccedil;o inferior</span></p>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">C&oacute;digo piv&ocirc; </span></p>
                 </td>
-                <td class="c2" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">SFG</span></p>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">W076</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">C&oacute;digo do bra&ccedil;o superior</span></p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">GFM</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">C&oacute;digo do bra&ccedil;o inferior</span></p>
+                </td>
+                <td class="c3" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">SFG</span></p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c1"><span class="c5"></span></p><a id="t.dd1137c45afa4ed6565c269735cef514c9e098e1"></a><a id="t.1"></a>
-    <table class="c25">
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c2"><span class="c9"></span></p><a id="t.dd1137c45afa4ed6565c269735cef514c9e098e1"></a><a id="t.1"></a>
+    <table class="c35">
         <tbody>
-            <tr class="c32">
-                <td class="c41" colspan="3" rowspan="1">
-                    <p class="c3"><span class="c5">Operadores</span></p>
+            <tr class="c39">
+                <td class="c20" colspan="3" rowspan="1">
+                    <p class="c4"><span class="c9">Operadores (matrícula)</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c8" colspan="1" rowspan="1">
-                    <p class="c17 c14"><span class="c5"></span></p>
+            <tr class="c13">
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c22 c6"><span class="c9">'.$operador.'</span></p>
                 </td>
-                <td class="c8" colspan="1" rowspan="1">
-                    <p class="c17 c14"><span class="c5"></span></p>
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c22 c6"><span class="c9">'.$operador2.'</span></p>
                 </td>
-                <td class="c8" colspan="1" rowspan="1">
-                    <p class="c17 c14"><span class="c5"></span></p>
+                <td class="c5" colspan="1" rowspan="1">
+                    <p class="c22 c6"><span class="c9">'.$operador3.'</span></p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="c1"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10"><span class="c22">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE OS BRA&Ccedil;OS/SUPORTES/TIRANTES</span>
+    <p class="c2"><span class="c9"></span></p>
+    <p class="c1"><span class="c9"></span></p>
+    <p class="c1"><span class="c9"></span></p>
+    <p class="c1"><span class="c9"></span></p>
+    <p class="c1"><span class="c9"></span></p>
+    <p class="c1"><span class="c9"></span></p>
+    <p class="c16"><span class="c8">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE OS BRA&Ccedil;OS/SUPORTES/TIRANTES</span>
     </p><a id="t.f40da7b62bb4e1cde0b9d2940161805064a1ea7b"></a><a id="t.2"></a>
-    <table class="c25">
+    <table class="c35">
         <tbody>
-            <tr class="c4">
-                <td class="c28" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Descri&ccedil;&otilde;es das opera&ccedil;&otilde;es</span></p>
+            <tr class="c13">
+                <td class="c33" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c25">Descri&ccedil;&otilde;es das opera&ccedil;&otilde;es</span></p>
                 </td>
-                <td class="c38" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Quantidade</span></p>
+                <td class="c30" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c25">Quantidade</span></p>
                 </td>
                 <td class="c11" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">N&ordm; do desenho</span></p>
+                    <p class="c4"><span class="c25">N&ordm; do desenho</span></p>
                 </td>
-                <td class="c33" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Aperto (nm)</span></p>
+                <td class="c24" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c25">Aperto (nm)</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c28" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o porca nos bra&ccedil;os sup/inf</span></p>
+            <tr class="c13">
+                <td class="c33" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Calibra&ccedil;&atilde;o porca nos bra&ccedil;os sup/inf</span></p>
                 </td>
-                <td class="c38" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">4</span></p>
+                <td class="c30" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">4</span></p>
                 </td>
                 <td class="c11" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">AE112500.01</span></p>
+                    <p class="c4"><span class="c9">AE112500.01</span></p>
                 </td>
-                <td class="c33" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">77.4 &divide; 94.6</span></p>
+                <td class="c24" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">77.4 &divide; 94.6</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c28" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o porca piv&ocirc; do tirante</span></p>
+            <tr class="c13">
+                <td class="c33" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Calibra&ccedil;&atilde;o porca piv&ocirc; do tirante</span></p>
                 </td>
-                <td class="c38" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">4</span></p>
+                <td class="c30" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">4</span></p>
                 </td>
                 <td class="c11" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">16980931</span></p>
+                    <p class="c4"><span class="c9">16980931</span></p>
                 </td>
-                <td class="c33" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">98 &divide; 137.2</span></p>
+                <td class="c24" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">98 &divide; 137.2</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c28" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o porca piv&ocirc; do tirante / suporte
+            <tr class="c13">
+                <td class="c33" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">Calibra&ccedil;&atilde;o porca piv&ocirc; do tirante / suporte
                             lateral</span></p>
                 </td>
-                <td class="c36" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">4</span></p>
+                <td class="c27" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">4</span></p>
+                </td>
+                <td class="c34" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">17155931</span></p>
+                </td>
+                <td class="c42" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c9">98 &divide; 137.2</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p><a id="t.346d8ea1c0a6c8b1f5ba4599793b6460b3f9b32e"></a><a id="t.3"></a>
+    <table class="c35">
+        <tbody>
+            <tr class="c13">
+                <td class="c23" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Visto 1:</span></p>
+                </td>
+                <td class="c18" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c0">'.$operacao1.'</span></p>
+                </td>
+                <td class="c29" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Visto 2:</span></p>
                 </td>
                 <td class="c40" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">17155931</span></p>
-                </td>
-                <td class="c23" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">98 &divide; 137.2</span></p>
+                    <p class="c4 c6"><span class="c0">'.$operacao1op.'</span></p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="c10 c14"><span class="c5"></span></p><a id="t.346d8ea1c0a6c8b1f5ba4599793b6460b3f9b32e"></a><a
-        id="t.3"></a>
-    <table class="c25">
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c16"><span class="c28">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE O LADO DA DIRE&Ccedil;&Atilde;O</span></p>
+    <a id="t.3e61ad935e4e82033df193ac8dce98a8f6dd1c07"></a><a id="t.4"></a>
+    <table class="c31">
         <tbody>
-            <tr class="c4">
-                <td class="c31" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Visto 1:</span></p>
+            <tr class="c13">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">Descri&ccedil;&otilde;es das opera&ccedil;&otilde;es</span></p>
                 </td>
-                <td class="c37" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
-                </td>
-                <td class="c26" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Visto 2:</span></p>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">Quantidade</span></p>
                 </td>
                 <td class="c15" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                    <p class="c4"><span class="c8">N&ordm; do desenho</span></p>
+                </td>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">Aperto (nm)</span></p>
                 </td>
             </tr>
-        </tbody>
-    </table>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10"><span class="c22">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE O LADO DA DIRE&Ccedil;&Atilde;O</span></p>
-    <a id="t.3e61ad935e4e82033df193ac8dce98a8f6dd1c07"></a><a id="t.4"></a>
-    <table class="c34">
-        <tbody>
-            <tr class="c4">
-                <td class="c13" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Descri&ccedil;&otilde;es das opera&ccedil;&otilde;es</span></p>
-                </td>
-                <td class="c19" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Quantidade</span></p>
-                </td>
-                <td class="c9" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">N&ordm; do desenho</span></p>
-                </td>
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Aperto (nm)</span></p>
-                </td>
-            </tr>
-            <tr class="c39">
-                <td class="c13" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o parafuso fixa&ccedil;&atilde;o da
+            <tr class="c44">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o parafuso fixa&ccedil;&atilde;o da
                             dire&ccedil;&atilde;o hidr&aacute;ulica</span></p>
                 </td>
-                <td class="c19" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">4</span></p>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">4</span></p>
                 </td>
-                <td class="c9" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">16676834</span></p>
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">16676834</span></p>
                 </td>
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">50 &divide; 61</span></p>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">50 &divide; 61</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c13" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o porcas fixa&ccedil;&atilde;o da barra de
+            <tr class="c13">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o porcas fixa&ccedil;&atilde;o da barra de
                             tor&ccedil;&atilde;o</span></p>
                 </td>
-                <td class="c19" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">4</span></p>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">4</span></p>
                 </td>
-                <td class="c9" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">17039021<br>16858601</span></p>
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">17039021<br>16858601</span></p>
                 </td>
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">83 &divide; 93<br></span></p>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">83 &divide; 93<br></span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c13" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o porca fixa&ccedil;&atilde;o piv&ocirc; de
+            <tr class="c13">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o porca fixa&ccedil;&atilde;o piv&ocirc; de
                             dire&ccedil;&atilde;o hidr&aacute;ulica e bra&ccedil;os do fuso s</span></p>
                 </td>
-                <td class="c19" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">2</span></p>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">2</span></p>
                 </td>
-                <td class="c9" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">17155531</span></p>
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">17155531</span></p>
                 </td>
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">68 &divide; 83</span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c13" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Converg&ecirc;ncia das rodas</span></p>
-                </td>
-                <td class="c19" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">*</span></p>
-                </td>
-                <td class="c9" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">*</span></p>
-                </td>
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">1 &divide; 2 (mm)</span></p>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">68 &divide; 83</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c13" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o porca de registro converg&ecirc;ncia</span>
+            <tr class="c13">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Converg&ecirc;ncia das rodas</span></p>
+                </td>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">*</span></p>
+                </td>
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">*</span></p>
+                </td>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">1 &divide; 2 (mm)</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o porca de registro converg&ecirc;ncia</span>
                     </p>
                 </td>
-                <td class="c19" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">2</span></p>
-                </td>
-                <td class="c9" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">99477984</span></p>
-                </td>
-                <td class="c6" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">75 &divide; 98</span></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p><a id="t.346d8ea1c0a6c8b1f5ba4599793b6460b3f9b32e"></a><a
-        id="t.5"></a>
-    <table class="c25">
-        <tbody>
-            <tr class="c4">
-                <td class="c31" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Visto 1:</span></p>
-                </td>
-                <td class="c37" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
-                </td>
-                <td class="c26" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Visto 2:</span></p>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">2</span></p>
                 </td>
                 <td class="c15" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+                    <p class="c4"><span class="c0">99477984</span></p>
+                </td>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">75 &divide; 98</span></p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10"><span class="c22">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE O LADO DA BARRA DE
-            TOR&Ccedil;&Atilde;O</span></p><a id="t.c0e3b6f832e7aa34dbcb3c8bf2e9031184463bd5"></a><a id="t.6"></a>
-    <table class="c34">
+    <p class="c2"><span class="c0"></span></p><a id="t.346d8ea1c0a6c8b1f5ba4599793b6460b3f9b32e"></a><a id="t.5"></a>
+    <table class="c35">
         <tbody>
-            <tr class="c4">
-                <td class="c16" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Descri&ccedil;&otilde;es das opera&ccedil;&otilde;es</span></p>
-                </td>
-                <td class="c30" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Quantidade</span></p>
+            <tr class="c13">
+                <td class="c23" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Visto 1:</span></p>
                 </td>
                 <td class="c18" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">N&ordm; do desenho</span></p>
+                    <p class="c4 c6"><span class="c0">'.$operacao2.'</span></p>
                 </td>
-                <td class="c24" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c7">Aperto (nm)</span></p>
+                <td class="c29" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Visto 2:</span></p>
+                </td>
+                <td class="c40" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c0">'.$operacao2op.'</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c16" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o da porca para parafuso dos
+        </tbody>
+    </table>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c1"><span class="c0"></span></p>
+    <p class="c16"><span class="c28">OPERA&Ccedil;&Otilde;ES EFETUADAS SOBRE O LADO DA BARRA DE
+            TOR&Ccedil;&Atilde;O</span></p><a id="t.c0e3b6f832e7aa34dbcb3c8bf2e9031184463bd5"></a><a id="t.6"></a>
+    <table class="c31">
+        <tbody>
+            <tr class="c13">
+                <td class="c32" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">Descri&ccedil;&otilde;es das opera&ccedil;&otilde;es</span></p>
+                </td>
+                <td class="c38" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">Quantidade</span></p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">N&ordm; do desenho</span></p>
+                </td>
+                <td class="c19" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c8">Aperto (nm)</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c32" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o da porca para parafuso dos
                             bra&ccedil;os/dist&acirc;ncia/buchas</span></p>
                 </td>
-                <td class="c30" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">2</span></p>
+                <td class="c38" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">2</span></p>
                 </td>
-                <td class="c18" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">17155731</span></p>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">17155731</span></p>
                 </td>
-                <td class="c24" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">206 &divide; 252</span></p>
+                <td class="c19" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">206 &divide; 252</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c16" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o das porcas para parafuso dos tirantes
+            <tr class="c13">
+                <td class="c32" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o das porcas para parafuso dos tirantes
                             superiores/inferiores</span></p>
                 </td>
-                <td class="c30" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">4</span></p>
+                <td class="c38" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">4</span></p>
                 </td>
-                <td class="c18" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">17155731</span></p>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">17155731</span></p>
                 </td>
-                <td class="c24" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">150 &divide; 183</span></p>
+                <td class="c19" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">150 &divide; 183</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c16" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o das porcas para parafuso da
+            <tr class="c13">
+                <td class="c32" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o das porcas para parafuso da
                             travessa/amortecedores.</span></p>
                 </td>
-                <td class="c30" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">2</span></p>
+                <td class="c38" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">2</span></p>
                 </td>
-                <td class="c18" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">16984631</span></p>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">16984631</span></p>
                 </td>
-                <td class="c24" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">116 &divide; 142</span></p>
+                <td class="c19" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">116 &divide; 142</span></p>
                 </td>
             </tr>
-            <tr class="c4">
-                <td class="c16" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Calibra&ccedil;&atilde;o das porcas para parafuso dos
+            <tr class="c13">
+                <td class="c32" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o das porcas para parafuso dos
                             amortecedores/bra&ccedil;os</span></p>
                 </td>
-                <td class="c30" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">2</span></p>
+                <td class="c38" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">2</span></p>
+                </td>
+                <td class="c12" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">16984631</span></p>
+                </td>
+                <td class="c19" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">116 &divide; 142</span></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="c2"><span class="c0"></span></p><a id="t.346d8ea1c0a6c8b1f5ba4599793b6460b3f9b32e"></a><a id="t.7"></a>
+    <table class="c35">
+        <tbody>
+            <tr class="c13">
+                <td class="c23" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Visto 1:</span></p>
                 </td>
                 <td class="c18" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">16984631</span></p>
+                    <p class="c4 c6"><span class="c0">'.$operacao3.'</span></p>
                 </td>
-                <td class="c24" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">116 &divide; 142</span></p>
+                <td class="c29" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Visto 2:</span></p>
+                </td>
+                <td class="c40" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c0">'.$operacao3op.'</span></p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p>
-    <p class="c10 c14"><span class="c5"></span></p><a id="t.346d8ea1c0a6c8b1f5ba4599793b6460b3f9b32e"></a><a
-        id="t.7"></a>
-    <table class="c25">
+    <p class="c2"><span class="c10"></span></p>
+    <p class="c2"><span class="c10"></span></p>
+    <p class="c2"><span class="c10"></span></p>
+    <p class="c2"><span class="c10"></span></p><a id="t.1203076ad78f71947dd75befb490f59785878d8e"></a><a id="t.8"></a>
+    <table class="c35">
         <tbody>
-            <tr class="c4">
-                <td class="c31" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Visto 1:</span></p>
-                </td>
-                <td class="c37" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+            <tr class="c13">
+                <td class="c21" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c10">C&oacute;digo da travessa</span></p>
                 </td>
                 <td class="c26" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c5">Visto 2:</span></p>
+                    <p class="c4 c6"><span class="c10">'.$travessa.'</span></p>
                 </td>
-                <td class="c15" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c5"></span></p>
+            </tr>
+            <tr class="c13">
+                <td class="c21" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c10">Observa&ccedil;&otilde;es</span></p>
+                </td>
+                <td class="c26" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c10"'.$observacoes.'></span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c21" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c10">Aprovado por</span></p>
+                </td>
+                <td class="c26" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c10">'.$inspetor.'</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c21" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c10">Data</span></p>
+                </td>
+                <td class="c26" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c10">'.$data.'</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c21" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c10">Etiqueta</span></p>
+                </td>
+                <td class="c26" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c10">'.$etiqueta.'</span></p>
+                </td>
+            </tr>
+            <tr class="c13">
+                <td class="c21" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c10">Código</span></p>
+                </td>
+                <td class="c26" colspan="1" rowspan="1">
+                    <p class="c4 c6"><span class="c10">'.$codigo.'</span></p>
                 </td>
             </tr>
         </tbody>
     </table>
-    <p class="c1"><span class="c12"></span></p>
-    <p class="c1"><span class="c12"></span></p>
-    <p class="c1"><span class="c12"></span></p>
-    <p class="c1"><span class="c12"></span></p><a id="t.1203076ad78f71947dd75befb490f59785878d8e"></a><a id="t.8"></a>
-    <table class="c25">
-        <tbody>
-            <tr class="c4">
-                <td class="c0" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c12">C&oacute;digo da travessa</span></p>
-                </td>
-                <td class="c20" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c12"></span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c0" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c12">Observa&ccedil;&otilde;es</span></p>
-                </td>
-                <td class="c20" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c12"></span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c0" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c12">Aprovado por</span></p>
-                </td>
-                <td class="c20" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c12"></span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c0" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c12">Data</span></p>
-                </td>
-                <td class="c20" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c12"></span></p>
-                </td>
-            </tr>
-            <tr class="c4">
-                <td class="c0" colspan="1" rowspan="1">
-                    <p class="c3"><span class="c12">Etiqueta</span></p>
-                </td>
-                <td class="c20" colspan="1" rowspan="1">
-                    <p class="c3 c14"><span class="c12"></span></p>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    <p class="c1"><span class="c12"></span></p>
-    <p class="c1"><span class="c12"></span></p>
-    <p class="c1"><span class="c12"></span></p>
-    <p class="c1"><span class="c5"></span></p>
+    <p class="c2"><span class="c10"></span></p>
+    <p class="c2"><span class="c10"></span></p>
+    <p class="c2"><span class="c10"></span></p>
+    <p class="c2"><span class="c0"></span></p>
 </body>
 
 </html>

@@ -3,6 +3,7 @@ include("../auth/validaMontagem.php");
 include_once("../../data/connection.php");
 
 if (isset($_POST)) {
+    
     $etiqueta = $_POST["etiqueta"];
     $operador = $_POST["txtOperador"];
     $operador2 = $_POST["txtOperador2"];

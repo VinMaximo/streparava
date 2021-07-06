@@ -8,29 +8,29 @@ use Dompdf\Dompdf;
 
 if (isset($_GET["etiqueta"])) {
     $etiqueta = $_GET["etiqueta"];
-    $sqlG35 = "SELECT * FROM g35 WHERE etiqueta = " . $etiqueta;
-    $resultado = $connection->query($sqlG35);
-    $G35 = $resultado->fetch_assoc();
-    $codigo = $G35["codigo"];
-    $operador = $G35["operador"];
-    $operador2 = $G35["operador2"];
-    $operador3 = $G35["operador3"];
-    $esmagamento_dir = $G35["esmagamento_dir"];
-    $montagem_dir = $G35["montagem_dir"];
-    $esmagamento_esq = $G35["esmagamento_esq"];
-    $montagem_esq = $G35["montagem_esq"];
-    $oscilacao_esq = $G35["oscilacao_esq"];
-    $oscilacao_dir = $G35["oscilacao_dir"];
-    $operacao1 = $G35["operacao1"];
-    $operacao1op = $G35["operacao1op"];
-    $operacao2 = $G35["operacao2"];
-    $operacao2op = $G35["operacao2op"];
-    $operacao3 = $G35["operacao3"];
-    $operacao3op = $G35["operacao3op"];
-    $travessa = $G35["travessa"];
-    $data = $G35["data"];
-    $observacoes = $G35["observacoes"];
-    $inspetor = $G35["inspetor"];
+    $sqlG65 = "SELECT * FROM G65 WHERE etiqueta = " . $etiqueta;
+    $resultado = $connection->query($sqlG65);
+    $G65 = $resultado->fetch_assoc();
+    $codigo = $G65["codigo"];
+    $operador = $G65["operador"];
+    $operador2 = $G65["operador2"];
+    $operador3 = $G65["operador3"];
+    $esmagamento_dir = $G65["esmagamento_dir"];
+    $montagem_dir = $G65["montagem_dir"];
+    $esmagamento_esq = $G65["esmagamento_esq"];
+    $montagem_esq = $G65["montagem_esq"];
+    $oscilacao_esq = $G65["oscilacao_esq"];
+    $oscilacao_dir = $G65["oscilacao_dir"];
+    $operacao1 = $G65["operacao1"];
+    $operacao1op = $G65["operacao1op"];
+    $operacao2 = $G65["operacao2"];
+    $operacao2op = $G65["operacao2op"];
+    $operacao3 = $G65["operacao3"];
+    $operacao3op = $G65["operacao3op"];
+    $travessa = $G65["travessa"];
+    $data = $G65["data"];
+    $observacoes = $G65["observacoes"];
+    $inspetor = $G65["inspetor"];
     
 
 
@@ -759,7 +759,7 @@ if (isset($_GET["etiqueta"])) {
                     <p class="c2"><span class="c1">Torque parafuso cubo roda</span></p>
                 </td>
                 <td class="c4" colspan="1" rowspan="1">
-                    <p class="c2"><span class="c1">109 - 128 nm</span></p>
+                    <p class="c2"><span class="c1">409 - 128 nm</span></p>
                 </td>
             </tr>
             <tr class="c3">

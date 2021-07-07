@@ -35,11 +35,11 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                         <td><?php echo $exibir["inspetor"] ?></td>
                         
                         <td>
-                            <button type="button" class="btn btn-primary ">
+                            <button type="button" class="btn btn-primary btn-sm">
                                 <a href="editAprovar70.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Aprovar</a>
                             </button>
                         
-                            <button type="button" class="btn btn-primary ">
+                            <button type="button" class="btn btn-primary btn-sm">
                                 <a href="createPDF.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Imprimir</a>
                             </button>
                         </td>

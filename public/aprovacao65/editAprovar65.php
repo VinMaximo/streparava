@@ -834,7 +834,7 @@ if (isset($_GET["etiqueta"])) {
 
             <div class="buttons">
 
-                <input type="submit" class="btn btn-success" value="Atualizar">
+                <input type="submit" class="btn btn-success btn-sm" value="Atualizar">
                 <input type="reset" class="btn btn-danger" onclick="window.location.href='../aprovacao65/aprovar65.php'" value="Cancelar">
 
             </div>

@@ -34,7 +34,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 
                         
                         <td>
-                            <button type="button" class="btn btn-primary ">
+                            <button type="button" class="btn btn-primary btn-sm">
                                 <a href="exibeRelatorio.php?data=<?php echo $exibir["data"]?>" style="text-decoration: none; color: white">Abrir relatório</a>
                             </button>
                         

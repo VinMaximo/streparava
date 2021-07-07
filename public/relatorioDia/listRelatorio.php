@@ -32,7 +32,7 @@ include("../auth/validaADM.php"); ?>
 		<br>
 
 		<div class="buttons">
-			<a href="../relatorioDia/createRelatorio.php" class="btn btn-primary">Gere um relatório</a>
+			<a href="../relatorioDia/createRelatorio.php" class="btn btn-primary btn-sm">Gere um relatório</a>
 		</div>
 
 		<br>

@@ -35,7 +35,7 @@
                   <label>Senha</label>
                   <input name="senha" type="password" class="form-control" placeholder="Password">
                </div>
-               <button type="submit" class="btn btn-success">Login</button>
+               <button type="submit" class="btn btn-success btn-sm">Login</button>
             </form> 
             <br>
             

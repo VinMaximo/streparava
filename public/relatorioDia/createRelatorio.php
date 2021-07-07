@@ -45,8 +45,8 @@ include("../auth/validaADM.php");
             
             <div class="buttons">
                 
-                <input type="submit" class="btn btn-success" value="Gerar relatório">
-                <input type="reset" class="btn btn-danger"  onclick="window.location.href='../montagem/createPDC.php'" value="Cancelar">
+                <input type="submit" class="btn btn-success btn-sm" value="Gerar relatório">
+                <input type="reset" class="btn btn-danger btn-sm"  onclick="window.location.href='../montagem/createPDC.php'" value="Cancelar">
 
             </div>
             

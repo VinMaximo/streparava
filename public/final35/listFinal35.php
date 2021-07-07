@@ -16,7 +16,7 @@ include("../auth/validaMontagem.php"); ?>
         <br>
         
     <div class="buttons">
-                <a href="../final35/createFinal35.php" class="btn btn-primary">Cadastre um levantamento diário de produção</a>
+                <a href="../final35/createFinal35.php" class="btn btn-primary btn-sm">Cadastre um levantamento diário de produção</a>
         </div>
     
     <br>

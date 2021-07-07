@@ -46,8 +46,8 @@ include("../auth/validaADM.php");
             
             <div class="buttons">
                 
-                <input type="submit" class="btn btn-success" value="Cadastrar">
-                <input type="reset" class="btn btn-danger"  onclick="window.location.href='../home/home.php'" value="Cancelar">
+                <input type="submit" class="btn btn-success btn-sm" value="Cadastrar">
+                <input type="reset" class="btn btn-danger btn-sm"  onclick="window.location.href='../home/home.php'" value="Cancelar">
 
             </div>
             

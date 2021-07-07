@@ -16,7 +16,7 @@
         <br>
         
     <div class="buttons">
-                <a href="../operador/createOperador.php" class="btn btn-primary">Cadastre um operador</a>
+                <a href="../operador/createOperador.php" class="btn btn-primary btn-sm">Cadastre um operador</a>
         </div>
     
     <br>

@@ -407,8 +407,8 @@ if (isset($_GET["id"])) {
 
                 <div class="buttons">
 
-                    <input type="submit" class="btn btn-success" value="Atualizar">
-                    <input type="reset" class="btn btn-danger" onclick="window.location.href='../montagem35/listPDC.php'" value="Cancelar">
+                    <input type="submit" class="btn btn-success btn-sm" value="Atualizar">
+                    <input type="reset" class="btn btn-danger btn-sm" onclick="window.location.href='../montagem35/listPDC.php'" value="Cancelar">
 
                 </div>
 

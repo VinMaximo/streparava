@@ -11,7 +11,7 @@ include("../auth/validaMontagem.php");
     <br>
 
     <div class="buttons">
-        <a href="../travessa/createTravessa.php" class="btn btn-primary">Cadastre uma travessa</a>
+        <a href="../travessa/createTravessa.php" class="btn btn-primary btn-sm">Cadastre uma travessa</a>
     </div>
 </div>
 
@@ -41,7 +41,7 @@ if ($dadosTravessa->num_rows > 0) {
                     <td><?php echo $exibir["data"] ?></td>
 
                     <td>
-                        <button type="button" class="btn btn-primary ">
+                        <button type="button" class="btn btn-primary btn-sm">
                             <a href="editTravessa.php?id=<?php echo $exibir["id_travessa"] ?>" style="text-decoration: none; color: white">Editar</a>
                         </button>
 

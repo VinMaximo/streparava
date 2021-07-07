@@ -12,7 +12,7 @@ include_once("../../data/connection.php");
     <br>
 
     <div class="buttons">
-        <a href="../usuario/createUser.php" class="btn btn-primary">Cadastre um usuário</a>
+        <a href="../usuario/createUser.php" class="btn btn-primary btn-sm">Cadastre um usuário</a>
     </div>
 
     <br>

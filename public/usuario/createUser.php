@@ -79,8 +79,8 @@ include_once("../../data/connection.php");
 
 
             <div class="buttons">
-                <input type="submit" class="btn btn-success" value="Cadastrar">
-                <input type="reset" class="btn btn-danger" value="Cancelar">
+                <input type="submit" class="btn btn-success btn-sm" value="Cadastrar">
+                <input type="reset" class="btn btn-danger btn-sm" value="Cancelar" onclick="window.location.href='../usuario/listUser.php'">
             </div>
 
         </form>

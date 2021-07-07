@@ -11,6 +11,8 @@ if (isset($_POST)) {
     $montagem_dir = $_POST["txtMontagemd"];
     $esmagamento_esq = $_POST["txtEsmagamentoe"];
     $montagem_esq = $_POST["txtMontageme"];
+    $oscilacao_esq = $_POST["numOscilacaoe"];
+    $oscilacao_dir = $_POST["numOscilacaod"];
     $operacao1 = $_POST["txtVisto1"];
     $operacao1op = $_POST["txtVisto1op"];
     $operacao2 = $_POST["txtVisto2"];
@@ -32,6 +34,8 @@ if (isset($_POST)) {
         "montagem_dir= '" . $montagem_dir . "', " .
         "esmagamento_esq= '" . $esmagamento_esq . "', " .
         "montagem_esq= '" . $montagem_esq . "', " .
+        "oscilacao_esq= '" . $oscilacao_esq . "', " .
+        "oscilacao_dir= '" . $oscilacao_dir . "', " .
         "operacao1= '" . $operacao1 . "', " .
         "operacao1op= '" . $operacao1op . "', " .
         "operacao2= '" . $operacao2 . "', " .

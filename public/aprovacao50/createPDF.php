@@ -1091,15 +1091,33 @@ if (isset($_GET["etiqueta"])) {
                             tor&ccedil;&atilde;o</span></p>
                 </td>
                 <td class="c14" colspan="1" rowspan="1">
-                    <p class="c4"><span class="c0">4</span></p>
+                    <p class="c4"><span class="c0">2</span></p>
                 </td>
                 <td class="c15" colspan="1" rowspan="1">
-                    <p class="c4"><span class="c0">17039021<br>16858601</span></p>
+                    <p class="c4"><span class="c0">17039021</span></p>
                 </td>
                 <td class="c36" colspan="1" rowspan="1">
                     <p class="c4"><span class="c0">83 &divide; 93<br></span></p>
                 </td>
             </tr>
+
+            <tr class="c13">
+                <td class="c7" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">Travamento do grampo da barra de
+                            tor&ccedil;&atilde;o</span></p>
+                </td>
+                <td class="c14" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">2</span></p>
+                </td>
+                <td class="c15" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">16858601</span></p>
+                </td>
+                <td class="c36" colspan="1" rowspan="1">
+                    <p class="c4"><span class="c0">*<br></span></p>
+                </td>
+            </tr>
+
+
             <tr class="c13">
                 <td class="c7" colspan="1" rowspan="1">
                     <p class="c4"><span class="c0">Calibra&ccedil;&atilde;o porca fixa&ccedil;&atilde;o piv&ocirc; de

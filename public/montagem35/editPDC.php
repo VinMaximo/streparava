@@ -263,7 +263,7 @@ if (isset($_GET["etiqueta"])) {
                     if ($operadores->num_rows > 0) {
 
                         while ($row = $operadores->fetch_assoc()) {
-                            if ($pdc["operador1"] === $row["matricula"]) {
+                            if ($pdc["operador"] === $row["matricula"]) {
                     ?>
                                 <option value="<?php echo $row["matricula"] ?>" selected>
                                     <?php echo $row["nome"]  ?>
@@ -832,7 +832,7 @@ if (isset($_GET["etiqueta"])) {
                 <select class="form-select" name="txtTravessa" id="txtTravessa">
                     <?php
 
-                    $sqlQ = "SELECT * FROM travessa ORDER BY data";
+                    $sqlQ = "SELECT * FROM travessa ORDER BY data DESC";
 
                     $travessa = $connection->query($sqlQ);
 

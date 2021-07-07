@@ -838,7 +838,7 @@ if (isset($_GET["etiqueta"])) {
                 <select class="form-select" name="txtTravessa" id="txtTravessa">
                     <?php
 
-                    $sqlQ = "SELECT * FROM travessa ORDER BY data";
+                    $sqlQ = "SELECT * FROM travessa ORDER BY data DESC";
 
                     $travessa = $connection->query($sqlQ);
 

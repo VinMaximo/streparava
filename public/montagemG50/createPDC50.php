@@ -708,7 +708,7 @@ $row = $sql->fetch_row();
                 <select class="form-select" name="txtTravessa" id="txtTravessa">
                     <?php
 
-                    $sqlQuery = "SELECT * FROM travessa ORDER BY data";
+                    $sqlQuery = "SELECT * FROM travessa ORDER BY data DESC";
 
                     $travessa = $connection->query($sqlQuery);
 

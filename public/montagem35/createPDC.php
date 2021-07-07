@@ -31,7 +31,7 @@ $row = $sql->fetch_row();
                 <h3>Nova planilha de controle (G35-40)</h3>
 
                 <p style="text-align: right;">
-                    <input type="button" class="btn btn-success" onclick="window.location.href='../etiqueta/alteraEtiqueta.php'" value="Mudar número de início">
+                    <input type="button" class="btn btn-success btn-sm" onclick="window.location.href='../etiqueta/alteraEtiqueta.php'" value="Mudar número de início">
                 </p>
 
 
@@ -756,7 +756,7 @@ $row = $sql->fetch_row();
 
             <div class="buttons">
 
-                <input type="submit" class="btn btn-success" value="Cadastrar">
+                <input type="submit" class="btn btn-success btn-sm" value="Cadastrar">
                 <input type="reset" class="btn btn-danger" onclick="window.location.href='../montagem35/listPDC.php'" value="Cancelar">
 
             </div>

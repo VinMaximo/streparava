@@ -9,7 +9,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
 
     include("../../data/connection.php");
 
-    $sql = "SELECT *, DATE_FORMAT(data,'%d/%m/%Y') as datas FROM relatoriodia WHERE data LIKE '%$usuarios%'";
+    $sql = "SELECT *, DATE_FORMAT(data,'%d/%m/%Y') as datas FROM relatoriodia WHERE data LIKE '%$usuarios%' order by id_levantamento DESC";
     $dadosRelatorio = $connection -> query($sql);
 
     if($dadosRelatorio -> num_rows > 0)
@@ -38,8 +38,8 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                                 <a href="exibeRelatorio.php?data=<?php echo $exibir["data"]?>" style="text-decoration: none; color: white">Abrir relatório</a>
                             </button>
                         
-                            <button type="submit" class="btn btn-danger " formmethod="post">
-                                 <a href="deleteRelatorio.php?data=<?php echo $exibir ["data"] ?>" style="text-decoration: none; color: white"> Excluir </a> 
+                            <button type="submit" class="btn btn-danger btn-sm" formmethod="post">
+                                 <a href="deleteRelatorio.php?id=<?php echo $exibir ["id_levantamento"] ?>" style="text-decoration: none; color: white"> Excluir </a> 
                                 
                             </button>
                         </td>

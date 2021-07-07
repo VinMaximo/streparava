@@ -21,14 +21,14 @@ $resultado = $connection -> query($sql);
 if ($resultado){ ?>
     <script>
         alert("Relatório cadastrado com sucesso");
-        window.location = '../relatorioMes/createRelatorio.php';
+        window.location = '../relatorioMes/listRelatorio.php';
     </script>
 <?php
 } else {
     echo $sql; ?>
     <script>
-        alert("Esse dia já foi cadastrado");
-        window.location = '../relatorioMes/createRelatorio.php';
+        alert("Essa data já foi cadastrada");
+        //window.location = '../relatorioMes/createRelatorio.php';
        
     </script>
     

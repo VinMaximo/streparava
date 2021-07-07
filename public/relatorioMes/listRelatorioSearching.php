@@ -42,7 +42,7 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                             </button>
                         
                             <button type="submit" class="btn btn-danger " formmethod="post">
-                                 <a href="deleteRelatorio.php?mes=<?php echo $exibir["mes"]?> & ano=<?php echo $exibir["ano"]?>" style="text-decoration: none; color: white"> Excluir </a> 
+                                 <a href="deleteRelatorio.php?id=<?php echo $exibir["id_relatorio"]?>" style="text-decoration: none; color: white"> Excluir </a> 
                                 
                             </button>
                         </td>

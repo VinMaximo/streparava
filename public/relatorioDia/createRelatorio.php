@@ -24,7 +24,7 @@ include("../auth/validaADM.php");
     
     <div class="form">
         <form action="../relatorioDia/insertRelatorio.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
-            <h3>Digite o dia ou o mês que deseja emitir o relatório</h3>
+            <h3>Digite o dia que deseja emitir o relatório</h3>
             <br>
 
            

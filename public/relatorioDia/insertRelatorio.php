@@ -1,7 +1,6 @@
 <?php
 
 include_once("../../data/connection.php");
-include("../auth/validaMontagem.php");
 include("../auth/validaADM.php");
 
 
@@ -25,7 +24,7 @@ if ($resultado){ ?>
     </script>
 <?php
 } else {
-    echo $sql; ?>
+    ?>
     <script>
         alert("Esse dia já foi cadastrado");
         window.location = '../relatorioDia/listRelatorio.php';

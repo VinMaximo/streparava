@@ -50,6 +50,7 @@ $sql = "INSERT INTO
 $resultado = $connection->query($sql);
 
 if ($resultado) {
+    
      ?>
     <script>
         alert("Lançamento de refugo e retrabalho cadastrados com sucesso");
@@ -57,9 +58,10 @@ if ($resultado) {
     </script>
 <?php
 } else {
-    echo $sql; ?>
+   ?>
     <script>
-        alert("Ocorreu um erro ao cadastrar lançamento");
+        alert("Essa data já foi cadastrada, edite o registro já existente");
+        window.location = '../refret/listRefret.php';
     </script>
 
 <?php

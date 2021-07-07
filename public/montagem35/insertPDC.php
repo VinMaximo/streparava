@@ -55,7 +55,7 @@ $resultado = $connection -> query($sql);
 if ($resultado){ ?>
     <script>
         alert("Planilha de controle cadastrada com sucesso");
-        //window.location = 'listPDC.php';
+        window.location = 'listPDC.php';
     </script>
 <?php
 } else {

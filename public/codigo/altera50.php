@@ -4,7 +4,7 @@ include("../auth/validaQualidade.php");
 
 $dbcon = new mysqli($servername, $username, $password, $dbname);
 
-$sql = $dbcon->query("SELECT coalesce( max( codigo ), 0) FROM g50");
+$sql = $dbcon->query("SELECT * FROM codigo50 ORDER BY id_codigo DESC LIMIT 1");
 
 $row = $sql->fetch_row();
 
@@ -32,7 +32,7 @@ $row = $sql->fetch_row();
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Código atual</span>
                 </div>
-                <input type="number" name="numCodigo" class="form-control" id="numCodigo" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[0]; ?>" readonly>
+                <input type="number" name="numCodigo" class="form-control" id="numCodigo" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $row[1]; ?>" readonly>
             </div>
 
 

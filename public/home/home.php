@@ -157,13 +157,13 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
                             <div class="buttons">
                                 <br>
 
-                            <a href="../codigo/altera35.php" class="btn btn-primary">Aterar código da gama 35</a>
+                                <a href="../codigo/altera35.php" class="btn btn-primary">Aterar código da gama 35</a>
 
-                            <a href="../codigo/altera50.php" class="btn btn-primary">Aterar código da gama 50</a>
+                                <a href="../codigo/altera50.php" class="btn btn-primary">Aterar código da gama 50</a>
 
-                            <a href="../codigo/altera65.php" class="btn btn-primary">Aterar código da gama 65</a>
+                                <a href="../codigo/altera65.php" class="btn btn-primary">Aterar código da gama 65</a>
 
-                            <a href="../codigo/altera70.php" class="btn btn-primary">Aterar código da gama 70</a>
+                                <a href="../codigo/altera70.php" class="btn btn-primary">Aterar código da gama 70</a>
 
 
 
@@ -172,15 +172,34 @@ if (isset($_SESSION['montagem']) or isset($_SESSION['adm']) or isset($_SESSION['
                             <div class="buttons">
                                 <br>
 
-                            <a href="../refret/listRefret.php" class="btn btn-primary">Levantamento diário de refugo</a>
+                                <a href="../refret/listRefret.php" class="btn btn-primary">Levantamento diário de refugo</a>
 
-                            
+
 
 
 
                             </div>
+
                             
+
                         </div>
+                    </div>
+                    <div class="card-footer text-muted">
+
+                    </div>
+                </div>
+
+                <div class="card text-center">
+                    <div class="card-header">
+
+                    </div>
+                    <div class="card-body">
+                        <h3>Observação</h3>
+                        <br>
+                        A geração de PDF da planilha de controle será feita nos botões de aprovação.
+
+
+
                     </div>
                     <div class="card-footer text-muted">
 

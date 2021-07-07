@@ -25,7 +25,7 @@ include("../auth/validaQualidade.php"); ?>
 	<div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Pesquisar por levantamento diário</span>
                 </div>
-				<input type="text" name="pesquisa" class="form-control" id="pesquisa" aria-label="Default" placeholder="Digite a data (Formato de pesquisa ''ano-mês-dia'' ou o número da etiqueta)" aria-describedby="inputGroup-sizing-default">
+				<input type="text" name="pesquisa" class="form-control" id="pesquisa" aria-label="Default" placeholder="Digite a data (Formato de pesquisa ''ano-mês-dia'' e pode-se pesquisar apenas dia, ano ou mês)" aria-describedby="inputGroup-sizing-default">
 	</div>
     </div>
 		

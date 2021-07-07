@@ -22,8 +22,7 @@ include("../auth/validaQualidade.php");
     <div class="form">
         <form action="../refret/insertRefret.php" method="POST" style="margin-left: 100px; margin-right: 100px;">
             <div>
-                <h2>Levantamento diário de produção final - <Refugo>
-                <Retrabalho></Retrabalho></h2>
+                <h2>Levantamento diário de produção final - Refugo/Retrabalho</h2>
 
             </div>
             <br>
@@ -178,7 +177,7 @@ include("../auth/validaQualidade.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Observações</span>
                 </div>
-                <input type="text" name="txtObs" class="form-control" id="txtObs" aria-label="Default" aria-describedby="inputGroup-sizing-default" required>
+                <input type="text" name="txtObs" class="form-control" id="txtObs" aria-label="Default" aria-describedby="inputGroup-sizing-default">
 
             </div>
 

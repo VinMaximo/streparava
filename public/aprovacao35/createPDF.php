@@ -1277,7 +1277,7 @@ if (isset($_GET["etiqueta"])) {
 
     $domPDF->render();
 
-    $documentName = "Prontuario_" . $etiqueta . ".pdf";
+    $documentName = "G35_" . $etiqueta . ".pdf";
 
     $domPDF->stream($documentName);
 }

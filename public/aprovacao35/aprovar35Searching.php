@@ -38,8 +38,8 @@ $usuarios = filter_input(INPUT_POST, 'palavra', FILTER_SANITIZE_STRING);
                                 <a href="editAprovar35.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Aprovar</a>
                             </button>
 
-                            <button type="button" class="btn btn-primary btn-sm">
-                                <a href="createPDF.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: white">Imprimir</a>
+                            <button type="button" class="btn btn-outline-success btn-sm">
+                                <a href="createPDF.php?etiqueta=<?php echo $exibir["etiqueta"]?>" style="text-decoration: none; color: green">Imprimir</a>
                             </button>
                         
                             

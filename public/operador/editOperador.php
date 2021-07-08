@@ -2,6 +2,20 @@
 include("../../data/connection.php");
 include("../auth/validaADM.php");
 
+
+if (isset ($_GET["matricula"])) 
+    {
+        $matricula = $_GET["matricula"];
+        
+        $sql = "SELECT * FROM operadores WHERE matricula = '" . $matricula . "'";
+        //echo $sql;
+        $resultado = $connection->query($sql);
+        $operador = $resultado->fetch_assoc();
+
+
+
+
+
 ?>
 
 <html lang="en">
@@ -27,7 +41,7 @@ include("../auth/validaADM.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Nome do operador</span>
                 </div>
-                <input type="text" name="txtNome" class="form-control" id="txtNome" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="text" name="txtNome" class="form-control" id="txtNome" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $operador["nome"] ?>">
             </div>
             
 
@@ -35,25 +49,41 @@ include("../auth/validaADM.php");
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Matrícula</span>
                 </div>
-                <input type="number" name="numMatricula" class="form-control" id="numMatricula" aria-label="Default" aria-describedby="inputGroup-sizing-default">
+                <input type="number" name="numMatricula" class="form-control" id="numMatricula" aria-label="Default" aria-describedby="inputGroup-sizing-default" value="<?php echo $operador["matricula"] ?>" readonly>
             </div>
             
             <div class="input-group mb-3">
                 <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-default">Situação</span>
                 </div>
-                <select class="form-select" name="txtGama" id="txtGama">
+                <select class="form-select" name="txtSituacao" id="txtSituacao">
+                    <?php
+                    if ($operador["situacao"] === "Ativo") {
+                    ?>
+                        <option value="Ativo" selected>
+                            <?php echo "Ativo"  ?>
+                        </option>
+                        <option value="Inativo">
+                            <?php echo "Inativo"  ?>
+                        </option>
+                        >
+                    <?php
+                    } else {
+                    ?>
+                         <option value="Ativo">
+                            <?php echo "Ativo"  ?>
+                        </option>
+                        <option value="Inativo" selected>
+                            <?php echo "Inativo"  ?>
+                        </option>
 
-                    <option value="Ativo">
-                        <?php echo "Ativo"  ?>
-                    </option>
-                    <option value="Inativo">
-                        <?php echo "Inativo"  ?>
-                    </option>
-                   
+                    <?php
+                    }
+                    ?>
 
                 </select>
             </div>
+
 
 
 
@@ -75,3 +105,8 @@ include("../auth/validaADM.php");
 
 </body>
 </html>
+
+
+<?php
+    }
+?>

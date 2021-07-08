@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 02-Jul-2021 às 17:01
--- Versão do servidor: 10.4.19-MariaDB
--- versão do PHP: 7.4.19
+-- Tempo de geração: 08-Jul-2021 às 13:13
+-- Versão do servidor: 10.4.18-MariaDB
+-- versão do PHP: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -38,16 +38,8 @@ CREATE TABLE `codigo35` (
 --
 
 INSERT INTO `codigo35` (`id_codigo`, `codigo`, `data`) VALUES
-(1, 87985856, '2021-06-29'),
-(2, 45, '2021-06-29'),
-(3, 5802370087, '2021-07-02'),
-(4, 5802370087, '2021-07-02'),
-(5, 5802370087, '2021-07-02'),
-(6, 5802370087, '2021-07-02'),
-(7, 5802370087, '2021-07-02'),
-(8, 5802370087, '2021-07-02'),
-(9, 5802370087, '2021-07-02'),
-(10, 5802370087, '2021-07-02');
+(1, 5802370088, '2021-07-07'),
+(2, 5802370087, '2021-07-07');
 
 -- --------------------------------------------------------
 
@@ -67,7 +59,9 @@ CREATE TABLE `codigo50` (
 
 INSERT INTO `codigo50` (`id_codigo`, `codigo`, `data`) VALUES
 (1, 5802370088, '2021-06-29'),
-(2, 5802370088, '2021-06-29');
+(2, 5802370088, '2021-06-29'),
+(3, 5802370087, '2021-07-07'),
+(4, 5802370088, '2021-07-07');
 
 -- --------------------------------------------------------
 
@@ -87,7 +81,9 @@ CREATE TABLE `codigo65` (
 
 INSERT INTO `codigo65` (`id_codigo`, `codigo`, `data`) VALUES
 (1, 582428969, '2021-06-29'),
-(2, 5802705154, '2021-06-29');
+(2, 5802705154, '2021-06-29'),
+(3, 5802708969, '2021-07-07'),
+(4, 5802705154, '2021-07-07');
 
 -- --------------------------------------------------------
 
@@ -106,7 +102,9 @@ CREATE TABLE `codigo70` (
 --
 
 INSERT INTO `codigo70` (`id_codigo`, `codigo`, `data`) VALUES
-(1, 5802428969, '2021-06-29');
+(1, 5802428969, '2021-06-29'),
+(2, 5802425154, '2021-07-07'),
+(3, 5802428969, '2021-07-07');
 
 -- --------------------------------------------------------
 
@@ -143,8 +141,9 @@ CREATE TABLE `g35` (
 --
 
 INSERT INTO `g35` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(2802500357, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0, 0, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Sisisa', '2021-06-24', '', ''),
-(2802500358, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0.11, 0.11, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Sisisa', '2021-06-28', '123', '');
+(899, 5802370087, '110', '231', '110', 'NOK', 'NOK', 'OK', 'OK', 0.11, 0.1, '112', 'Nulo', '231', 'Nulo', '112', 'Nulo', '00184715114003089C', '2021-07-07', '', 'Paulo Silva '),
+(900, 5802370087, '225', '225', '231', 'NOK', 'NOK', 'NOK', 'NOK', 0.2, 0.2, '231', '215', '215', '231', '145', '110', '00184715114003089C', '2021-07-07', ' 123', ''),
+(1007, 5802370087, '215', '73', '260', 'NOK', 'NOK', 'NOK', 'NOK', 0.15, 0.15, '73', '145', '112', 'Nulo', '145', '215', '00184715114003089C', '2021-07-08', '', '');
 
 -- --------------------------------------------------------
 
@@ -181,7 +180,7 @@ CREATE TABLE `g50` (
 --
 
 INSERT INTO `g50` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(2082500488, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0.3, 0.3, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', '00184715114003089C', '2021-06-29', '', '');
+(79, 5802370088, '231', '231', '231', 'NOK', 'NOK', 'NOK', 'NOK', 0.12, 0.12, '231', '231', '231', '231', '231', '231', '00184715114003089C', '2021-07-07', '      Teste', 'Júlio César Souza');
 
 -- --------------------------------------------------------
 
@@ -218,7 +217,7 @@ CREATE TABLE `g65` (
 --
 
 INSERT INTO `g65` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(20827000257, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0.4, 0.4, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', '00184715114003089C', '2021-06-29', '', '');
+(2183100003, 5802705154, '225', '225', '225', 'NOK', 'NOK', 'NOK', 'NOK', 0.13, 0.13, '225', '225', '225', '225', '225', '225', '00184715114003089C', '2021-07-07', '  ', 'Sidney Henrique Pereira');
 
 -- --------------------------------------------------------
 
@@ -255,36 +254,7 @@ CREATE TABLE `g70` (
 --
 
 INSERT INTO `g70` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(2502700457, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0.45, 0.45, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Sisisa', '2021-06-28', '123', ''),
-(2502700458, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0, 0, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Sisisa', '2021-06-28', '123', ''),
-(2502700459, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0.3, 0.3, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', '00184715114003089C', '2021-06-29', '', ''),
-(2502700460, 0, 'Aguinaldo Alves', 'Aguinaldo Alves', 'Aguinaldo Alves', 'OK', 'OK', 'OK', 'OK', 0.5, 0.5, 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', 'Aguinaldo Alves', 'Nulo', '00184715114003089C', '2021-06-29', '', '');
-
--- --------------------------------------------------------
-
---
--- Estrutura da tabela `guarda`
---
-
-CREATE TABLE `guarda` (
-  `id` int(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `guarda`
---
-
-INSERT INTO `guarda` (`id`) VALUES
-(232),
-(898),
-(2147483647),
-(250102015),
-(123),
-(123123),
-(12333),
-(2082700356),
-(2147483647),
-(0);
+(12345, 5802428969, '215', '112', '112', 'OK', 'NOK', 'NOK', 'OK', 1234, 1234, '145', 'Nulo', '231', 'Nulo', '145', 'Nulo', '00184715114003089C', '2021-07-07', ' a', 'Sidney Henrique Pereira');
 
 -- --------------------------------------------------------
 
@@ -304,8 +274,7 @@ CREATE TABLE `inspetor` (
 INSERT INTO `inspetor` (`matricula`, `nome`) VALUES
 (156, 'Júlio César Souza'),
 (184, 'Sidney Henrique Pereira'),
-(198, 'Paulo Silva '),
-(222, 'Fernanda Stephanie Rodrigues');
+(198, 'Paulo Silva ');
 
 -- --------------------------------------------------------
 
@@ -357,6 +326,7 @@ CREATE TABLE `levantamento35f` (
 --
 
 INSERT INTO `levantamento35f` (`id_levantamento35`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
+(36, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2802500357, 2802500357),
 (36, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2802500357, 2802500357);
 
 -- --------------------------------------------------------
@@ -410,6 +380,8 @@ CREATE TABLE `levantamento50f` (
 
 INSERT INTO `levantamento50f` (`id_levantamento50`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
 (34, '2021-06-30', 1, 0, '', 2, 0, '', 3, 0, '', 4, 0, '', 5, 0, '', 6, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 21, 0, 2082500488, 2082500488),
+(35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2082500488, 2082500488),
+(34, '2021-06-30', 1, 0, '', 2, 0, '', 3, 0, '', 4, 0, '', 5, 0, '', 6, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 0, 0, '', 21, 0, 2082500488, 2082500488),
 (35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2082500488, 2082500488);
 
 -- --------------------------------------------------------
@@ -462,6 +434,7 @@ CREATE TABLE `levantamento65f` (
 --
 
 INSERT INTO `levantamento65f` (`id_levantamento65`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
+(35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 20827000257, 20827000257),
 (35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 20827000257, 20827000257);
 
 -- --------------------------------------------------------
@@ -514,6 +487,7 @@ CREATE TABLE `levantamento70f` (
 --
 
 INSERT INTO `levantamento70f` (`id_levantamento70`, `data`, `prod7`, `t7`, `obs7`, `prod8`, `t8`, `obs8`, `prod9`, `t9`, `obs9`, `prod10`, `t10`, `obs10`, `prod11`, `t11`, `obs11`, `prod12`, `t12`, `obs12`, `prod13`, `t13`, `obs13`, `prod14`, `t14`, `obs14`, `prod15`, `t15`, `obs15`, `prod16`, `t16`, `obs16`, `total`, `tempo_total`, `etiqueta1`, `etiqueta2`) VALUES
+(35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2502700457, 2502700457),
 (35, '2021-07-02', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 1, 0, '', 10, 0, 2502700457, 2502700457);
 
 -- --------------------------------------------------------
@@ -538,9 +512,9 @@ INSERT INTO `operadores` (`matricula`, `nome`, `situacao`) VALUES
 (145, 'Lucas Alves', ''),
 (231, 'Jonathan Martins', ''),
 (73, 'Rodrigo Santos', ''),
-(260, 'Danilo Silva', ''),
+(260, 'Danilo Silva ', ''),
 (110, 'José Carlos Pereira', ''),
-(225, 'Fabrício Santos', ''),
+(225, 'Fabrício Henrique', ''),
 (251, 'Pedro Henrique', '');
 
 -- --------------------------------------------------------
@@ -574,8 +548,7 @@ CREATE TABLE `refret` (
 --
 
 INSERT INTO `refret` (`id_refret`, `data`, `retrabalho_braco`, `refugo_braco`, `retrabalho_tirante`, `refugo_tirante`, `retrabalho_travessa`, `refugo_travessa`, `retrabalho_roda`, `refugo_roda`, `retrabalho_montagem`, `refugo_montagem`, `retrabalho_pintura`, `refugo_pintura`, `total_retrabalho`, `total_refugo`, `observacoes`) VALUES
-(7, '2021-07-02', 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 18, 0, '1'),
-(8, '2021-07-02', 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 6, 12, '15');
+(0, '2021-07-07', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, '');
 
 -- --------------------------------------------------------
 
@@ -588,15 +561,6 @@ CREATE TABLE `relatoriodia` (
   `data` date NOT NULL,
   `total` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `relatoriodia`
---
-
-INSERT INTO `relatoriodia` (`id_levantamento`, `data`, `total`) VALUES
-(3, '2021-06-30', 0),
-(6, '2021-06-29', 0),
-(7, '2021-07-02', 0);
 
 -- --------------------------------------------------------
 
@@ -615,10 +579,7 @@ CREATE TABLE `relatoriomes` (
 --
 
 INSERT INTO `relatoriomes` (`id_relatorio`, `mes`, `ano`) VALUES
-(1, 1, 2021),
-(2, 1, 2021),
-(3, 6, 2021),
-(4, 7, 2021);
+(1, 3, 2021);
 
 -- --------------------------------------------------------
 
@@ -637,6 +598,9 @@ CREATE TABLE `travessa` (
 --
 
 INSERT INTO `travessa` (`id_travessa`, `codigo`, `data`) VALUES
+(5, 'Sisisa', '2021-06-02'),
+(6, 'Vinicera', '2021-06-04'),
+(7, '123', '2021-06-11'),
 (8, '00184715114003089C', '2021-06-29');
 
 -- --------------------------------------------------------
@@ -658,6 +622,7 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `senha`, `user`, `prioridade`, `setor`) VALUES
+(4, 'Vinicinho', 'ViniMaximo', 3, 'Administrador'),
 (5, 'Qualidade02', 'Qualidade', 1, 'Qualidade'),
 (6, 'Montagem123', 'Montagem', 2, 'Montagem'),
 (7, 'abcde', 'adm', 3, 'Administrador'),
@@ -722,38 +687,10 @@ ALTER TABLE `inspetor`
   ADD PRIMARY KEY (`matricula`);
 
 --
--- Índices para tabela `levantamento35f`
---
-ALTER TABLE `levantamento35f`
-  ADD PRIMARY KEY (`id_levantamento35`),
-  ADD UNIQUE KEY `data` (`data`);
-
---
--- Índices para tabela `levantamento50f`
---
-ALTER TABLE `levantamento50f`
-  ADD PRIMARY KEY (`id_levantamento50`),
-  ADD UNIQUE KEY `data` (`data`);
-
---
--- Índices para tabela `levantamento65f`
---
-ALTER TABLE `levantamento65f`
-  ADD PRIMARY KEY (`id_levantamento65`),
-  ADD UNIQUE KEY `data` (`data`);
-
---
--- Índices para tabela `levantamento70f`
---
-ALTER TABLE `levantamento70f`
-  ADD PRIMARY KEY (`id_levantamento70`),
-  ADD UNIQUE KEY `data` (`data`);
-
---
 -- Índices para tabela `refret`
 --
 ALTER TABLE `refret`
-  ADD PRIMARY KEY (`id_refret`);
+  ADD UNIQUE KEY `data` (`data`);
 
 --
 -- Índices para tabela `relatoriodia`
@@ -788,85 +725,49 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT de tabela `codigo35`
 --
 ALTER TABLE `codigo35`
-  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `codigo50`
 --
 ALTER TABLE `codigo50`
-  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `codigo65`
 --
 ALTER TABLE `codigo65`
-  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de tabela `codigo70`
 --
 ALTER TABLE `codigo70`
-  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_codigo` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `g35`
 --
 ALTER TABLE `g35`
-  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2802500359;
+  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1008;
 
 --
 -- AUTO_INCREMENT de tabela `g50`
 --
 ALTER TABLE `g50`
-  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2082500489;
+  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=80;
 
 --
 -- AUTO_INCREMENT de tabela `g65`
 --
 ALTER TABLE `g65`
-  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20827000258;
+  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2183100004;
 
 --
 -- AUTO_INCREMENT de tabela `g70`
 --
 ALTER TABLE `g70`
-  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2502700461;
-
---
--- AUTO_INCREMENT de tabela `levantamento35f`
---
-ALTER TABLE `levantamento35f`
-  MODIFY `id_levantamento35` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
-
---
--- AUTO_INCREMENT de tabela `levantamento50f`
---
-ALTER TABLE `levantamento50f`
-  MODIFY `id_levantamento50` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
-
---
--- AUTO_INCREMENT de tabela `levantamento65f`
---
-ALTER TABLE `levantamento65f`
-  MODIFY `id_levantamento65` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
-
---
--- AUTO_INCREMENT de tabela `levantamento70f`
---
-ALTER TABLE `levantamento70f`
-  MODIFY `id_levantamento70` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=36;
-
---
--- AUTO_INCREMENT de tabela `refret`
---
-ALTER TABLE `refret`
-  MODIFY `id_refret` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
-
---
--- AUTO_INCREMENT de tabela `relatoriodia`
---
-ALTER TABLE `relatoriodia`
-  MODIFY `id_levantamento` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `etiqueta` bigint(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12346;
 
 --
 -- AUTO_INCREMENT de tabela `relatoriomes`

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 08-Jul-2021 às 14:50
+-- Tempo de geração: 08-Jul-2021 às 14:56
 -- Versão do servidor: 10.4.18-MariaDB
 -- versão do PHP: 8.0.3
 
@@ -33,14 +33,6 @@ CREATE TABLE `codigo35` (
   `data` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `codigo35`
---
-
-INSERT INTO `codigo35` (`id_codigo`, `codigo`, `data`) VALUES
-(1, 5802370088, '2021-07-07'),
-(2, 5802370087, '2021-07-07');
-
 -- --------------------------------------------------------
 
 --
@@ -52,16 +44,6 @@ CREATE TABLE `codigo50` (
   `codigo` bigint(20) NOT NULL,
   `data` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `codigo50`
---
-
-INSERT INTO `codigo50` (`id_codigo`, `codigo`, `data`) VALUES
-(1, 5802370088, '2021-06-29'),
-(2, 5802370088, '2021-06-29'),
-(3, 5802370087, '2021-07-07'),
-(4, 5802370088, '2021-07-07');
 
 -- --------------------------------------------------------
 
@@ -75,16 +57,6 @@ CREATE TABLE `codigo65` (
   `data` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `codigo65`
---
-
-INSERT INTO `codigo65` (`id_codigo`, `codigo`, `data`) VALUES
-(1, 582428969, '2021-06-29'),
-(2, 5802705154, '2021-06-29'),
-(3, 5802708969, '2021-07-07'),
-(4, 5802705154, '2021-07-07');
-
 -- --------------------------------------------------------
 
 --
@@ -96,15 +68,6 @@ CREATE TABLE `codigo70` (
   `codigo` bigint(20) NOT NULL,
   `data` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `codigo70`
---
-
-INSERT INTO `codigo70` (`id_codigo`, `codigo`, `data`) VALUES
-(1, 5802428969, '2021-06-29'),
-(2, 5802425154, '2021-07-07'),
-(3, 5802428969, '2021-07-07');
 
 -- --------------------------------------------------------
 
@@ -136,15 +99,6 @@ CREATE TABLE `g35` (
   `inspetor` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `g35`
---
-
-INSERT INTO `g35` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(899, 5802370087, '110', '231', '110', 'NOK', 'NOK', 'OK', 'OK', 0.11, 0.1, '112', 'Nulo', '231', 'Nulo', '112', 'Nulo', '00184715114003089C', '2021-07-07', '', 'Paulo Silva '),
-(900, 5802370087, '225', '225', '231', 'NOK', 'NOK', 'NOK', 'NOK', 0.2, 0.2, '231', '215', '215', '231', '145', '110', '00184715114003089C', '2021-07-07', ' 123', ''),
-(1007, 5802370087, '215', '73', '260', 'NOK', 'NOK', 'NOK', 'NOK', 0.15, 0.15, '73', '145', '112', 'Nulo', '145', '215', '00184715114003089C', '2021-07-08', '', '');
-
 -- --------------------------------------------------------
 
 --
@@ -174,13 +128,6 @@ CREATE TABLE `g50` (
   `observacoes` text NOT NULL,
   `inspetor` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `g50`
---
-
-INSERT INTO `g50` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(79, 5802370088, '231', '231', '231', 'NOK', 'NOK', 'NOK', 'NOK', 0.12, 0.12, '231', '231', '231', '231', '231', '231', '00184715114003089C', '2021-07-07', '      Teste', 'Júlio César Souza');
 
 -- --------------------------------------------------------
 
@@ -212,13 +159,6 @@ CREATE TABLE `g65` (
   `inspetor` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `g65`
---
-
-INSERT INTO `g65` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(2183100003, 5802705154, '225', '225', '225', 'NOK', 'NOK', 'NOK', 'NOK', 0.13, 0.13, '225', '225', '225', '225', '225', '225', '00184715114003089C', '2021-07-07', '  ', 'Sidney Henrique Pereira');
-
 -- --------------------------------------------------------
 
 --
@@ -249,13 +189,6 @@ CREATE TABLE `g70` (
   `inspetor` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `g70`
---
-
-INSERT INTO `g70` (`etiqueta`, `codigo`, `operador`, `operador2`, `operador3`, `esmagamento_dir`, `montagem_dir`, `esmagamento_esq`, `montagem_esq`, `oscilacao_esq`, `oscilacao_dir`, `operacao1`, `operacao1op`, `operacao2`, `operacao2op`, `operacao3`, `operacao3op`, `travessa`, `data`, `observacoes`, `inspetor`) VALUES
-(12345, 5802428969, '215', '112', '112', 'OK', 'NOK', 'NOK', 'OK', 1234, 1234, '145', 'Nulo', '231', 'Nulo', '145', 'Nulo', '00184715114003089C', '2021-07-07', ' a', 'Sidney Henrique Pereira');
-
 -- --------------------------------------------------------
 
 --
@@ -266,14 +199,6 @@ CREATE TABLE `inspetor` (
   `matricula` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `inspetor`
---
-
-INSERT INTO `inspetor` (`matricula`, `nome`) VALUES
-(156, 'Júlio César Souza'),
-(184, 'Sidney Henrique Pereira');
 
 -- --------------------------------------------------------
 
@@ -467,21 +392,6 @@ CREATE TABLE `operadores` (
   `situacao` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `operadores`
---
-
-INSERT INTO `operadores` (`matricula`, `nome`, `situacao`) VALUES
-(73, 'Rodrigo Santos', 'Ativo'),
-(110, 'José Carlos Pereira', ''),
-(112, 'Aguinaldo Alves', 'Ativo'),
-(145, 'Lucas Alves', 'Ativo'),
-(215, 'Flávio Henrique', ''),
-(225, 'Fabrício Henrique', ''),
-(231, 'Jonathan Martins', ''),
-(251, 'Pedro Henrique', ''),
-(260, 'Danilo Silva ', 'Ativo');
-
 -- --------------------------------------------------------
 
 --
@@ -508,13 +418,6 @@ CREATE TABLE `refret` (
   `observacoes` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `refret`
---
-
-INSERT INTO `refret` (`id_refret`, `data`, `retrabalho_braco`, `refugo_braco`, `retrabalho_tirante`, `refugo_tirante`, `retrabalho_travessa`, `refugo_travessa`, `retrabalho_roda`, `refugo_roda`, `retrabalho_montagem`, `refugo_montagem`, `retrabalho_pintura`, `refugo_pintura`, `total_retrabalho`, `total_refugo`, `observacoes`) VALUES
-(1, '2021-07-07', 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 6, 6, '');
-
 -- --------------------------------------------------------
 
 --
@@ -539,13 +442,6 @@ CREATE TABLE `relatoriomes` (
   `ano` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `relatoriomes`
---
-
-INSERT INTO `relatoriomes` (`id_relatorio`, `mes`, `ano`) VALUES
-(1, 3, 2021);
-
 -- --------------------------------------------------------
 
 --
@@ -557,16 +453,6 @@ CREATE TABLE `travessa` (
   `codigo` varchar(200) NOT NULL,
   `data` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `travessa`
---
-
-INSERT INTO `travessa` (`id_travessa`, `codigo`, `data`) VALUES
-(5, 'Sisisa', '2021-06-02'),
-(6, 'Vinicera', '2021-06-04'),
-(7, '123', '2021-06-11'),
-(8, '00184715114003089C', '2021-06-29');
 
 -- --------------------------------------------------------
 
@@ -587,11 +473,10 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`id_usuario`, `senha`, `user`, `prioridade`, `setor`) VALUES
-(4, 'Vinicinho', 'ViniMaximo', 3, 'Administrador'),
-(5, 'Qualidade02', 'Qualidade', 1, 'Qualidade'),
-(6, 'Montagem123', 'Montagem', 2, 'Montagem'),
 (7, 'abcde', 'adm', 3, 'Administrador'),
-(8, 'sidhenr', 'qld.sidney', 1, 'Qualidade');
+(9, 'Qualidade02', 'metrologia', 1, 'Qualidade'),
+(10, 'Montagem123', 'Montagem', 2, 'Montagem'),
+(11, 'mca678', 'qld.silva', 3, 'Administrador');
 
 --
 -- Índices para tabelas despejadas
@@ -815,7 +700,7 @@ ALTER TABLE `travessa`
 -- AUTO_INCREMENT de tabela `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
